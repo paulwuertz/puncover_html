@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_subsys.html">subsys</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_subsys_usb.html">usb</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_subsys_usb_device.html">device</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_subsys_usb_device_bos.c.html">bos.c</a>:54
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">usb_handle_bos</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00002fc8</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>0 (static)</td>
+                <td>36</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_usb_handle_standard_request.html">usb_handle_standard_request (680)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_usb_device_bos.c_usb_bos_register_cap.html">usb_bos_register_cap (32)</a></pre>
+    
+    <pre>
+usb_handle_bos():
+    2fc8:	8843      	ldrh	r3, [r0, #2]
+    2fca:	0a1b      	lsrs	r3, r3, #8
+    2fcc:	2b0f      	cmp	r3, #15
+    2fce:	bf01      	itttt	eq
+    2fd0:	4804      	ldreq	r0, [pc, #16]	; (2fe4 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_bos.c_usb_handle_bos.html">usb_handle_bos</a>+0x1c&gt;)
+usb_bos_get_length():
+    2fd2:	4b05      	ldreq	r3, [pc, #20]	; (2fe8 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_bos.c_usb_handle_bos.html">usb_handle_bos</a>+0x20&gt;)
+usb_handle_bos():
+    2fd4:	6010      	streq	r0, [r2, #0]
+usb_bos_get_length():
+    2fd6:	1a1b      	subeq	r3, r3, r0
+usb_handle_bos():
+    2fd8:	bf06      	itte	eq
+    2fda:	600b      	streq	r3, [r1, #0]
+    2fdc:	2000      	moveq	r0, #0
+    2fde:	f06f 0085 	mvnne.w	r0, #133	; 0x85
+    2fe2:	4770      	bx	lr
+    2fe4:	20000db4 	.word	0x20000db4
+    2fe8:	20000ddc 	.word	0x20000ddc
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_interface_config.html">gs_usb_interface_config (64)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 32</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 716</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    716
+                    
+                    
+                </td>
+                <td class="col_size">36</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_usb_device_bos.c_usb_handle_bos.html" class="icon-function">usb_handle_bos</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">680</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_usb_handle_standard_request.html" class="icon-function">usb_handle_standard_request</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

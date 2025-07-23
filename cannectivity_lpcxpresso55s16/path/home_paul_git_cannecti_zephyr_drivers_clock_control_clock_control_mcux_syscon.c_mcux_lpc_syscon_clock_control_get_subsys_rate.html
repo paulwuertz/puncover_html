@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_drivers_clock_control.html">clock_control</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c.html">clock_control_mcux_syscon.c</a>:148
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">mcux_lpc_syscon_clock_control_get_subsys_rate</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000ba5c</td>
+                <td>
+    
+    
+</td>
+                <td>8 (static)</td>
+                <td>192</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (5,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=402
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetFreq.html">CLOCK_GetFreq (132)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetFlexCommClkFreq.html">CLOCK_GetFlexCommClkFreq (44)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetHsLspiClkFreq.html">CLOCK_GetHsLspiClkFreq (100)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetMCanClkFreq.html">CLOCK_GetMCanClkFreq (58)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetCTimerClkFreq.html">CLOCK_GetCTimerClkFreq (68)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_set_subsys_rate.html">mcux_lpc_syscon_clock_control_set_subsys_rate (6)</a></pre>
+    
+    <pre>
+mcux_lpc_syscon_clock_control_get_subsys_rate():
+    ba5c:	f5b1 7f88 	cmp.w	r1, #272	; 0x110
+    ba60:	b510      	push	{r4, lr}
+    ba62:	4614      	mov	r4, r2
+    ba64:	d81b      	bhi.n	ba9e &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x42&gt;
+    ba66:	29ff      	cmp	r1, #255	; 0xff
+    ba68:	d803      	bhi.n	ba72 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x16&gt;
+    ba6a:	2904      	cmp	r1, #4
+    ba6c:	d910      	bls.n	ba90 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x34&gt;
+    ba6e:	2000      	movs	r0, #0
+    ba70:	bd10      	pop	{r4, pc}
+    ba72:	f46f 7380 	mvn.w	r3, #256	; 0x100
+    ba76:	4419      	add	r1, r3
+    ba78:	290f      	cmp	r1, #15
+    ba7a:	d81a      	bhi.n	bab2 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x56&gt;
+    ba7c:	e8df f001 	tbb	[pc, r1]
+    ba80:	2422201e 	.word	0x2422201e
+    ba84:	2c2a2826 	.word	0x2c2a2826
+    ba88:	3432302e 	.word	0x3432302e
+    ba8c:	3d383a36 	.word	0x3d383a36
+    ba90:	3901      	subs	r1, #1
+    ba92:	2903      	cmp	r1, #3
+    ba94:	d836      	bhi.n	bb04 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0xa8&gt;
+    ba96:	e8df f001 	tbb	[pc, r1]
+    ba9a:	3b39      	.short	0x3b39
+    ba9c:	3f3d      	.short	0x3f3d
+    ba9e:	f5b1 7f40 	cmp.w	r1, #768	; 0x300
+    baa2:	d02c      	beq.n	bafe &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0xa2&gt;
+    baa4:	f5b1 6f80 	cmp.w	r1, #1024	; 0x400
+    baa8:	d1e1      	bne.n	ba6e &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x12&gt;
+    baaa:	2001      	movs	r0, #1
+    baac:	f7fc f8c2 	bl	7c34 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetFreq.html">CLOCK_GetFreq</a>&gt;
+    bab0:	e002      	b.n	bab8 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x5c&gt;
+    bab2:	2000      	movs	r0, #0
+    bab4:	f000 fbfe 	bl	c2b4 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetFlexCommClkFreq.html">CLOCK_GetFlexCommClkFreq</a>&gt;
+    bab8:	6020      	str	r0, [r4, #0]
+    baba:	e7d8      	b.n	ba6e &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x12&gt;
+    babc:	2001      	movs	r0, #1
+    babe:	e7f9      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    bac0:	2002      	movs	r0, #2
+    bac2:	e7f7      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    bac4:	2003      	movs	r0, #3
+    bac6:	e7f5      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    bac8:	2004      	movs	r0, #4
+    baca:	e7f3      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    bacc:	2005      	movs	r0, #5
+    bace:	e7f1      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    bad0:	2006      	movs	r0, #6
+    bad2:	e7ef      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    bad4:	2007      	movs	r0, #7
+    bad6:	e7ed      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    bad8:	2008      	movs	r0, #8
+    bada:	e7eb      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    badc:	2009      	movs	r0, #9
+    bade:	e7e9      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    bae0:	200a      	movs	r0, #10
+    bae2:	e7e7      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    bae4:	200b      	movs	r0, #11
+    bae6:	e7e5      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    bae8:	200c      	movs	r0, #12
+    baea:	e7e3      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    baec:	200d      	movs	r0, #13
+    baee:	e7e1      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    baf0:	200f      	movs	r0, #15
+    baf2:	e7df      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    baf4:	f7fc f84a 	bl	7b8c &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetHsLspiClkFreq.html">CLOCK_GetHsLspiClkFreq</a>&gt;
+    baf8:	e7de      	b.n	bab8 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x5c&gt;
+    bafa:	2010      	movs	r0, #16
+    bafc:	e7da      	b.n	bab4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x58&gt;
+    bafe:	f000 fbbc 	bl	c27a &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetMCanClkFreq.html">CLOCK_GetMCanClkFreq</a>&gt;
+    bb02:	e7d9      	b.n	bab8 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x5c&gt;
+    bb04:	2000      	movs	r0, #0
+    bb06:	f7fc f873 	bl	7bf0 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetCTimerClkFreq.html">CLOCK_GetCTimerClkFreq</a>&gt;
+    bb0a:	e7d5      	b.n	bab8 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0x5c&gt;
+    bb0c:	2001      	movs	r0, #1
+    bb0e:	e7fa      	b.n	bb06 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0xaa&gt;
+    bb10:	2002      	movs	r0, #2
+    bb12:	e7f8      	b.n	bb06 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0xaa&gt;
+    bb14:	2003      	movs	r0, #3
+    bb16:	e7f6      	b.n	bb06 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0xaa&gt;
+    bb18:	2004      	movs	r0, #4
+    bb1a:	e7f4      	b.n	bb06 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_clock_control_clock_control_mcux_syscon.c_mcux_lpc_syscon_clock_control_get_subsys_rate.html">mcux_lpc_syscon_clock_control_get_subsys_rate</a>+0xaa&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_start.html">mcux_lpc_ctimer_start (16)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 24</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 224</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    24
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    224
+                    
+                    
+                </td>
+                <td class="col_size">92</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetClockOutClkFreq.html" class="icon-function">CLOCK_GetClockOutClkFreq</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    16
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">132</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetFreq.html" class="icon-function">CLOCK_GetFreq</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">8</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

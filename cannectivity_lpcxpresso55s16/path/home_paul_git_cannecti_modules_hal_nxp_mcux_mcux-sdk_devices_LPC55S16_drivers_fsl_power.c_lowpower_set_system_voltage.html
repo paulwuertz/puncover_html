@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules.html">modules</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal.html">hal</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp.html">nxp</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux.html">mcux</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk.html">mcux-sdk</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices.html">devices</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16.html">LPC55S16</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers.html">drivers</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c.html">fsl_power.c</a>:1192
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">lowpower_set_system_voltage</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00007ecc</td>
+                <td>
+    
+    
+</td>
+                <td>8 (static)</td>
+                <td>160</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_voltage_for_process.html">lowpower_set_voltage_for_process (144)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_EnableUsbhs0DeviceClock.html">CLOCK_EnableUsbhs0DeviceClock (48)</a></pre>
+    
+    <pre>
+lowpower_set_system_voltage():
+    7ecc:	f5b0 7f7a 	cmp.w	r0, #1000	; 0x3e8
+    7ed0:	b510      	push	{r4, lr}
+    7ed2:	d01f      	beq.n	7f14 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x48&gt;
+    7ed4:	f240 4301 	movw	r3, #1025	; 0x401
+    7ed8:	4298      	cmp	r0, r3
+    7eda:	d92f      	bls.n	7f3c &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x70&gt;
+    7edc:	f240 431a 	movw	r3, #1050	; 0x41a
+    7ee0:	4298      	cmp	r0, r3
+    7ee2:	d92f      	bls.n	7f44 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x78&gt;
+    7ee4:	f240 4333 	movw	r3, #1075	; 0x433
+    7ee8:	4298      	cmp	r0, r3
+    7eea:	d92f      	bls.n	7f4c &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x80&gt;
+    7eec:	f240 434c 	movw	r3, #1100	; 0x44c
+    7ef0:	4298      	cmp	r0, r3
+    7ef2:	d92f      	bls.n	7f54 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x88&gt;
+    7ef4:	f240 4365 	movw	r3, #1125	; 0x465
+    7ef8:	4298      	cmp	r0, r3
+    7efa:	d92f      	bls.n	7f5c &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x90&gt;
+    7efc:	f240 437e 	movw	r3, #1150	; 0x47e
+    7f00:	4298      	cmp	r0, r3
+    7f02:	d92f      	bls.n	7f64 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x98&gt;
+    7f04:	f5b0 6f93 	cmp.w	r0, #1176	; 0x498
+    7f08:	bf2c      	ite	cs
+    7f0a:	220a      	movcs	r2, #10
+    7f0c:	2209      	movcc	r2, #9
+    7f0e:	211f      	movs	r1, #31
+    7f10:	201e      	movs	r0, #30
+    7f12:	e002      	b.n	7f1a &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x4e&gt;
+    7f14:	2202      	movs	r2, #2
+    7f16:	2113      	movs	r1, #19
+    7f18:	200e      	movs	r0, #14
+    7f1a:	4c13      	ldr	r4, [pc, #76]	; (7f68 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x9c&gt;)
+    7f1c:	69e3      	ldr	r3, [r4, #28]
+    7f1e:	f423 43f8 	bic.w	r3, r3, #31744	; 0x7c00
+    7f22:	f023 031f 	bic.w	r3, r3, #31
+    7f26:	4303      	orrs	r3, r0
+    7f28:	ea43 2381 	orr.w	r3, r3, r1, lsl #10
+    7f2c:	61e3      	str	r3, [r4, #28]
+    7f2e:	6923      	ldr	r3, [r4, #16]
+    7f30:	f423 13f0 	bic.w	r3, r3, #1966080	; 0x1e0000
+    7f34:	ea43 4342 	orr.w	r3, r3, r2, lsl #17
+    7f38:	6123      	str	r3, [r4, #16]
+    7f3a:	bd10      	pop	{r4, pc}
+    7f3c:	2203      	movs	r2, #3
+    7f3e:	2116      	movs	r1, #22
+    7f40:	2011      	movs	r0, #17
+    7f42:	e7ea      	b.n	7f1a &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x4e&gt;
+    7f44:	2204      	movs	r2, #4
+    7f46:	2119      	movs	r1, #25
+    7f48:	2014      	movs	r0, #20
+    7f4a:	e7e6      	b.n	7f1a &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x4e&gt;
+    7f4c:	2205      	movs	r2, #5
+    7f4e:	211b      	movs	r1, #27
+    7f50:	2016      	movs	r0, #22
+    7f52:	e7e2      	b.n	7f1a &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x4e&gt;
+    7f54:	2206      	movs	r2, #6
+    7f56:	211d      	movs	r1, #29
+    7f58:	2018      	movs	r0, #24
+    7f5a:	e7de      	b.n	7f1a &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x4e&gt;
+    7f5c:	2207      	movs	r2, #7
+    7f5e:	211e      	movs	r1, #30
+    7f60:	201b      	movs	r0, #27
+    7f62:	e7da      	b.n	7f1a &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x4e&gt;
+    7f64:	2208      	movs	r2, #8
+    7f66:	e7d2      	b.n	7f0e &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html">lowpower_set_system_voltage</a>+0x42&gt;
+    7f68:	40020000 	.word	0x40020000
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_voltage_for_process.html">lowpower_set_voltage_for_process (144)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 44</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 752</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    44
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    752
+                    
+                    
+                </td>
+                <td class="col_size">160</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_system_voltage.html" class="icon-function">lowpower_set_system_voltage</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    36
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                4 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    592
+                    
+                    
+                </td>
+                <td class="col_size">144</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_lowpower_set_voltage_for_process.html" class="icon-function">lowpower_set_voltage_for_process</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    448
+                    
+                    
+                </td>
+                <td class="col_size">112</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_POWER_SetVoltageForFreq.html" class="icon-function">POWER_SetVoltageForFreq</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    32
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    336
+                    
+                    
+                </td>
+                <td class="col_size">304</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_soc_nxp_lpc_lpc55xxx_soc.c_clock_init.html" class="icon-function">clock_init</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">32</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_soc_nxp_lpc_lpc55xxx_soc.c_nxp_lpc55xxx_init.html" class="icon-function">nxp_lpc55xxx_init</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules.html">modules</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal.html">hal</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp.html">nxp</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux.html">mcux</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk.html">mcux-sdk</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer.html">ctimer</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c.html">fsl_ctimer.c</a>:380
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">CTIMER_SetupMatch</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000081ac</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>24 (static)</td>
+                <td>128</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (2)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_set_alarm.html">mcux_lpc_ctimer_set_alarm (140)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_set_top_value.html">mcux_lpc_ctimer_set_top_value (104)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=92
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_GetInstance.html">CTIMER_GetInstance (64)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_CMSIS_Core_Include_core_cm33.h_EnableIRQ.html">EnableIRQ (28)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_Init.html">CTIMER_Init (80)</a></pre>
+    
+    <pre>
+CTIMER_SetupMatch():
+    81ac:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+    81ae:	2307      	movs	r3, #7
+    81b0:	6947      	ldr	r7, [r0, #20]
+    81b2:	eb01 0641 	add.w	r6, r1, r1, lsl #1
+    81b6:	40b3      	lsls	r3, r6
+    81b8:	ea27 0703 	bic.w	r7, r7, r3
+    81bc:	7913      	ldrb	r3, [r2, #4]
+    81be:	f106 0c01 	add.w	ip, r6, #1
+    81c2:	fa03 f30c 	lsl.w	r3, r3, ip
+    81c6:	f892 c005 	ldrb.w	ip, [r2, #5]
+    81ca:	f106 0e02 	add.w	lr, r6, #2
+    81ce:	fa0c fc0e 	lsl.w	ip, ip, lr
+    81d2:	ea43 030c 	orr.w	r3, r3, ip
+    81d6:	f892 c008 	ldrb.w	ip, [r2, #8]
+    81da:	004d      	lsls	r5, r1, #1
+    81dc:	fa0c f606 	lsl.w	r6, ip, r6
+    81e0:	4333      	orrs	r3, r6
+    81e2:	433b      	orrs	r3, r7
+    81e4:	6143      	str	r3, [r0, #20]
+    81e6:	2330      	movs	r3, #48	; 0x30
+    81e8:	6bc6      	ldr	r6, [r0, #60]	; 0x3c
+    81ea:	40ab      	lsls	r3, r5
+    81ec:	ea26 0603 	bic.w	r6, r6, r3
+    81f0:	7993      	ldrb	r3, [r2, #6]
+    81f2:	3504      	adds	r5, #4
+    81f4:	40ab      	lsls	r3, r5
+    81f6:	4333      	orrs	r3, r6
+    81f8:	2601      	movs	r6, #1
+    81fa:	79d5      	ldrb	r5, [r2, #7]
+    81fc:	408e      	lsls	r6, r1
+    81fe:	408d      	lsls	r5, r1
+    8200:	ea23 0306 	bic.w	r3, r3, r6
+    8204:	432b      	orrs	r3, r5
+    8206:	63c3      	str	r3, [r0, #60]	; 0x3c
+    8208:	6813      	ldr	r3, [r2, #0]
+    820a:	3106      	adds	r1, #6
+    820c:	f840 3021 	str.w	r3, [r0, r1, lsl #2]
+CTIMER_ClearStatusFlags():
+    8210:	6006      	str	r6, [r0, #0]
+CTIMER_SetupMatch():
+    8212:	7a13      	ldrb	r3, [r2, #8]
+    8214:	b13b      	cbz	r3, 8226 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_SetupMatch.html">CTIMER_SetupMatch</a>+0x7a&gt;
+    8216:	f7ff ff73 	bl	8100 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_GetInstance.html">CTIMER_GetInstance</a>&gt;
+    821a:	4b03      	ldr	r3, [pc, #12]	; (8228 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_SetupMatch.html">CTIMER_SetupMatch</a>+0x7c&gt;)
+    821c:	5618      	ldrsb	r0, [r3, r0]
+    821e:	e8bd 40f8 	ldmia.w	sp!, {r3, r4, r5, r6, r7, lr}
+    8222:	f7ff bf8d 	b.w	8140 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_CMSIS_Core_Include_core_cm33.h_EnableIRQ.html">EnableIRQ</a>.isra.0&gt;
+    8226:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
+    8228:	000107e4 	.word	0x000107e4
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_lpc_gpio_fsl_gpio.c_GPIO_PortInit.html">GPIO_PortInit (44)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 72</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 268</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    72
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    268
+                    
+                    
+                </td>
+                <td class="col_size">128</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_SetupMatch.html" class="icon-function">CTIMER_SetupMatch</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">140</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_set_alarm.html" class="icon-function">mcux_lpc_ctimer_set_alarm</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

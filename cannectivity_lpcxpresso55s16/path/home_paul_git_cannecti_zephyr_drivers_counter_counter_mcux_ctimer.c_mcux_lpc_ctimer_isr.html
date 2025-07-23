@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_drivers_counter.html">counter</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c.html">counter_mcux_ctimer.c</a>:218
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">mcux_lpc_ctimer_isr</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000bba6</td>
+                <td>
+    
+    
+</td>
+                <td>48 (static)</td>
+                <td>112</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_get_pending_int.html">mcux_lpc_ctimer_get_pending_int (16)</a></pre>
+    
+    <pre>
+mcux_lpc_ctimer_isr():
+    bba6:	e92d 4ff7 	stmdb	sp!, {r0, r1, r2, r4, r5, r6, r7, r8, r9, sl, fp, lr}
+CTIMER_GetTimerCountValue():
+    bbaa:	2400      	movs	r4, #0
+mcux_lpc_ctimer_isr():
+    bbac:	6906      	ldr	r6, [r0, #16]
+    bbae:	4605      	mov	r5, r0
+    bbb0:	4637      	mov	r7, r6
+    bbb2:	f04f 0b01 	mov.w	fp, #1
+    bbb6:	46a1      	mov	r9, r4
+    bbb8:	6843      	ldr	r3, [r0, #4]
+    bbba:	68da      	ldr	r2, [r3, #12]
+CTIMER_GetStatusFlags():
+    bbbc:	f8d2 8000 	ldr.w	r8, [r2]
+CTIMER_ClearStatusFlags():
+    bbc0:	f8c2 8000 	str.w	r8, [r2]
+mcux_lpc_ctimer_isr():
+    bbc4:	68db      	ldr	r3, [r3, #12]
+CTIMER_GetTimerCountValue():
+    bbc6:	689a      	ldr	r2, [r3, #8]
+mcux_lpc_ctimer_isr():
+    bbc8:	fa0b f304 	lsl.w	r3, fp, r4
+    bbcc:	ea13 0f08 	tst.w	r3, r8
+    bbd0:	d00e      	beq.n	bbf0 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_isr.html">mcux_lpc_ctimer_isr</a>+0x4a&gt;
+    bbd2:	f856 a034 	ldr.w	sl, [r6, r4, lsl #3]
+    bbd6:	f1ba 0f00 	cmp.w	sl, #0
+    bbda:	d009      	beq.n	bbf0 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_isr.html">mcux_lpc_ctimer_isr</a>+0x4a&gt;
+    bbdc:	687b      	ldr	r3, [r7, #4]
+    bbde:	4628      	mov	r0, r5
+    bbe0:	f846 9034 	str.w	r9, [r6, r4, lsl #3]
+    bbe4:	b2e1      	uxtb	r1, r4
+    bbe6:	f8c7 9004 	str.w	r9, [r7, #4]
+    bbea:	9201      	str	r2, [sp, #4]
+    bbec:	47d0      	blx	sl
+    bbee:	9a01      	ldr	r2, [sp, #4]
+    bbf0:	3401      	adds	r4, #1
+    bbf2:	2c03      	cmp	r4, #3
+    bbf4:	f107 0708 	add.w	r7, r7, #8
+    bbf8:	d1e6      	bne.n	bbc8 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_isr.html">mcux_lpc_ctimer_isr</a>+0x22&gt;
+    bbfa:	f018 0f08 	tst.w	r8, #8
+    bbfe:	d007      	beq.n	bc10 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_isr.html">mcux_lpc_ctimer_isr</a>+0x6a&gt;
+    bc00:	69b3      	ldr	r3, [r6, #24]
+    bc02:	b12b      	cbz	r3, bc10 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_isr.html">mcux_lpc_ctimer_isr</a>+0x6a&gt;
+    bc04:	4628      	mov	r0, r5
+    bc06:	69f1      	ldr	r1, [r6, #28]
+    bc08:	b003      	add	sp, #12
+    bc0a:	e8bd 4ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+    bc0e:	4718      	bx	r3
+    bc10:	b003      	add	sp, #12
+    bc12:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_irq_config_0.html">mcux_lpc_ctimer_irq_config_0 (22)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

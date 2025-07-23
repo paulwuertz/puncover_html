@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules.html">modules</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal.html">hal</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp.html">nxp</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux.html">mcux</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk.html">mcux-sdk</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers.html">drivers</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm.html">flexcomm</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart.html">usart</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c.html">fsl_usart.c</a>:193
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">USART_Init</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000c46e</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>24 (static)</td>
+                <td>312</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (2)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure (180)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_init.html">mcux_flexcomm_init (172)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=306
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_Init.html">FLEXCOMM_Init (124)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_SetBaudRate.html">USART_SetBaudRate (182)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_SetBaudRate.html">USART_SetBaudRate (182)</a></pre>
+    
+    <pre>
+USART_Init():
+    c46e:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+    c470:	460d      	mov	r5, r1
+    c472:	4617      	mov	r7, r2
+    c474:	4604      	mov	r4, r0
+    c476:	2800      	cmp	r0, #0
+    c478:	f000 8090 	beq.w	c59c &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>+0x12e&gt;
+    c47c:	2900      	cmp	r1, #0
+    c47e:	f000 808d 	beq.w	c59c &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>+0x12e&gt;
+    c482:	2a00      	cmp	r2, #0
+    c484:	f000 808a 	beq.w	c59c &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>+0x12e&gt;
+    c488:	2101      	movs	r1, #1
+    c48a:	f7fb ff5b 	bl	8344 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_Init.html">FLEXCOMM_Init</a>&gt;
+    c48e:	4606      	mov	r6, r0
+    c490:	2800      	cmp	r0, #0
+    c492:	d174      	bne.n	c57e &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>+0x110&gt;
+    c494:	7a6b      	ldrb	r3, [r5, #9]
+    c496:	b1d3      	cbz	r3, c4ce &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>+0x60&gt;
+    c498:	f8d4 3e00 	ldr.w	r3, [r4, #3584]	; 0xe00
+    c49c:	f043 1301 	orr.w	r3, r3, #65537	; 0x10001
+    c4a0:	f8c4 3e00 	str.w	r3, [r4, #3584]	; 0xe00
+    c4a4:	f8d4 3e08 	ldr.w	r3, [r4, #3592]	; 0xe08
+    c4a8:	f423 6370 	bic.w	r3, r3, #3840	; 0xf00
+    c4ac:	f8c4 3e08 	str.w	r3, [r4, #3592]	; 0xe08
+    c4b0:	7b6b      	ldrb	r3, [r5, #13]
+    c4b2:	f8d4 2e08 	ldr.w	r2, [r4, #3592]	; 0xe08
+    c4b6:	021b      	lsls	r3, r3, #8
+    c4b8:	f403 6370 	and.w	r3, r3, #3840	; 0xf00
+    c4bc:	4313      	orrs	r3, r2
+    c4be:	f8c4 3e08 	str.w	r3, [r4, #3592]	; 0xe08
+    c4c2:	f8d4 3e08 	ldr.w	r3, [r4, #3592]	; 0xe08
+    c4c6:	f043 0301 	orr.w	r3, r3, #1
+    c4ca:	f8c4 3e08 	str.w	r3, [r4, #3592]	; 0xe08
+    c4ce:	7a2b      	ldrb	r3, [r5, #8]
+    c4d0:	b1d3      	cbz	r3, c508 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>+0x9a&gt;
+    c4d2:	f8d4 3e00 	ldr.w	r3, [r4, #3584]	; 0xe00
+    c4d6:	f043 1302 	orr.w	r3, r3, #131074	; 0x20002
+    c4da:	f8c4 3e00 	str.w	r3, [r4, #3584]	; 0xe00
+    c4de:	f8d4 3e08 	ldr.w	r3, [r4, #3592]	; 0xe08
+    c4e2:	f423 2370 	bic.w	r3, r3, #983040	; 0xf0000
+    c4e6:	f8c4 3e08 	str.w	r3, [r4, #3592]	; 0xe08
+    c4ea:	7bab      	ldrb	r3, [r5, #14]
+    c4ec:	f8d4 2e08 	ldr.w	r2, [r4, #3592]	; 0xe08
+    c4f0:	041b      	lsls	r3, r3, #16
+    c4f2:	f403 2370 	and.w	r3, r3, #983040	; 0xf0000
+    c4f6:	4313      	orrs	r3, r2
+    c4f8:	f8c4 3e08 	str.w	r3, [r4, #3592]	; 0xe08
+    c4fc:	f8d4 3e08 	ldr.w	r3, [r4, #3592]	; 0xe08
+    c500:	f043 0302 	orr.w	r3, r3, #2
+    c504:	f8c4 3e08 	str.w	r3, [r4, #3592]	; 0xe08
+    c508:	7aeb      	ldrb	r3, [r5, #11]
+    c50a:	7bea      	ldrb	r2, [r5, #15]
+    c50c:	79e9      	ldrb	r1, [r5, #7]
+    c50e:	01db      	lsls	r3, r3, #7
+    c510:	ea43 33c1 	orr.w	r3, r3, r1, lsl #15
+    c514:	0291      	lsls	r1, r2, #10
+    c516:	f401 6100 	and.w	r1, r1, #2048	; 0x800
+    c51a:	430b      	orrs	r3, r1
+    c51c:	7b29      	ldrb	r1, [r5, #12]
+    c51e:	0392      	lsls	r2, r2, #14
+    c520:	ea43 2341 	orr.w	r3, r3, r1, lsl #9
+    c524:	7929      	ldrb	r1, [r5, #4]
+    c526:	f402 4280 	and.w	r2, r2, #16384	; 0x4000
+    c52a:	0109      	lsls	r1, r1, #4
+    c52c:	f001 0130 	and.w	r1, r1, #48	; 0x30
+    c530:	430b      	orrs	r3, r1
+    c532:	7969      	ldrb	r1, [r5, #5]
+    c534:	0189      	lsls	r1, r1, #6
+    c536:	f001 0140 	and.w	r1, r1, #64	; 0x40
+    c53a:	430b      	orrs	r3, r1
+    c53c:	79a9      	ldrb	r1, [r5, #6]
+    c53e:	0089      	lsls	r1, r1, #2
+    c540:	f001 010c 	and.w	r1, r1, #12
+    c544:	430b      	orrs	r3, r1
+    c546:	4313      	orrs	r3, r2
+    c548:	7c2a      	ldrb	r2, [r5, #16]
+    c54a:	0312      	lsls	r2, r2, #12
+    c54c:	f402 5280 	and.w	r2, r2, #4096	; 0x1000
+    c550:	4313      	orrs	r3, r2
+    c552:	f043 0301 	orr.w	r3, r3, #1
+    c556:	6023      	str	r3, [r4, #0]
+    c558:	7aeb      	ldrb	r3, [r5, #11]
+    c55a:	b193      	cbz	r3, c582 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>+0x114&gt;
+    c55c:	f44f 5316 	mov.w	r3, #9600	; 0x2580
+    c560:	682a      	ldr	r2, [r5, #0]
+    c562:	fbb3 f3f2 	udiv	r3, r3, r2
+    c566:	435a      	muls	r2, r3
+    c568:	f5b2 5f16 	cmp.w	r2, #9600	; 0x2580
+    c56c:	d118      	bne.n	c5a0 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>+0x132&gt;
+    c56e:	3b01      	subs	r3, #1
+    c570:	6223      	str	r3, [r4, #32]
+USART_EnableContinuousSCLK():
+    c572:	7aab      	ldrb	r3, [r5, #10]
+    c574:	b173      	cbz	r3, c594 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>+0x126&gt;
+    c576:	6863      	ldr	r3, [r4, #4]
+    c578:	f443 7380 	orr.w	r3, r3, #256	; 0x100
+    c57c:	6063      	str	r3, [r4, #4]
+USART_Init():
+    c57e:	4630      	mov	r0, r6
+    c580:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
+    c582:	463a      	mov	r2, r7
+    c584:	4620      	mov	r0, r4
+    c586:	6829      	ldr	r1, [r5, #0]
+    c588:	f7ff ff16 	bl	c3b8 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_SetBaudRate.html">USART_SetBaudRate</a>&gt;
+    c58c:	2800      	cmp	r0, #0
+    c58e:	d0f0      	beq.n	c572 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>+0x104&gt;
+    c590:	4606      	mov	r6, r0
+    c592:	e7f4      	b.n	c57e &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>+0x110&gt;
+USART_EnableContinuousSCLK():
+    c594:	6863      	ldr	r3, [r4, #4]
+    c596:	f423 7380 	bic.w	r3, r3, #256	; 0x100
+    c59a:	e7ef      	b.n	c57c &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>+0x10e&gt;
+USART_Init():
+    c59c:	2604      	movs	r6, #4
+    c59e:	e7ee      	b.n	c57e &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>+0x110&gt;
+    c5a0:	f241 6651 	movw	r6, #5713	; 0x1651
+    c5a4:	e7eb      	b.n	c57e &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>+0x110&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Enable9bitMode.html">USART_Enable9bitMode (30)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 104</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 182</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    104
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">182</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_SetBaudRate.html" class="icon-function">USART_SetBaudRate</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">72</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 72</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 492</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    72
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    492
+                    
+                    
+                </td>
+                <td class="col_size">312</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html" class="icon-function">USART_Init</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">180</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html" class="icon-function">mcux_flexcomm_uart_configure</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

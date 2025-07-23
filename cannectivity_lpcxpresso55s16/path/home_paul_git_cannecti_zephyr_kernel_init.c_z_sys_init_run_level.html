@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_kernel.html">kernel</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_kernel_init.c.html">init.c</a>:347
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">z_sys_init_run_level</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00008afc</td>
+                <td>
+    
+    
+</td>
+                <td>16 (static)</td>
+                <td>44</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (2)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_kernel_init.c_z_cstart.html">z_cstart (200)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_kernel_init.c_bg_thread_main.html">bg_thread_main (196)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=48
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_kernel_init.c_do_device_init.html">do_device_init (48)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_kernel_fatal.c_z_fatal_error.html">z_fatal_error (232)</a></pre>
+    
+    <pre>
+z_sys_init_run_level():
+    8afc:	b538      	push	{r3, r4, r5, lr}
+    8afe:	4b09      	ldr	r3, [pc, #36]	; (8b24 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_init.c_z_sys_init_run_level.html">z_sys_init_run_level</a>+0x28&gt;)
+    8b00:	f853 4020 	ldr.w	r4, [r3, r0, lsl #2]
+    8b04:	3001      	adds	r0, #1
+    8b06:	f853 5020 	ldr.w	r5, [r3, r0, lsl #2]
+    8b0a:	42a5      	cmp	r5, r4
+    8b0c:	d800      	bhi.n	8b10 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_init.c_z_sys_init_run_level.html">z_sys_init_run_level</a>+0x14&gt;
+    8b0e:	bd38      	pop	{r3, r4, r5, pc}
+    8b10:	6863      	ldr	r3, [r4, #4]
+    8b12:	b123      	cbz	r3, 8b1e &lt;<a href="home_paul_git_cannecti_zephyr_kernel_init.c_z_sys_init_run_level.html">z_sys_init_run_level</a>+0x22&gt;
+    8b14:	4620      	mov	r0, r4
+    8b16:	f004 f9f9 	bl	cf0c &lt;<a href="home_paul_git_cannecti_zephyr_kernel_init.c_do_device_init.html">do_device_init</a>&gt;
+    8b1a:	3408      	adds	r4, #8
+    8b1c:	e7f5      	b.n	8b0a &lt;<a href="home_paul_git_cannecti_zephyr_kernel_init.c_z_sys_init_run_level.html">z_sys_init_run_level</a>+0xe&gt;
+    8b1e:	6823      	ldr	r3, [r4, #0]
+    8b20:	4798      	blx	r3
+    8b22:	e7fa      	b.n	8b1a &lt;<a href="home_paul_git_cannecti_zephyr_kernel_init.c_z_sys_init_run_level.html">z_sys_init_run_level</a>+0x1e&gt;
+    8b24:	0000e240 	.word	0x0000e240
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_kernel_init.c_bg_thread_main.html">bg_thread_main (196)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 64</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 48</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    64
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">48</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_init.c_do_device_init.html" class="icon-function">do_device_init</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">56</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 56</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 316</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    56
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    316
+                    
+                    
+                </td>
+                <td class="col_size">44</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_init.c_z_sys_init_run_level.html" class="icon-function">z_sys_init_run_level</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    40
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    272
+                    
+                    
+                </td>
+                <td class="col_size">200</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_init.c_z_cstart.html" class="icon-function">z_cstart</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">72</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_arch_arm_core_cortex_m_prep_c.c_z_prep_c.html" class="icon-function">z_prep_c</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

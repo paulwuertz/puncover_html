@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_drivers_interrupt_controller.html">interrupt_controller</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_drivers_interrupt_controller_intc_nxp_pint.c.html">intc_nxp_pint.c</a>:114
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">nxp_pint_pin_disable</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000054fc</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>0 (static)</td>
+                <td>52</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_pin_interrupt_configure.html">gpio_mcux_lpc_pin_interrupt_configure (168)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=80
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_pint_fsl_pint.c_PINT_PinInterruptConfig.html">PINT_PinInterruptConfig (80)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_interrupt_controller_intc_nxp_pint.c_nxp_pint_pin_enable.html">nxp_pint_pin_enable (136)</a></pre>
+    
+    <pre>
+nxp_pint_pin_disable():
+    54fc:	2840      	cmp	r0, #64	; 0x40
+    54fe:	d811      	bhi.n	5524 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_interrupt_controller_intc_nxp_pint.c_nxp_pint_pin_disable.html">nxp_pint_pin_disable</a>+0x28&gt;
+    5500:	4b09      	ldr	r3, [pc, #36]	; (5528 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_interrupt_controller_intc_nxp_pint.c_nxp_pint_pin_disable.html">nxp_pint_pin_disable</a>+0x2c&gt;)
+    5502:	5c19      	ldrb	r1, [r3, r0]
+    5504:	29ff      	cmp	r1, #255	; 0xff
+    5506:	d00d      	beq.n	5524 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_interrupt_controller_intc_nxp_pint.c_nxp_pint_pin_disable.html">nxp_pint_pin_disable</a>+0x28&gt;
+    5508:	220c      	movs	r2, #12
+    550a:	4b08      	ldr	r3, [pc, #32]	; (552c &lt;<a href="home_paul_git_cannecti_zephyr_drivers_interrupt_controller_intc_nxp_pint.c_nxp_pint_pin_disable.html">nxp_pint_pin_disable</a>+0x30&gt;)
+    550c:	f04f 2040 	mov.w	r0, #1073758208	; 0x40004000
+    5510:	fb02 3301 	mla	r3, r2, r1, r3
+    5514:	7a1a      	ldrb	r2, [r3, #8]
+    5516:	f36f 1286 	bfc	r2, #6, #1
+    551a:	721a      	strb	r2, [r3, #8]
+    551c:	2300      	movs	r3, #0
+    551e:	461a      	mov	r2, r3
+    5520:	f002 beda 	b.w	82d8 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_pint_fsl_pint.c_PINT_PinInterruptConfig.html">PINT_PinInterruptConfig</a>&gt;
+    5524:	4770      	bx	lr
+    5526:	bf00      	nop
+    5528:	2000237c 	.word	0x2000237c
+    552c:	20001d1c 	.word	0x20001d1c
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_interrupt_controller_intc_nxp_pint.c_nxp_pint_pin_set_callback.html">nxp_pint_pin_set_callback (44)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 40</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 80</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    40
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">80</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_pint_fsl_pint.c_PINT_PinInterruptConfig.html" class="icon-function">PINT_PinInterruptConfig</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">24</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 24</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 220</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    220
+                    
+                    
+                </td>
+                <td class="col_size">52</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_interrupt_controller_intc_nxp_pint.c_nxp_pint_pin_disable.html" class="icon-function">nxp_pint_pin_disable</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">168</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_pin_interrupt_configure.html" class="icon-function">gpio_mcux_lpc_pin_interrupt_configure</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

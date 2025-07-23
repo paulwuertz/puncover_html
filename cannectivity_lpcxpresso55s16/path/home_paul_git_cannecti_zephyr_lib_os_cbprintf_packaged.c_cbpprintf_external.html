@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_lib.html">lib</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_lib_os.html">os</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c.html">cbprintf_packaged.c</a>:831
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">cbpprintf_external</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000ab1c</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>32 (static)</td>
+                <td>98</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process (724)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=16
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_strlen.html">strlen (16)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_sys_heap_init.html">sys_heap_init (122)</a></pre>
+    
+    <pre>
+cbpprintf_external():
+    ab1c:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+    ab20:	4606      	mov	r6, r0
+    ab22:	460d      	mov	r5, r1
+    ab24:	4617      	mov	r7, r2
+    ab26:	4698      	mov	r8, r3
+    ab28:	b32b      	cbz	r3, ab76 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbpprintf_external.html">cbpprintf_external</a>+0x5a&gt;
+    ab2a:	f04f 0a00 	mov.w	sl, #0
+    ab2e:	f898 4000 	ldrb.w	r4, [r8]
+    ab32:	f893 9001 	ldrb.w	r9, [r3, #1]
+    ab36:	78db      	ldrb	r3, [r3, #3]
+    ab38:	00a4      	lsls	r4, r4, #2
+    ab3a:	eb04 0443 	add.w	r4, r4, r3, lsl #1
+    ab3e:	f898 3002 	ldrb.w	r3, [r8, #2]
+    ab42:	441c      	add	r4, r3
+    ab44:	4444      	add	r4, r8
+    ab46:	45ca      	cmp	sl, r9
+    ab48:	d309      	bcc.n	ab5e &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbpprintf_external.html">cbpprintf_external</a>+0x42&gt;
+cbprintf_via_va_list():
+    ab4a:	4639      	mov	r1, r7
+    ab4c:	4630      	mov	r0, r6
+    ab4e:	46ac      	mov	ip, r5
+    ab50:	f8d8 2004 	ldr.w	r2, [r8, #4]
+    ab54:	f108 0308 	add.w	r3, r8, #8
+cbpprintf_external():
+    ab58:	e8bd 47f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+cbprintf_via_va_list():
+    ab5c:	4760      	bx	ip
+cbpprintf_external():
+    ab5e:	f814 3b01 	ldrb.w	r3, [r4], #1
+    ab62:	f10a 0a01 	add.w	sl, sl, #1
+    ab66:	4620      	mov	r0, r4
+    ab68:	f848 4023 	str.w	r4, [r8, r3, lsl #2]
+    ab6c:	f7f5 fafa 	bl	164 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_strlen.html">strlen</a>&gt;
+    ab70:	3001      	adds	r0, #1
+    ab72:	4404      	add	r4, r0
+    ab74:	e7e7      	b.n	ab46 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbpprintf_external.html">cbpprintf_external</a>+0x2a&gt;
+    ab76:	f06f 0015 	mvn.w	r0, #21
+    ab7a:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_is_ptr.html">is_ptr (74)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 160</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 928</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    160
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    928
+                    
+                    
+                </td>
+                <td class="col_size">98</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbpprintf_external.html" class="icon-function">cbpprintf_external</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    128
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    830
+                    
+                    
+                </td>
+                <td class="col_size">724</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html" class="icon-function">log_output_process</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">106</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_msg_process.html" class="icon-function">log_output_msg_process</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

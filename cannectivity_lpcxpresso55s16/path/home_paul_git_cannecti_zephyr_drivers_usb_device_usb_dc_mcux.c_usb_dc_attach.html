@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers.html">drivers</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers_usb.html">usb</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_drivers_usb_device.html">device</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_drivers_usb_device_usb_dc_mcux.c.html">usb_dc_mcux.c</a>:184
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">usb_dc_attach</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000057cc</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>16 (static)</td>
+                <td>92</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_usb_enable.html">usb_enable (344)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (3,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=248
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpc3511IpInit.html">USB_DeviceLpc3511IpInit (176)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_arch_arm_core_cortex_m_irq_manage.c_z_arm_irq_priority_set.html">z_arm_irq_priority_set (44)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_arch_arm_core_cortex_m_irq_manage.c_arch_irq_enable.html">arch_irq_enable (28)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_usb_device_usb_dc_mcux.c_usb_mcux_thread_main.html">usb_mcux_thread_main (512)</a></pre>
+    
+    <pre>
+usb_dc_attach():
+    57cc:	b538      	push	{r3, r4, r5, lr}
+    57ce:	4c13      	ldr	r4, [pc, #76]	; (581c &lt;<a href="home_paul_git_cannecti_zephyr_drivers_usb_device_usb_dc_mcux.c_usb_dc_attach.html">usb_dc_attach</a>+0x50&gt;)
+    57d0:	4b13      	ldr	r3, [pc, #76]	; (5820 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_usb_device_usb_dc_mcux.c_usb_dc_attach.html">usb_dc_attach</a>+0x54&gt;)
+    57d2:	f8c4 30a4 	str.w	r3, [r4, #164]	; 0xa4
+    57d6:	f894 30a8 	ldrb.w	r3, [r4, #168]	; 0xa8
+    57da:	b9cb      	cbnz	r3, 5810 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_usb_device_usb_dc_mcux.c_usb_dc_attach.html">usb_dc_attach</a>+0x44&gt;
+    57dc:	4b11      	ldr	r3, [pc, #68]	; (5824 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_usb_device_usb_dc_mcux.c_usb_dc_attach.html">usb_dc_attach</a>+0x58&gt;)
+    57de:	4622      	mov	r2, r4
+    57e0:	4621      	mov	r1, r4
+    57e2:	2006      	movs	r0, #6
+    57e4:	6063      	str	r3, [r4, #4]
+    57e6:	f002 feb3 	bl	8550 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpc3511IpInit.html">USB_DeviceLpc3511IpInit</a>&gt;
+    57ea:	4605      	mov	r5, r0
+    57ec:	b990      	cbnz	r0, 5814 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_usb_device_usb_dc_mcux.c_usb_dc_attach.html">usb_dc_attach</a>+0x48&gt;
+    57ee:	4602      	mov	r2, r0
+    57f0:	2101      	movs	r1, #1
+    57f2:	202f      	movs	r0, #47	; 0x2f
+    57f4:	f7ff f8c6 	bl	4984 &lt;<a href="home_paul_git_cannecti_zephyr_arch_arm_core_cortex_m_irq_manage.c_z_arm_irq_priority_set.html">z_arm_irq_priority_set</a>&gt;
+    57f8:	202f      	movs	r0, #47	; 0x2f
+    57fa:	f7ff f8b5 	bl	4968 &lt;<a href="home_paul_git_cannecti_zephyr_arch_arm_core_cortex_m_irq_manage.c_arch_irq_enable.html">arch_irq_enable</a>&gt;
+    57fe:	2301      	movs	r3, #1
+    5800:	f884 30a8 	strb.w	r3, [r4, #168]	; 0xa8
+    5804:	6863      	ldr	r3, [r4, #4]
+    5806:	462a      	mov	r2, r5
+    5808:	4629      	mov	r1, r5
+    580a:	695b      	ldr	r3, [r3, #20]
+    580c:	6820      	ldr	r0, [r4, #0]
+    580e:	4798      	blx	r3
+    5810:	2000      	movs	r0, #0
+    5812:	bd38      	pop	{r3, r4, r5, pc}
+    5814:	f06f 0004 	mvn.w	r0, #4
+    5818:	e7fb      	b.n	5812 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_usb_device_usb_dc_mcux.c_usb_dc_attach.html">usb_dc_attach</a>+0x46&gt;
+    581a:	bf00      	nop
+    581c:	20001320 	.word	0x20001320
+    5820:	20001d7c 	.word	0x20001d7c
+    5824:	0000e044 	.word	0x0000e044
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_usb_device_usb_dc_mcux.c_usb_dc_set_address.html">usb_dc_set_address (48)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 208</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 296</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    208
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    296
+                    
+                    
+                </td>
+                <td class="col_size">120</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpcIp3511MallocMaxPacketBuffer.html" class="icon-function">USB_DeviceLpcIp3511MallocMaxPacketBuffer</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    184
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">176</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpc3511IpInit.html" class="icon-function">USB_DeviceLpc3511IpInit</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">168</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 168</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 896</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    168
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    896
+                    
+                    
+                </td>
+                <td class="col_size">92</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_usb_device_usb_dc_mcux.c_usb_dc_attach.html" class="icon-function">usb_dc_attach</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    152
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    804
+                    
+                    
+                </td>
+                <td class="col_size">344</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_usb_enable.html" class="icon-function">usb_enable</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    120
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    460
+                    
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_app_src_usb.c_cannectivity_usb_init.html" class="icon-function">cannectivity_usb_init</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    112
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    404
+                    
+                    
+                </td>
+                <td class="col_size">208</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_app_src_main.c_main.html" class="icon-function">main</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">196</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_init.c_bg_thread_main.html" class="icon-function">bg_thread_main</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

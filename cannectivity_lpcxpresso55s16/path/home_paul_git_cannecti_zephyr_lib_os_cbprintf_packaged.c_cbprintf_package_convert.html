@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_lib.html">lib</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_lib_os.html">os</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c.html">cbprintf_packaged.c</a>:913
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">cbprintf_package_convert</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000011ac</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>168 (dynamic,bounded)</td>
+                <td>972</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_impl_z_log_msg_static_create.html">z_impl_z_log_msg_static_create (264)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (4,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=380
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_strlen.html">strlen (16)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_is_ptr.html">is_ptr (74)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_impl_z_log_msg_static_create.html">z_impl_z_log_msg_static_create (264)</a>
+                    
+                        ,
+                    
+                
+                    <a href="_unknown___unknown__memcpy.html">memcpy (26)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package (932)</a></pre>
+    
+    <pre>
+cbprintf_package_convert():
+    11ac:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+    11b0:	b097      	sub	sp, #92	; 0x5c
+    11b2:	af00      	add	r7, sp, #0
+    11b4:	f8d7 b080 	ldr.w	fp, [r7, #128]	; 0x80
+    11b8:	623b      	str	r3, [r7, #32]
+    11ba:	f3cb 03c0 	ubfx	r3, fp, #3, #1
+    11be:	4604      	mov	r4, r0
+    11c0:	4689      	mov	r9, r1
+get_package_len():
+    11c2:	f890 a002 	ldrb.w	sl, [r0, #2]
+cbprintf_package_convert():
+    11c6:	62fa      	str	r2, [r7, #44]	; 0x2c
+    11c8:	61bb      	str	r3, [r7, #24]
+    11ca:	b941      	cbnz	r1, 11de &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbprintf_package_convert.html">cbprintf_package_convert</a>+0x32&gt;
+get_package_len():
+    11cc:	7845      	ldrb	r5, [r0, #1]
+    11ce:	7800      	ldrb	r0, [r0, #0]
+    11d0:	eb0a 0080 	add.w	r0, sl, r0, lsl #2
+    11d4:	4420      	add	r0, r4
+    11d6:	454d      	cmp	r5, r9
+    11d8:	d817      	bhi.n	120a &lt;CONFIG_CANNECTIVITY_USB_VID+0x1&gt;
+    11da:	eba0 0904 	sub.w	r9, r0, r4
+cbprintf_package_convert():
+    11de:	78e3      	ldrb	r3, [r4, #3]
+    11e0:	61fb      	str	r3, [r7, #28]
+    11e2:	f1ba 0f00 	cmp.w	sl, #0
+    11e6:	d002      	beq.n	11ee &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbprintf_package_convert.html">cbprintf_package_convert</a>+0x42&gt;
+    11e8:	f01b 0f01 	tst.w	fp, #1
+    11ec:	d116      	bne.n	121c &lt;CONFIG_CANNECTIVITY_USB_VID+0x13&gt;
+    11ee:	69fb      	ldr	r3, [r7, #28]
+    11f0:	bb53      	cbnz	r3, 1248 &lt;CONFIG_CANNECTIVITY_USB_VID+0x3f&gt;
+    11f2:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+    11f4:	b11b      	cbz	r3, 11fe &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbprintf_package_convert.html">cbprintf_package_convert</a>+0x52&gt;
+    11f6:	4649      	mov	r1, r9
+    11f8:	4620      	mov	r0, r4
+    11fa:	6a3a      	ldr	r2, [r7, #32]
+    11fc:	4798      	blx	r3
+    11fe:	464d      	mov	r5, r9
+    1200:	4628      	mov	r0, r5
+    1202:	375c      	adds	r7, #92	; 0x5c
+    1204:	46bd      	mov	sp, r7
+    1206:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+get_package_len():
+    120a:	1c46      	adds	r6, r0, #1
+    120c:	4630      	mov	r0, r6
+    120e:	f7fe ffa9 	bl	164 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_strlen.html">strlen</a>&gt;
+    1212:	3001      	adds	r0, #1
+    1214:	4430      	add	r0, r6
+    1216:	f109 0901 	add.w	r9, r9, #1
+    121a:	e7dc      	b.n	11d6 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbprintf_package_convert.html">cbprintf_package_convert</a>+0x2a&gt;
+cbprintf_package_convert():
+    121c:	6862      	ldr	r2, [r4, #4]
+    121e:	7823      	ldrb	r3, [r4, #0]
+    1220:	627a      	str	r2, [r7, #36]	; 0x24
+    1222:	6afa      	ldr	r2, [r7, #44]	; 0x2c
+    1224:	0099      	lsls	r1, r3, #2
+    1226:	6179      	str	r1, [r7, #20]
+    1228:	eb04 0183 	add.w	r1, r4, r3, lsl #2
+    122c:	2a00      	cmp	r2, #0
+    122e:	f040 8101 	bne.w	1434 &lt;CONFIG_CANNECTIVITY_USB_VID+0x22b&gt;
+    1232:	460e      	mov	r6, r1
+    1234:	f04f 0800 	mov.w	r8, #0
+    1238:	464d      	mov	r5, r9
+    123a:	eb01 090a 	add.w	r9, r1, sl
+    123e:	454e      	cmp	r6, r9
+    1240:	d14c      	bne.n	12dc &lt;CONFIG_CANNECTIVITY_USB_VID+0xd3&gt;
+    1242:	eb01 060a 	add.w	r6, r1, sl
+    1246:	e010      	b.n	126a &lt;CONFIG_CANNECTIVITY_USB_VID+0x61&gt;
+    1248:	f01b 0f02 	tst.w	fp, #2
+    124c:	d0d1      	beq.n	11f2 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbprintf_package_convert.html">cbprintf_package_convert</a>+0x46&gt;
+    124e:	7823      	ldrb	r3, [r4, #0]
+    1250:	009a      	lsls	r2, r3, #2
+    1252:	617a      	str	r2, [r7, #20]
+    1254:	6862      	ldr	r2, [r4, #4]
+    1256:	eb04 0183 	add.w	r1, r4, r3, lsl #2
+    125a:	627a      	str	r2, [r7, #36]	; 0x24
+    125c:	6afa      	ldr	r2, [r7, #44]	; 0x2c
+    125e:	2a00      	cmp	r2, #0
+    1260:	d177      	bne.n	1352 &lt;CONFIG_CANNECTIVITY_USB_VID+0x149&gt;
+    1262:	464d      	mov	r5, r9
+    1264:	4690      	mov	r8, r2
+    1266:	eb01 060a 	add.w	r6, r1, sl
+    126a:	f01b 0f05 	tst.w	fp, #5
+    126e:	bf0c      	ite	eq
+    1270:	2302      	moveq	r3, #2
+    1272:	2301      	movne	r3, #1
+    1274:	62fb      	str	r3, [r7, #44]	; 0x2c
+    1276:	69fb      	ldr	r3, [r7, #28]
+    1278:	eb06 0a43 	add.w	sl, r6, r3, lsl #1
+    127c:	f00b 0302 	and.w	r3, fp, #2
+    1280:	62bb      	str	r3, [r7, #40]	; 0x28
+    1282:	4556      	cmp	r6, sl
+    1284:	d0bc      	beq.n	1200 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbprintf_package_convert.html">cbprintf_package_convert</a>+0x54&gt;
+    1286:	f816 1b02 	ldrb.w	r1, [r6], #2
+    128a:	f816 3c01 	ldrb.w	r3, [r6, #-1]
+    128e:	f854 9023 	ldr.w	r9, [r4, r3, lsl #2]
+linker_is_in_rodata():
+    1292:	4b99      	ldr	r3, [pc, #612]	; (14f8 &lt;CONFIG_CANNECTIVITY_USB_VID+0x2ef&gt;)
+    1294:	4599      	cmp	r9, r3
+    1296:	d302      	bcc.n	129e &lt;CONFIG_CANNECTIVITY_USB_VID+0x95&gt;
+    1298:	4b98      	ldr	r3, [pc, #608]	; (14fc &lt;CONFIG_CANNECTIVITY_USB_VID+0x2f3&gt;)
+    129a:	4599      	cmp	r9, r3
+    129c:	d336      	bcc.n	130c &lt;CONFIG_CANNECTIVITY_USB_VID+0x103&gt;
+cbprintf_package_convert():
+    129e:	69bb      	ldr	r3, [r7, #24]
+    12a0:	2b00      	cmp	r3, #0
+    12a2:	d040      	beq.n	1326 &lt;CONFIG_CANNECTIVITY_USB_VID+0x11d&gt;
+    12a4:	6a78      	ldr	r0, [r7, #36]	; 0x24
+    12a6:	f009 fc6a 	bl	ab7e &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_is_ptr.html">is_ptr</a>&gt;
+    12aa:	2800      	cmp	r0, #0
+    12ac:	d03b      	beq.n	1326 &lt;CONFIG_CANNECTIVITY_USB_VID+0x11d&gt;
+    12ae:	46e9      	mov	r9, sp
+    12b0:	b08a      	sub	sp, #40	; 0x28
+    12b2:	466a      	mov	r2, sp
+    12b4:	4b92      	ldr	r3, [pc, #584]	; (1500 &lt;CONFIG_CANNECTIVITY_USB_VID+0x2f7&gt;)
+    12b6:	6153      	str	r3, [r2, #20]
+    12b8:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+    12ba:	e9c2 3106 	strd	r3, r1, [r2, #24]
+    12be:	f44f 7300 	mov.w	r3, #512	; 0x200
+    12c2:	8413      	strh	r3, [r2, #32]
+    12c4:	4b8f      	ldr	r3, [pc, #572]	; (1504 &lt;CONFIG_CANNECTIVITY_USB_VID+0x2fb&gt;)
+    12c6:	f842 3f10 	str.w	r3, [r2, #16]!
+z_log_msg_static_create():
+    12ca:	2300      	movs	r3, #0
+    12cc:	f44f 5112 	mov.w	r1, #9344	; 0x2480
+    12d0:	488d      	ldr	r0, [pc, #564]	; (1508 &lt;CONFIG_CANNECTIVITY_USB_VID+0x2ff&gt;)
+    12d2:	f000 fbf9 	bl	1ac8 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_impl_z_log_msg_static_create.html">z_impl_z_log_msg_static_create</a>&gt;
+cbprintf_package_convert():
+    12d6:	3d02      	subs	r5, #2
+    12d8:	46cd      	mov	sp, r9
+    12da:	e7d2      	b.n	1282 &lt;CONFIG_CANNECTIVITY_USB_VID+0x79&gt;
+    12dc:	f816 3b01 	ldrb.w	r3, [r6], #1
+    12e0:	62f9      	str	r1, [r7, #44]	; 0x2c
+append_string():
+    12e2:	f854 0023 	ldr.w	r0, [r4, r3, lsl #2]
+    12e6:	f7fe ff3d 	bl	164 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_strlen.html">strlen</a>&gt;
+cbprintf_package_convert():
+    12ea:	f8d7 3084 	ldr.w	r3, [r7, #132]	; 0x84
+    12ee:	6af9      	ldr	r1, [r7, #44]	; 0x2c
+append_string():
+    12f0:	3001      	adds	r0, #1
+cbprintf_package_convert():
+    12f2:	b14b      	cbz	r3, 1308 &lt;CONFIG_CANNECTIVITY_USB_VID+0xff&gt;
+    12f4:	f8d7 3088 	ldr.w	r3, [r7, #136]	; 0x88
+    12f8:	4598      	cmp	r8, r3
+    12fa:	bf3e      	ittt	cc
+    12fc:	f8d7 3084 	ldrcc.w	r3, [r7, #132]	; 0x84
+    1300:	f823 0018 	strhcc.w	r0, [r3, r8, lsl #1]
+    1304:	f108 0801 	addcc.w	r8, r8, #1
+    1308:	4405      	add	r5, r0
+    130a:	e798      	b.n	123e &lt;CONFIG_CANNECTIVITY_USB_VID+0x35&gt;
+    130c:	69bb      	ldr	r3, [r7, #24]
+    130e:	b123      	cbz	r3, 131a &lt;CONFIG_CANNECTIVITY_USB_VID+0x111&gt;
+    1310:	6a78      	ldr	r0, [r7, #36]	; 0x24
+    1312:	f009 fc34 	bl	ab7e &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_is_ptr.html">is_ptr</a>&gt;
+    1316:	2800      	cmp	r0, #0
+    1318:	d1c9      	bne.n	12ae &lt;CONFIG_CANNECTIVITY_USB_VID+0xa5&gt;
+    131a:	f01b 0f01 	tst.w	fp, #1
+    131e:	d105      	bne.n	132c &lt;CONFIG_CANNECTIVITY_USB_VID+0x123&gt;
+    1320:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+    1322:	1aed      	subs	r5, r5, r3
+    1324:	e7ad      	b.n	1282 &lt;CONFIG_CANNECTIVITY_USB_VID+0x79&gt;
+    1326:	6abb      	ldr	r3, [r7, #40]	; 0x28
+    1328:	2b00      	cmp	r3, #0
+    132a:	d0aa      	beq.n	1282 &lt;CONFIG_CANNECTIVITY_USB_VID+0x79&gt;
+append_string():
+    132c:	4648      	mov	r0, r9
+    132e:	f7fe ff19 	bl	164 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_strlen.html">strlen</a>&gt;
+cbprintf_package_convert():
+    1332:	f8d7 3084 	ldr.w	r3, [r7, #132]	; 0x84
+    1336:	b153      	cbz	r3, 134e &lt;CONFIG_CANNECTIVITY_USB_VID+0x145&gt;
+    1338:	f8d7 3088 	ldr.w	r3, [r7, #136]	; 0x88
+    133c:	4598      	cmp	r8, r3
+    133e:	bf3f      	itttt	cc
+    1340:	f8d7 2084 	ldrcc.w	r2, [r7, #132]	; 0x84
+append_string():
+    1344:	1c43      	addcc	r3, r0, #1
+cbprintf_package_convert():
+    1346:	f822 3018 	strhcc.w	r3, [r2, r8, lsl #1]
+    134a:	f108 0801 	addcc.w	r8, r8, #1
+    134e:	4405      	add	r5, r0
+    1350:	e797      	b.n	1282 &lt;CONFIG_CANNECTIVITY_USB_VID+0x79&gt;
+    1352:	f1ba 0f00 	cmp.w	sl, #0
+    1356:	d073      	beq.n	1440 &lt;CONFIG_CANNECTIVITY_USB_VID+0x237&gt;
+    1358:	f01b 0604 	ands.w	r6, fp, #4
+    135c:	d073      	beq.n	1446 &lt;CONFIG_CANNECTIVITY_USB_VID+0x23d&gt;
+    135e:	46d0      	mov	r8, sl
+    1360:	2600      	movs	r6, #0
+    1362:	f107 0048 	add.w	r0, r7, #72	; 0x48
+    1366:	4652      	mov	r2, sl
+    1368:	613b      	str	r3, [r7, #16]
+    136a:	62b9      	str	r1, [r7, #40]	; 0x28
+    136c:	f00c fac0 	bl	d8f0 &lt;<a href="_unknown___unknown__memcpy.html">memcpy</a>&gt;
+    1370:	6ab9      	ldr	r1, [r7, #40]	; 0x28
+    1372:	693b      	ldr	r3, [r7, #16]
+    1374:	eb01 020a 	add.w	r2, r1, sl
+    1378:	62ba      	str	r2, [r7, #40]	; 0x28
+    137a:	69fa      	ldr	r2, [r7, #28]
+    137c:	69f9      	ldr	r1, [r7, #28]
+    137e:	0052      	lsls	r2, r2, #1
+    1380:	60fa      	str	r2, [r7, #12]
+    1382:	6aba      	ldr	r2, [r7, #40]	; 0x28
+    1384:	eb02 0241 	add.w	r2, r2, r1, lsl #1
+    1388:	613a      	str	r2, [r7, #16]
+    138a:	f00b 0202 	and.w	r2, fp, #2
+    138e:	60ba      	str	r2, [r7, #8]
+    1390:	693a      	ldr	r2, [r7, #16]
+    1392:	6ab9      	ldr	r1, [r7, #40]	; 0x28
+    1394:	428a      	cmp	r2, r1
+    1396:	d158      	bne.n	144a &lt;CONFIG_CANNECTIVITY_USB_VID+0x241&gt;
+    1398:	7862      	ldrb	r2, [r4, #1]
+    139a:	f01b 0f02 	tst.w	fp, #2
+    139e:	bf18      	it	ne
+    13a0:	2100      	movne	r1, #0
+    13a2:	627a      	str	r2, [r7, #36]	; 0x24
+    13a4:	bf08      	it	eq
+    13a6:	ea4f 0158 	moveq.w	r1, r8, lsr #1
+    13aa:	18b2      	adds	r2, r6, r2
+    13ac:	f01b 0f01 	tst.w	fp, #1
+    13b0:	b2d2      	uxtb	r2, r2
+    13b2:	f040 809f 	bne.w	14f4 &lt;CONFIG_CANNECTIVITY_USB_VID+0x2eb&gt;
+    13b6:	f01b 0f04 	tst.w	fp, #4
+    13ba:	bf14      	ite	ne
+    13bc:	4640      	movne	r0, r8
+    13be:	2000      	moveq	r0, #0
+    13c0:	61bb      	str	r3, [r7, #24]
+    13c2:	7062      	strb	r2, [r4, #1]
+    13c4:	70a0      	strb	r0, [r4, #2]
+    13c6:	70e1      	strb	r1, [r4, #3]
+    13c8:	4620      	mov	r0, r4
+    13ca:	6a3a      	ldr	r2, [r7, #32]
+    13cc:	6979      	ldr	r1, [r7, #20]
+    13ce:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+    13d0:	4798      	blx	r3
+    13d2:	1e05      	subs	r5, r0, #0
+    13d4:	f6ff af14 	blt.w	1200 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbprintf_package_convert.html">cbprintf_package_convert</a>+0x54&gt;
+    13d8:	69bb      	ldr	r3, [r7, #24]
+    13da:	4641      	mov	r1, r8
+    13dc:	7023      	strb	r3, [r4, #0]
+    13de:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+    13e0:	6a3a      	ldr	r2, [r7, #32]
+    13e2:	7063      	strb	r3, [r4, #1]
+    13e4:	69fb      	ldr	r3, [r7, #28]
+    13e6:	f884 a002 	strb.w	sl, [r4, #2]
+    13ea:	70e3      	strb	r3, [r4, #3]
+    13ec:	f107 0048 	add.w	r0, r7, #72	; 0x48
+    13f0:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+    13f2:	4798      	blx	r3
+    13f4:	f1b0 0800 	subs.w	r8, r0, #0
+    13f8:	f2c0 80ba 	blt.w	1570 &lt;CONFIG_CANNECTIVITY_USB_VID+0x367&gt;
+    13fc:	697b      	ldr	r3, [r7, #20]
+    13fe:	eba9 010a 	sub.w	r1, r9, sl
+    1402:	1ac9      	subs	r1, r1, r3
+    1404:	68fb      	ldr	r3, [r7, #12]
+    1406:	6a3a      	ldr	r2, [r7, #32]
+    1408:	1ac9      	subs	r1, r1, r3
+    140a:	e9d7 030a 	ldrd	r0, r3, [r7, #40]	; 0x28
+    140e:	4798      	blx	r3
+    1410:	2800      	cmp	r0, #0
+    1412:	f2c0 80af 	blt.w	1574 &lt;CONFIG_CANNECTIVITY_USB_VID+0x36b&gt;
+    1416:	f04f 0b00 	mov.w	fp, #0
+    141a:	44a8      	add	r8, r5
+    141c:	eb08 0500 	add.w	r5, r8, r0
+    1420:	f107 0a38 	add.w	sl, r7, #56	; 0x38
+    1424:	45b3      	cmp	fp, r6
+    1426:	d371      	bcc.n	150c &lt;CONFIG_CANNECTIVITY_USB_VID+0x303&gt;
+    1428:	2100      	movs	r1, #0
+    142a:	6a3a      	ldr	r2, [r7, #32]
+    142c:	4608      	mov	r0, r1
+    142e:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+    1430:	4798      	blx	r3
+    1432:	e6e5      	b.n	1200 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbprintf_package_convert.html">cbprintf_package_convert</a>+0x54&gt;
+    1434:	4656      	mov	r6, sl
+    1436:	f04f 0800 	mov.w	r8, #0
+    143a:	f107 0038 	add.w	r0, r7, #56	; 0x38
+    143e:	e792      	b.n	1366 &lt;CONFIG_CANNECTIVITY_USB_VID+0x15d&gt;
+    1440:	4656      	mov	r6, sl
+    1442:	46d0      	mov	r8, sl
+    1444:	e796      	b.n	1374 &lt;CONFIG_CANNECTIVITY_USB_VID+0x16b&gt;
+    1446:	46b0      	mov	r8, r6
+    1448:	e794      	b.n	1374 &lt;CONFIG_CANNECTIVITY_USB_VID+0x16b&gt;
+    144a:	6aba      	ldr	r2, [r7, #40]	; 0x28
+    144c:	f812 1b02 	ldrb.w	r1, [r2], #2
+    1450:	f812 5c01 	ldrb.w	r5, [r2, #-1]
+    1454:	62ba      	str	r2, [r7, #40]	; 0x28
+    1456:	f854 0025 	ldr.w	r0, [r4, r5, lsl #2]
+linker_is_in_rodata():
+    145a:	4a27      	ldr	r2, [pc, #156]	; (14f8 &lt;CONFIG_CANNECTIVITY_USB_VID+0x2ef&gt;)
+    145c:	4290      	cmp	r0, r2
+    145e:	d302      	bcc.n	1466 &lt;CONFIG_CANNECTIVITY_USB_VID+0x25d&gt;
+    1460:	4a26      	ldr	r2, [pc, #152]	; (14fc &lt;CONFIG_CANNECTIVITY_USB_VID+0x2f3&gt;)
+    1462:	4290      	cmp	r0, r2
+    1464:	d31e      	bcc.n	14a4 &lt;CONFIG_CANNECTIVITY_USB_VID+0x29b&gt;
+cbprintf_package_convert():
+    1466:	69ba      	ldr	r2, [r7, #24]
+    1468:	b132      	cbz	r2, 1478 &lt;CONFIG_CANNECTIVITY_USB_VID+0x26f&gt;
+    146a:	6a78      	ldr	r0, [r7, #36]	; 0x24
+    146c:	607b      	str	r3, [r7, #4]
+    146e:	f009 fb86 	bl	ab7e &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_is_ptr.html">is_ptr</a>&gt;
+    1472:	687b      	ldr	r3, [r7, #4]
+    1474:	2800      	cmp	r0, #0
+    1476:	d18b      	bne.n	1390 &lt;CONFIG_CANNECTIVITY_USB_VID+0x187&gt;
+    1478:	68ba      	ldr	r2, [r7, #8]
+    147a:	bb02      	cbnz	r2, 14be &lt;CONFIG_CANNECTIVITY_USB_VID+0x2b5&gt;
+    147c:	f108 0228 	add.w	r2, r8, #40	; 0x28
+    1480:	f107 0c30 	add.w	ip, r7, #48	; 0x30
+    1484:	f108 0001 	add.w	r0, r8, #1
+    1488:	4494      	add	ip, r2
+    148a:	f107 0258 	add.w	r2, r7, #88	; 0x58
+    148e:	f108 0802 	add.w	r8, r8, #2
+    1492:	fa52 f080 	uxtab	r0, r2, r0
+    1496:	f80c 1c10 	strb.w	r1, [ip, #-16]
+    149a:	fa5f f888 	uxtb.w	r8, r8
+    149e:	f800 5c10 	strb.w	r5, [r0, #-16]
+    14a2:	e775      	b.n	1390 &lt;CONFIG_CANNECTIVITY_USB_VID+0x187&gt;
+    14a4:	69ba      	ldr	r2, [r7, #24]
+    14a6:	b13a      	cbz	r2, 14b8 &lt;CONFIG_CANNECTIVITY_USB_VID+0x2af&gt;
+    14a8:	6a78      	ldr	r0, [r7, #36]	; 0x24
+    14aa:	607b      	str	r3, [r7, #4]
+    14ac:	f009 fb67 	bl	ab7e &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_is_ptr.html">is_ptr</a>&gt;
+    14b0:	687b      	ldr	r3, [r7, #4]
+    14b2:	2800      	cmp	r0, #0
+    14b4:	f47f af6c 	bne.w	1390 &lt;CONFIG_CANNECTIVITY_USB_VID+0x187&gt;
+    14b8:	f01b 0f01 	tst.w	fp, #1
+    14bc:	d009      	beq.n	14d2 &lt;CONFIG_CANNECTIVITY_USB_VID+0x2c9&gt;
+    14be:	f106 0228 	add.w	r2, r6, #40	; 0x28
+    14c2:	f107 0030 	add.w	r0, r7, #48	; 0x30
+    14c6:	1c71      	adds	r1, r6, #1
+    14c8:	1816      	adds	r6, r2, r0
+    14ca:	f806 5c20 	strb.w	r5, [r6, #-32]
+    14ce:	b2ce      	uxtb	r6, r1
+    14d0:	e75e      	b.n	1390 &lt;CONFIG_CANNECTIVITY_USB_VID+0x187&gt;
+    14d2:	f01b 0f04 	tst.w	fp, #4
+    14d6:	f43f af5b 	beq.w	1390 &lt;CONFIG_CANNECTIVITY_USB_VID+0x187&gt;
+    14da:	f108 0228 	add.w	r2, r8, #40	; 0x28
+    14de:	f107 0030 	add.w	r0, r7, #48	; 0x30
+    14e2:	f108 0101 	add.w	r1, r8, #1
+    14e6:	eb02 0800 	add.w	r8, r2, r0
+    14ea:	f808 5c10 	strb.w	r5, [r8, #-16]
+    14ee:	fa5f f881 	uxtb.w	r8, r1
+    14f2:	e74d      	b.n	1390 &lt;CONFIG_CANNECTIVITY_USB_VID+0x187&gt;
+    14f4:	2000      	movs	r0, #0
+    14f6:	e763      	b.n	13c0 &lt;CONFIG_CANNECTIVITY_USB_VID+0x1b7&gt;
+    14f8:	0000d940 	.word	0x0000d940
+    14fc:	00010900 	.word	0x00010900
+    1500:	0000e866 	.word	0x0000e866
+    1504:	01000004 	.word	0x01000004
+    1508:	0000de14 	.word	0x0000de14
+    150c:	f81b 300a 	ldrb.w	r3, [fp, sl]
+    1510:	f854 9023 	ldr.w	r9, [r4, r3, lsl #2]
+    1514:	f887 3037 	strb.w	r3, [r7, #55]	; 0x37
+    1518:	f8d7 3084 	ldr.w	r3, [r7, #132]	; 0x84
+    151c:	b32b      	cbz	r3, 156a &lt;CONFIG_CANNECTIVITY_USB_VID+0x361&gt;
+    151e:	f8d7 3088 	ldr.w	r3, [r7, #136]	; 0x88
+    1522:	459b      	cmp	fp, r3
+    1524:	d221      	bcs.n	156a &lt;CONFIG_CANNECTIVITY_USB_VID+0x361&gt;
+    1526:	f8d7 3084 	ldr.w	r3, [r7, #132]	; 0x84
+    152a:	f833 801b 	ldrh.w	r8, [r3, fp, lsl #1]
+    152e:	2101      	movs	r1, #1
+    1530:	6a3a      	ldr	r2, [r7, #32]
+    1532:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+    1534:	f107 0037 	add.w	r0, r7, #55	; 0x37
+    1538:	4798      	blx	r3
+    153a:	2800      	cmp	r0, #0
+    153c:	db1a      	blt.n	1574 &lt;CONFIG_CANNECTIVITY_USB_VID+0x36b&gt;
+    153e:	4405      	add	r5, r0
+append_string():
+    1540:	f1b8 0f00 	cmp.w	r8, #0
+    1544:	d106      	bne.n	1554 &lt;CONFIG_CANNECTIVITY_USB_VID+0x34b&gt;
+    1546:	4648      	mov	r0, r9
+    1548:	f7fe fe0c 	bl	164 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_strlen.html">strlen</a>&gt;
+    154c:	f100 0801 	add.w	r8, r0, #1
+    1550:	fa1f f888 	uxth.w	r8, r8
+    1554:	4641      	mov	r1, r8
+    1556:	4648      	mov	r0, r9
+    1558:	6a3a      	ldr	r2, [r7, #32]
+    155a:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+    155c:	4798      	blx	r3
+cbprintf_package_convert():
+    155e:	2800      	cmp	r0, #0
+    1560:	db08      	blt.n	1574 &lt;CONFIG_CANNECTIVITY_USB_VID+0x36b&gt;
+    1562:	4405      	add	r5, r0
+    1564:	f10b 0b01 	add.w	fp, fp, #1
+    1568:	e75c      	b.n	1424 &lt;CONFIG_CANNECTIVITY_USB_VID+0x21b&gt;
+    156a:	f04f 0800 	mov.w	r8, #0
+    156e:	e7de      	b.n	152e &lt;CONFIG_CANNECTIVITY_USB_VID+0x325&gt;
+    1570:	4645      	mov	r5, r8
+    1572:	e645      	b.n	1200 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbprintf_package_convert.html">cbprintf_package_convert</a>+0x54&gt;
+    1574:	4605      	mov	r5, r0
+    1576:	e643      	b.n	1200 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbprintf_package_convert.html">cbprintf_package_convert</a>+0x54&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_lib_os_printk.c___printk_hook_install.html">__printk_hook_install (12)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 808</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 74</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    808
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">74</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_is_ptr.html" class="icon-function">is_ptr</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">792</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 792</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 1<span class="secondary">,</span>736</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    792
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                168 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>736
+                    
+                    
+                </td>
+                <td class="col_size">972</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbprintf_package_convert.html" class="icon-function">cbprintf_package_convert</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    624
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                136 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    764
+                    
+                    
+                </td>
+                <td class="col_size">264</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_impl_z_log_msg_static_create.html" class="icon-function">z_impl_z_log_msg_static_create</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    500
+                    
+                    
+                </td>
+                <td class="col_size">4</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_static_create.html" class="icon-function">z_log_msg_static_create</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                488 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">496</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_status_callback.html" class="icon-function">gs_usb_status_callback</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

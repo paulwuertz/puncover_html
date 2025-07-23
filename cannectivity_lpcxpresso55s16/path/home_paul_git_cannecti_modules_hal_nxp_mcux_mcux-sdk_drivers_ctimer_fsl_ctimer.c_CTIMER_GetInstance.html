@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules.html">modules</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal.html">hal</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp.html">nxp</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux.html">mcux</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk.html">mcux-sdk</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer.html">ctimer</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c.html">fsl_ctimer.c</a>:71
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">CTIMER_GetInstance</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00008100</td>
+                <td>
+    
+    
+</td>
+                <td>0 (static)</td>
+                <td>64</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (2)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_SetupMatch.html">CTIMER_SetupMatch (128)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_Init.html">CTIMER_Init (80)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_system_LPC55S16.c_SystemInit.html">SystemInit (116)</a></pre>
+    
+    <pre>
+CTIMER_GetInstance():
+    8100:	4b0e      	ldr	r3, [pc, #56]	; (813c &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_GetInstance.html">CTIMER_GetInstance</a>+0x3c&gt;)
+    8102:	4298      	cmp	r0, r3
+    8104:	d012      	beq.n	812c &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_GetInstance.html">CTIMER_GetInstance</a>+0x2c&gt;
+    8106:	f503 5380 	add.w	r3, r3, #4096	; 0x1000
+    810a:	4298      	cmp	r0, r3
+    810c:	d010      	beq.n	8130 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_GetInstance.html">CTIMER_GetInstance</a>+0x30&gt;
+    810e:	f503 33f8 	add.w	r3, r3, #126976	; 0x1f000
+    8112:	4298      	cmp	r0, r3
+    8114:	d00e      	beq.n	8134 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_GetInstance.html">CTIMER_GetInstance</a>+0x34&gt;
+    8116:	f503 5380 	add.w	r3, r3, #4096	; 0x1000
+    811a:	4298      	cmp	r0, r3
+    811c:	d00c      	beq.n	8138 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_GetInstance.html">CTIMER_GetInstance</a>+0x38&gt;
+    811e:	f503 5380 	add.w	r3, r3, #4096	; 0x1000
+    8122:	4298      	cmp	r0, r3
+    8124:	bf14      	ite	ne
+    8126:	2005      	movne	r0, #5
+    8128:	2004      	moveq	r0, #4
+    812a:	4770      	bx	lr
+    812c:	2000      	movs	r0, #0
+    812e:	4770      	bx	lr
+    8130:	2001      	movs	r0, #1
+    8132:	4770      	bx	lr
+    8134:	2002      	movs	r0, #2
+    8136:	4770      	bx	lr
+    8138:	2003      	movs	r0, #3
+    813a:	4770      	bx	lr
+    813c:	40008000 	.word	0x40008000
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_CMSIS_Core_Include_core_cm33.h_EnableIRQ.html">EnableIRQ (28)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 72</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 332</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    332
+                    
+                    
+                </td>
+                <td class="col_size">64</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_GetInstance.html" class="icon-function">CTIMER_GetInstance</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    72
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    268
+                    
+                    
+                </td>
+                <td class="col_size">128</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_SetupMatch.html" class="icon-function">CTIMER_SetupMatch</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">140</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_set_alarm.html" class="icon-function">mcux_lpc_ctimer_set_alarm</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

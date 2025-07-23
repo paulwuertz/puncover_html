@@ -1,0 +1,971 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_kernel.html">kernel</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_kernel_work.c.html">work.c</a>:317
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">submit_to_queue_locked</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00009390</td>
+                <td>
+    
+    
+</td>
+                <td>24 (static)</td>
+                <td>180</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_kernel_work.c_z_work_submit_to_queue.html">z_work_submit_to_queue (38)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=26
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_kernel_thread.c_k_is_in_isr.html">k_is_in_isr (12)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_kernel_work.c_notify_queue_locked.html">notify_queue_locked (14)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_kernel_work.c_work_queue_main.html">work_queue_main (332)</a></pre>
+    
+    <pre>
+submit_to_queue_locked():
+    9390:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+flag_test():
+    9392:	68c3      	ldr	r3, [r0, #12]
+submit_to_queue_locked():
+    9394:	4604      	mov	r4, r0
+    9396:	079a      	lsls	r2, r3, #30
+    9398:	460f      	mov	r7, r1
+    939a:	f3c3 0640 	ubfx	r6, r3, #1, #1
+    939e:	d42c      	bmi.n	93fa &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x6a&gt;
+    93a0:	075b      	lsls	r3, r3, #29
+    93a2:	d41a      	bmi.n	93da &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x4a&gt;
+    93a4:	680b      	ldr	r3, [r1, #0]
+    93a6:	b90b      	cbnz	r3, 93ac &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x1c&gt;
+    93a8:	6883      	ldr	r3, [r0, #8]
+    93aa:	600b      	str	r3, [r1, #0]
+flag_test():
+    93ac:	68e3      	ldr	r3, [r4, #12]
+submit_to_queue_locked():
+    93ae:	07dd      	lsls	r5, r3, #31
+    93b0:	bf42      	ittt	mi
+    93b2:	68a3      	ldrmi	r3, [r4, #8]
+    93b4:	2602      	movmi	r6, #2
+    93b6:	603b      	strmi	r3, [r7, #0]
+    93b8:	683d      	ldr	r5, [r7, #0]
+    93ba:	bf58      	it	pl
+    93bc:	2601      	movpl	r6, #1
+queue_submit_locked():
+    93be:	2d00      	cmp	r5, #0
+    93c0:	d03a      	beq.n	9438 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0xa8&gt;
+    93c2:	4b1f      	ldr	r3, [pc, #124]	; (9440 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0xb0&gt;)
+    93c4:	689b      	ldr	r3, [r3, #8]
+    93c6:	42ab      	cmp	r3, r5
+    93c8:	d00a      	beq.n	93e0 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x50&gt;
+flag_test():
+    93ca:	f8d5 3098 	ldr.w	r3, [r5, #152]	; 0x98
+queue_submit_locked():
+    93ce:	07d8      	lsls	r0, r3, #31
+flag_test():
+    93d0:	f3c3 0280 	ubfx	r2, r3, #2, #1
+queue_submit_locked():
+    93d4:	d414      	bmi.n	9400 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x70&gt;
+submit_to_queue_locked():
+    93d6:	f06f 0612 	mvn.w	r6, #18
+    93da:	2300      	movs	r3, #0
+    93dc:	603b      	str	r3, [r7, #0]
+    93de:	e025      	b.n	942c &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x9c&gt;
+queue_submit_locked():
+    93e0:	f003 ff54 	bl	d28c &lt;<a href="home_paul_git_cannecti_zephyr_kernel_thread.c_k_is_in_isr.html">k_is_in_isr</a>&gt;
+    93e4:	f8d5 3098 	ldr.w	r3, [r5, #152]	; 0x98
+    93e8:	2800      	cmp	r0, #0
+    93ea:	d1f0      	bne.n	93ce &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x3e&gt;
+    93ec:	07d9      	lsls	r1, r3, #31
+flag_test():
+    93ee:	f3c3 02c0 	ubfx	r2, r3, #3, #1
+queue_submit_locked():
+    93f2:	d5f0      	bpl.n	93d6 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x46&gt;
+    93f4:	b152      	cbz	r2, 940c &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x7c&gt;
+    93f6:	075b      	lsls	r3, r3, #29
+    93f8:	d408      	bmi.n	940c &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x7c&gt;
+submit_to_queue_locked():
+    93fa:	f06f 060f 	mvn.w	r6, #15
+    93fe:	e7ec      	b.n	93da &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x4a&gt;
+queue_submit_locked():
+    9400:	2a00      	cmp	r2, #0
+    9402:	d1fa      	bne.n	93fa &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x6a&gt;
+flag_test():
+    9404:	f3c3 03c0 	ubfx	r3, r3, #3, #1
+queue_submit_locked():
+    9408:	2b00      	cmp	r3, #0
+    940a:	d1f6      	bne.n	93fa &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x6a&gt;
+z_snode_next_set():
+    940c:	2300      	movs	r3, #0
+    940e:	6023      	str	r3, [r4, #0]
+sys_slist_peek_tail():
+    9410:	f8d5 3084 	ldr.w	r3, [r5, #132]	; 0x84
+sys_slist_append():
+    9414:	b963      	cbnz	r3, 9430 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0xa0&gt;
+z_slist_head_set():
+    9416:	e9c5 4420 	strd	r4, r4, [r5, #128]	; 0x80
+queue_submit_locked():
+    941a:	4628      	mov	r0, r5
+    941c:	f003 ff03 	bl	d226 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_notify_queue_locked.html">notify_queue_locked</a>.isra.0&gt;
+flag_set():
+    9420:	68e3      	ldr	r3, [r4, #12]
+    9422:	f043 0304 	orr.w	r3, r3, #4
+    9426:	60e3      	str	r3, [r4, #12]
+submit_to_queue_locked():
+    9428:	683b      	ldr	r3, [r7, #0]
+    942a:	60a3      	str	r3, [r4, #8]
+    942c:	4630      	mov	r0, r6
+    942e:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
+z_snode_next_set():
+    9430:	601c      	str	r4, [r3, #0]
+z_slist_tail_set():
+    9432:	f8c5 4084 	str.w	r4, [r5, #132]	; 0x84
+    9436:	e7f0      	b.n	941a &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x8a&gt;
+queue_submit_locked():
+    9438:	f06f 0615 	mvn.w	r6, #21
+    943c:	e7cd      	b.n	93da &lt;<a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html">submit_to_queue_locked</a>+0x4a&gt;
+    943e:	bf00      	nop
+    9440:	2000232c 	.word	0x2000232c
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_kernel_work.c_k_work_queue_start.html">k_work_queue_start (124)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 904</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 736</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    904
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    736
+                    
+                    
+                </td>
+                <td class="col_size">76</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_timer_cortex_m_systick.c_elapsed.html" class="icon-function">elapsed</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    896
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    660
+                    
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_timer_cortex_m_systick.c_sys_clock_elapsed.html" class="icon-function">sys_clock_elapsed</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    600
+                    
+                    
+                </td>
+                <td class="col_size">20</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_timeout.c_elapsed.html" class="icon-function">elapsed</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    880
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    580
+                    
+                    
+                </td>
+                <td class="col_size">50</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_timeout.c_next_timeout.html" class="icon-function">next_timeout</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    872
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    530
+                    
+                    
+                </td>
+                <td class="col_size">236</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_timeout.c_z_add_timeout.html" class="icon-function">z_add_timeout</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    848
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    294
+                    
+                    
+                </td>
+                <td class="col_size">80</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_timeslicing.c_z_reset_time_slice.html" class="icon-function">z_reset_time_slice</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    832
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    214
+                    
+                    
+                </td>
+                <td class="col_size">132</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_sched.c_ready_thread.html" class="icon-function">ready_thread</a></td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                <td class="col_size">
+                    
+                    816
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    82
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_sched.c_z_sched_wake.html" class="icon-function">z_sched_wake</a></td>
+            </tr>
+        
+            <tr>
+                <th>9</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">14</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_work.c_notify_queue_locked.html" class="icon-function">notify_queue_locked</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">800</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 800</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 1<span class="secondary">,</span>802</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    800
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>802
+                    
+                    
+                </td>
+                <td class="col_size">180</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html" class="icon-function">submit_to_queue_locked</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    776
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>622
+                    
+                    
+                </td>
+                <td class="col_size">38</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_work.c_z_work_submit_to_queue.html" class="icon-function">z_work_submit_to_queue</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    760
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>584
+                    
+                    
+                </td>
+                <td class="col_size">134</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_poll.c_signal_poll_event.html" class="icon-function">signal_poll_event</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    736
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>450
+                    
+                    
+                </td>
+                <td class="col_size">62</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_poll.c_z_handle_obj_poll_events.html" class="icon-function">z_handle_obj_poll_events</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    720
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>388
+                    
+                    
+                </td>
+                <td class="col_size">116</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_sem.c_z_impl_k_sem_give.html" class="icon-function">z_impl_k_sem_give</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    704
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>272
+                    
+                    
+                </td>
+                <td class="col_size">118</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_mpsc_pbuf_free.html" class="icon-function">mpsc_pbuf_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>154
+                    
+                    
+                </td>
+                <td class="col_size">16</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_msg_free.html" class="icon-function">z_log_msg_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                <td class="col_size">
+                    
+                    680
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>138
+                    
+                    
+                </td>
+                <td class="col_size">168</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_impl_log_process.html" class="icon-function">z_impl_log_process</a></td>
+            </tr>
+        
+            <tr>
+                <th>9</th>
+                <td class="col_size">
+                    
+                    664
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    970
+                    
+                    
+                </td>
+                <td class="col_size">120</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_msg_post_finalize.html" class="icon-function">z_log_msg_post_finalize</a></td>
+            </tr>
+        
+            <tr>
+                <th>10</th>
+                <td class="col_size">
+                    
+                    648
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    850
+                    
+                    
+                </td>
+                <td class="col_size">36</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_msg_commit.html" class="icon-function">z_log_msg_commit</a></td>
+            </tr>
+        
+            <tr>
+                <th>11</th>
+                <td class="col_size">
+                    
+                    640
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    814
+                    
+                    
+                </td>
+                <td class="col_size">50</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_log_msg_finalize.html" class="icon-function">z_log_msg_finalize</a></td>
+            </tr>
+        
+            <tr>
+                <th>12</th>
+                <td class="col_size">
+                    
+                    624
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                136 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    764
+                    
+                    
+                </td>
+                <td class="col_size">264</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_impl_z_log_msg_static_create.html" class="icon-function">z_impl_z_log_msg_static_create</a></td>
+            </tr>
+        
+            <tr>
+                <th>13</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    500
+                    
+                    
+                </td>
+                <td class="col_size">4</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_static_create.html" class="icon-function">z_log_msg_static_create</a></td>
+            </tr>
+        
+            <tr>
+                <th>14</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                488 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">496</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_status_callback.html" class="icon-function">gs_usb_status_callback</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

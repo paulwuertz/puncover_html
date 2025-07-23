@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_lib.html">lib</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_lib_smf.html">smf</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c.html">smf.c</a>:95
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">smf_execute_all_entry_actions</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000b570</td>
+                <td>
+    
+    
+</td>
+                <td></td>
+                <td>84</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (2)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_set_state.html">smf_set_state (288)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_set_initial.html">smf_set_initial (68)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_lib_net_buf_buf_simple.c_net_buf_simple_pull_mem.html">net_buf_simple_pull_mem (16)</a></pre>
+    
+    <pre>
+smf_execute_all_entry_actions():
+    b570:	4291      	cmp	r1, r2
+    b572:	b570      	push	{r4, r5, r6, lr}
+    b574:	4605      	mov	r5, r0
+    b576:	460c      	mov	r4, r1
+    b578:	d023      	beq.n	b5c2 &lt;<a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_execute_all_entry_actions.html">smf_execute_all_entry_actions</a>.isra.0+0x52&gt;
+    b57a:	460b      	mov	r3, r1
+get_child_of():
+    b57c:	461e      	mov	r6, r3
+    b57e:	68db      	ldr	r3, [r3, #12]
+    b580:	429a      	cmp	r2, r3
+    b582:	d014      	beq.n	b5ae &lt;<a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_execute_all_entry_actions.html">smf_execute_all_entry_actions</a>.isra.0+0x3e&gt;
+    b584:	2b00      	cmp	r3, #0
+    b586:	d1f9      	bne.n	b57c &lt;<a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_execute_all_entry_actions.html">smf_execute_all_entry_actions</a>.isra.0+0xc&gt;
+smf_execute_all_entry_actions():
+    b588:	60ac      	str	r4, [r5, #8]
+    b58a:	6823      	ldr	r3, [r4, #0]
+    b58c:	b1cb      	cbz	r3, b5c2 &lt;<a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_execute_all_entry_actions.html">smf_execute_all_entry_actions</a>.isra.0+0x52&gt;
+    b58e:	4628      	mov	r0, r5
+    b590:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
+    b594:	4718      	bx	r3
+    b596:	60ae      	str	r6, [r5, #8]
+    b598:	6833      	ldr	r3, [r6, #0]
+    b59a:	b96b      	cbnz	r3, b5b8 &lt;<a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_execute_all_entry_actions.html">smf_execute_all_entry_actions</a>.isra.0+0x48&gt;
+    b59c:	4623      	mov	r3, r4
+get_child_of():
+    b59e:	461a      	mov	r2, r3
+    b5a0:	68db      	ldr	r3, [r3, #12]
+    b5a2:	429e      	cmp	r6, r3
+    b5a4:	d002      	beq.n	b5ac &lt;<a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_execute_all_entry_actions.html">smf_execute_all_entry_actions</a>.isra.0+0x3c&gt;
+    b5a6:	2b00      	cmp	r3, #0
+    b5a8:	d1f9      	bne.n	b59e &lt;<a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_execute_all_entry_actions.html">smf_execute_all_entry_actions</a>.isra.0+0x2e&gt;
+    b5aa:	461a      	mov	r2, r3
+    b5ac:	4616      	mov	r6, r2
+smf_execute_all_entry_actions():
+    b5ae:	2e00      	cmp	r6, #0
+    b5b0:	d0ea      	beq.n	b588 &lt;<a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_execute_all_entry_actions.html">smf_execute_all_entry_actions</a>.isra.0+0x18&gt;
+    b5b2:	42b4      	cmp	r4, r6
+    b5b4:	d1ef      	bne.n	b596 &lt;<a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_execute_all_entry_actions.html">smf_execute_all_entry_actions</a>.isra.0+0x26&gt;
+    b5b6:	e7e7      	b.n	b588 &lt;<a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_execute_all_entry_actions.html">smf_execute_all_entry_actions</a>.isra.0+0x18&gt;
+    b5b8:	4628      	mov	r0, r5
+    b5ba:	4798      	blx	r3
+    b5bc:	7c2b      	ldrb	r3, [r5, #16]
+    b5be:	079b      	lsls	r3, r3, #30
+    b5c0:	d5ec      	bpl.n	b59c &lt;<a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_execute_all_entry_actions.html">smf_execute_all_entry_actions</a>.isra.0+0x2c&gt;
+    b5c2:	bd70      	pop	{r4, r5, r6, pc}
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_set_initial.html">smf_set_initial (68)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 72</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 492</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    492
+                    
+                    
+                </td>
+                <td class="col_size">84</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_execute_all_entry_actions.html" class="icon-function">smf_execute_all_entry_actions</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    72
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                56 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    408
+                    
+                    
+                </td>
+                <td class="col_size">288</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_smf_smf.c_smf_set_state.html" class="icon-function">smf_set_state</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">120</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_app_src_led.c_led_state_normal_started_run.html" class="icon-function">led_state_normal_started_run</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

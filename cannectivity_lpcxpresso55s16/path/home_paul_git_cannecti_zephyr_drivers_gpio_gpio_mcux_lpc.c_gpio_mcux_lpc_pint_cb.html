@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_drivers_gpio.html">gpio</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c.html">gpio_mcux_lpc.c</a>:238
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">gpio_mcux_lpc_pint_cb</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000bea6</td>
+                <td>
+    
+    
+</td>
+                <td>16 (static)</td>
+                <td>54</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_lpc_gpio_init_0.html">lpc_gpio_init_0 (16)</a></pre>
+    
+    <pre>
+gpio_mcux_lpc_pint_cb():
+    bea6:	b570      	push	{r4, r5, r6, lr}
+    bea8:	690b      	ldr	r3, [r1, #16]
+    beaa:	460d      	mov	r5, r1
+    beac:	6859      	ldr	r1, [r3, #4]
+gpio_fire_callbacks():
+    beae:	b139      	cbz	r1, bec0 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_pint_cb.html">gpio_mcux_lpc_pint_cb</a>+0x1a&gt;
+gpio_mcux_lpc_pint_cb():
+    beb0:	2601      	movs	r6, #1
+    beb2:	686b      	ldr	r3, [r5, #4]
+z_snode_next_peek():
+    beb4:	680c      	ldr	r4, [r1, #0]
+gpio_mcux_lpc_pint_cb():
+    beb6:	691b      	ldr	r3, [r3, #16]
+    beb8:	eba0 1043 	sub.w	r0, r0, r3, lsl #5
+    bebc:	4086      	lsls	r6, r0
+gpio_fire_callbacks():
+    bebe:	b901      	cbnz	r1, bec2 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_pint_cb.html">gpio_mcux_lpc_pint_cb</a>+0x1c&gt;
+gpio_mcux_lpc_pint_cb():
+    bec0:	bd70      	pop	{r4, r5, r6, pc}
+gpio_fire_callbacks():
+    bec2:	688a      	ldr	r2, [r1, #8]
+    bec4:	4032      	ands	r2, r6
+    bec6:	d002      	beq.n	bece &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_pint_cb.html">gpio_mcux_lpc_pint_cb</a>+0x28&gt;
+    bec8:	4628      	mov	r0, r5
+    beca:	684b      	ldr	r3, [r1, #4]
+    becc:	4798      	blx	r3
+    bece:	b11c      	cbz	r4, bed8 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_pint_cb.html">gpio_mcux_lpc_pint_cb</a>+0x32&gt;
+z_snode_next_peek():
+    bed0:	6823      	ldr	r3, [r4, #0]
+gpio_fire_callbacks():
+    bed2:	4621      	mov	r1, r4
+    bed4:	461c      	mov	r4, r3
+    bed6:	e7f2      	b.n	bebe &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_pint_cb.html">gpio_mcux_lpc_pint_cb</a>+0x18&gt;
+    bed8:	4623      	mov	r3, r4
+    beda:	e7fa      	b.n	bed2 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_pint_cb.html">gpio_mcux_lpc_pint_cb</a>+0x2c&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_lpc_gpio_init_1.html">lpc_gpio_init_1 (16)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_subsys.html">subsys</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_subsys_usb.html">usb</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_subsys_usb_device.html">device</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c.html">usb_device.c</a>:1530
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">vendor_handler</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000020f0</td>
+                <td>
+    
+    
+</td>
+                <td>24 (static)</td>
+                <td>60</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_custom_handler.html">custom_handler (96)</a></pre>
+    
+    <pre>
+vendor_handler():
+    20f0:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
+    20f4:	4605      	mov	r5, r0
+    20f6:	460e      	mov	r6, r1
+    20f8:	4617      	mov	r7, r2
+    20fa:	4c0a      	ldr	r4, [pc, #40]	; (2124 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_vendor_handler.html">vendor_handler</a>+0x34&gt;)
+    20fc:	f8df 8028 	ldr.w	r8, [pc, #40]	; 2128 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_vendor_handler.html">vendor_handler</a>+0x38&gt;
+    2100:	4544      	cmp	r4, r8
+    2102:	d302      	bcc.n	210a &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_vendor_handler.html">vendor_handler</a>+0x1a&gt;
+    2104:	f06f 0085 	mvn.w	r0, #133	; 0x85
+    2108:	e009      	b.n	211e &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_vendor_handler.html">vendor_handler</a>+0x2e&gt;
+    210a:	6963      	ldr	r3, [r4, #20]
+    210c:	b90b      	cbnz	r3, 2112 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_vendor_handler.html">vendor_handler</a>+0x22&gt;
+    210e:	3424      	adds	r4, #36	; 0x24
+    2110:	e7f6      	b.n	2100 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_vendor_handler.html">vendor_handler</a>+0x10&gt;
+    2112:	463a      	mov	r2, r7
+    2114:	4631      	mov	r1, r6
+    2116:	4628      	mov	r0, r5
+    2118:	4798      	blx	r3
+    211a:	2800      	cmp	r0, #0
+    211c:	d1f7      	bne.n	210e &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_vendor_handler.html">vendor_handler</a>+0x1e&gt;
+    211e:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+    2122:	bf00      	nop
+    2124:	20000d90 	.word	0x20000d90
+    2128:	20000db4 	.word	0x20000db4
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_usb_reset_alt_setting.html">usb_reset_alt_setting (16)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

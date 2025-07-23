@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_lib.html">lib</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_lib_heap.html">heap</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c.html">heap.c</a>:133
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">free_chunk</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000a900</td>
+                <td>
+    
+    
+</td>
+                <td>16 (static)</td>
+                <td>98</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_sys_heap_free.html">sys_heap_free (30)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (4,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=158
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_lib_heap_heap.h_chunk_size.html">chunk_size (10)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_free_list_remove.html">free_list_remove (26)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_merge_chunks.html">merge_chunks (44)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_free_list_add.html">free_list_add (78)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_split_chunks.html">split_chunks (52)</a></pre>
+    
+    <pre>
+free_chunk():
+    a900:	b538      	push	{r3, r4, r5, lr}
+    a902:	4605      	mov	r5, r0
+right_chunk():
+    a904:	f7ff ff3f 	bl	a786 &lt;<a href="home_paul_git_cannecti_zephyr_lib_heap_heap.h_chunk_size.html">chunk_size</a>&gt;
+free_chunk():
+    a908:	460c      	mov	r4, r1
+right_chunk():
+    a90a:	4401      	add	r1, r0
+chunk_field():
+    a90c:	eb05 03c1 	add.w	r3, r5, r1, lsl #3
+chunk_used():
+    a910:	885b      	ldrh	r3, [r3, #2]
+free_chunk():
+    a912:	07da      	lsls	r2, r3, #31
+    a914:	d40a      	bmi.n	a92c &lt;<a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_free_chunk.html">free_chunk</a>+0x2c&gt;
+    a916:	4628      	mov	r0, r5
+    a918:	f7ff ff7e 	bl	a818 &lt;<a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_free_list_remove.html">free_list_remove</a>&gt;
+right_chunk():
+    a91c:	4621      	mov	r1, r4
+    a91e:	4628      	mov	r0, r5
+    a920:	f7ff ff31 	bl	a786 &lt;<a href="home_paul_git_cannecti_zephyr_lib_heap_heap.h_chunk_size.html">chunk_size</a>&gt;
+free_chunk():
+    a924:	1822      	adds	r2, r4, r0
+    a926:	4628      	mov	r0, r5
+    a928:	f7ff ffba 	bl	a8a0 &lt;<a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_merge_chunks.html">merge_chunks</a>&gt;
+chunk_field():
+    a92c:	f835 1034 	ldrh.w	r1, [r5, r4, lsl #3]
+left_chunk():
+    a930:	1a61      	subs	r1, r4, r1
+chunk_field():
+    a932:	eb05 03c1 	add.w	r3, r5, r1, lsl #3
+chunk_used():
+    a936:	885b      	ldrh	r3, [r3, #2]
+free_chunk():
+    a938:	07db      	lsls	r3, r3, #31
+    a93a:	d40c      	bmi.n	a956 &lt;<a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_free_chunk.html">free_chunk</a>+0x56&gt;
+    a93c:	4628      	mov	r0, r5
+    a93e:	f7ff ff6b 	bl	a818 &lt;<a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_free_list_remove.html">free_list_remove</a>&gt;
+chunk_field():
+    a942:	f835 1034 	ldrh.w	r1, [r5, r4, lsl #3]
+free_chunk():
+    a946:	4622      	mov	r2, r4
+    a948:	1a61      	subs	r1, r4, r1
+    a94a:	4628      	mov	r0, r5
+    a94c:	f7ff ffa8 	bl	a8a0 &lt;<a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_merge_chunks.html">merge_chunks</a>&gt;
+chunk_field():
+    a950:	f835 3034 	ldrh.w	r3, [r5, r4, lsl #3]
+left_chunk():
+    a954:	1ae4      	subs	r4, r4, r3
+free_chunk():
+    a956:	4621      	mov	r1, r4
+    a958:	4628      	mov	r0, r5
+    a95a:	e8bd 4038 	ldmia.w	sp!, {r3, r4, r5, lr}
+    a95e:	f7ff bf17 	b.w	a790 &lt;<a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_free_list_add.html">free_list_add</a>&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_sys_heap_free.html">sys_heap_free (30)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 264</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 78</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    264
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">78</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_free_list_add.html" class="icon-function">free_list_add</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">240</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 240</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 742</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    240
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    742
+                    
+                    
+                </td>
+                <td class="col_size">98</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_free_chunk.html" class="icon-function">free_chunk</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    644
+                    
+                    
+                </td>
+                <td class="col_size">30</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_heap_heap.c_sys_heap_free.html" class="icon-function">sys_heap_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    224
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    614
+                    
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_kheap.c_k_heap_free.html" class="icon-function">k_heap_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    558
+                    
+                    
+                </td>
+                <td class="col_size">14</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_mempool.c_k_free.html" class="icon-function">k_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    208
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    544
+                    
+                    
+                </td>
+                <td class="col_size">24</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_queue.c_z_queue_node_peek.html" class="icon-function">z_queue_node_peek</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    200
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    520
+                    
+                    
+                </td>
+                <td class="col_size">100</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_queue.c_z_impl_k_queue_get.html" class="icon-function">z_impl_k_queue_get</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                176 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">420</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_tx_thread.html" class="icon-function">gs_usb_tx_thread</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li class="active"><a href="_unknown_.html">&lt;unknown&gt;</a>
+            </li>
+
+        
+        <li class="active">&lt;unknown&gt;
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">__l_vfprintf</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000a22c</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td></td>
+                <td>1<span class="secondary">,</span>204</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (2)</th>
+                <td colspan="5">
+                
+                    <a href="_unknown___unknown__snprintf.html">snprintf (88)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_lib_libc_picolibc_cbprintf.c_cbvprintf.html">cbvprintf (56)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=196
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="_unknown___unknown__strnlen.html">strnlen (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="_unknown___unknown____ultoa_invert.html">__ultoa_invert (172)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="_unknown___unknown__snprintf.html">snprintf (88)</a></pre>
+    
+    <pre>
+__l_vfprintf():
+    a22c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+    a230:	6843      	ldr	r3, [r0, #4]
+    a232:	b08d      	sub	sp, #52	; 0x34
+    a234:	4615      	mov	r5, r2
+    a236:	4680      	mov	r8, r0
+    a238:	9302      	str	r3, [sp, #8]
+    a23a:	7883      	ldrb	r3, [r0, #2]
+    a23c:	079a      	lsls	r2, r3, #30
+    a23e:	f140 810d 	bpl.w	a45c &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x230&gt;
+    a242:	2400      	movs	r4, #0
+    a244:	780e      	ldrb	r6, [r1, #0]
+    a246:	2e00      	cmp	r6, #0
+    a248:	f000 810a 	beq.w	a460 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x234&gt;
+    a24c:	2e25      	cmp	r6, #37	; 0x25
+    a24e:	d00b      	beq.n	a268 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x3c&gt;
+    a250:	1c4b      	adds	r3, r1, #1
+    a252:	9303      	str	r3, [sp, #12]
+    a254:	3401      	adds	r4, #1
+    a256:	4641      	mov	r1, r8
+    a258:	4630      	mov	r0, r6
+    a25a:	9b02      	ldr	r3, [sp, #8]
+    a25c:	4798      	blx	r3
+    a25e:	2800      	cmp	r0, #0
+    a260:	f2c0 80f6 	blt.w	a450 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x224&gt;
+    a264:	9903      	ldr	r1, [sp, #12]
+    a266:	e7ed      	b.n	a244 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x18&gt;
+    a268:	784e      	ldrb	r6, [r1, #1]
+    a26a:	1c8b      	adds	r3, r1, #2
+    a26c:	2e25      	cmp	r6, #37	; 0x25
+    a26e:	9303      	str	r3, [sp, #12]
+    a270:	d0f0      	beq.n	a254 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x28&gt;
+    a272:	2700      	movs	r7, #0
+    a274:	46b9      	mov	r9, r7
+    a276:	46bb      	mov	fp, r7
+    a278:	f1bb 0f1f 	cmp.w	fp, #31
+    a27c:	d838      	bhi.n	a2f0 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xc4&gt;
+    a27e:	f1a6 0320 	sub.w	r3, r6, #32
+    a282:	2b10      	cmp	r3, #16
+    a284:	d80a      	bhi.n	a29c &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x70&gt;
+    a286:	e8df f003 	tbb	[pc, r3]
+    a28a:	092a      	.short	0x092a
+    a28c:	09093009 	.word	0x09093009
+    a290:	09092109 	.word	0x09092109
+    a294:	2d092809 	.word	0x2d092809
+    a298:	0909      	.short	0x0909
+    a29a:	1f          	.byte	0x1f
+    a29b:	00          	.byte	0x00
+    a29c:	f1a6 0330 	sub.w	r3, r6, #48	; 0x30
+    a2a0:	2b09      	cmp	r3, #9
+    a2a2:	d933      	bls.n	a30c &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xe0&gt;
+    a2a4:	2e2a      	cmp	r6, #42	; 0x2a
+    a2a6:	d137      	bne.n	a318 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xec&gt;
+    a2a8:	f01b 0f40 	tst.w	fp, #64	; 0x40
+    a2ac:	f855 3b04 	ldr.w	r3, [r5], #4
+    a2b0:	f040 8082 	bne.w	a3b8 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x18c&gt;
+    a2b4:	2b00      	cmp	r3, #0
+    a2b6:	bfa7      	ittee	ge
+    a2b8:	f04b 0b20 	orrge.w	fp, fp, #32
+    a2bc:	4699      	movge	r9, r3
+    a2be:	f1c3 0900 	rsblt	r9, r3, #0
+    a2c2:	f04b 0b28 	orrlt.w	fp, fp, #40	; 0x28
+    a2c6:	e001      	b.n	a2cc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xa0&gt;
+    a2c8:	f04b 0b01 	orr.w	fp, fp, #1
+    a2cc:	9b03      	ldr	r3, [sp, #12]
+    a2ce:	f813 6b01 	ldrb.w	r6, [r3], #1
+    a2d2:	9303      	str	r3, [sp, #12]
+    a2d4:	2e00      	cmp	r6, #0
+    a2d6:	d1cf      	bne.n	a278 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x4c&gt;
+    a2d8:	e030      	b.n	a33c &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x110&gt;
+    a2da:	f04b 0b02 	orr.w	fp, fp, #2
+    a2de:	f04b 0b04 	orr.w	fp, fp, #4
+    a2e2:	e7f3      	b.n	a2cc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xa0&gt;
+    a2e4:	f04b 0b08 	orr.w	fp, fp, #8
+    a2e8:	e7f0      	b.n	a2cc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xa0&gt;
+    a2ea:	f04b 0b10 	orr.w	fp, fp, #16
+    a2ee:	e7ed      	b.n	a2cc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xa0&gt;
+    a2f0:	f1bb 0f7f 	cmp.w	fp, #127	; 0x7f
+    a2f4:	d819      	bhi.n	a32a &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xfe&gt;
+    a2f6:	f1a6 0330 	sub.w	r3, r6, #48	; 0x30
+    a2fa:	2b09      	cmp	r3, #9
+    a2fc:	d8d2      	bhi.n	a2a4 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x78&gt;
+    a2fe:	f01b 0f40 	tst.w	fp, #64	; 0x40
+    a302:	d003      	beq.n	a30c &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xe0&gt;
+    a304:	210a      	movs	r1, #10
+    a306:	fb01 3707 	mla	r7, r1, r7, r3
+    a30a:	e7df      	b.n	a2cc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xa0&gt;
+    a30c:	210a      	movs	r1, #10
+    a30e:	f04b 0b20 	orr.w	fp, fp, #32
+    a312:	fb01 3909 	mla	r9, r1, r9, r3
+    a316:	e7d9      	b.n	a2cc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xa0&gt;
+    a318:	2e2e      	cmp	r6, #46	; 0x2e
+    a31a:	d106      	bne.n	a32a &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xfe&gt;
+    a31c:	f01b 0f40 	tst.w	fp, #64	; 0x40
+    a320:	f040 809e 	bne.w	a460 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x234&gt;
+    a324:	f04b 0b40 	orr.w	fp, fp, #64	; 0x40
+    a328:	e7d0      	b.n	a2cc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xa0&gt;
+    a32a:	2e6c      	cmp	r6, #108	; 0x6c
+    a32c:	d031      	beq.n	a392 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x166&gt;
+    a32e:	d82b      	bhi.n	a388 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x15c&gt;
+    a330:	2e68      	cmp	r6, #104	; 0x68
+    a332:	d036      	beq.n	a3a2 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x176&gt;
+    a334:	2e6a      	cmp	r6, #106	; 0x6a
+    a336:	d03c      	beq.n	a3b2 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x186&gt;
+    a338:	2e4c      	cmp	r6, #76	; 0x4c
+    a33a:	d03a      	beq.n	a3b2 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x186&gt;
+    a33c:	2f00      	cmp	r7, #0
+    a33e:	f046 0320 	orr.w	r3, r6, #32
+    a342:	bfb8      	it	lt
+    a344:	f02b 0240 	biclt.w	r2, fp, #64	; 0x40
+    a348:	f1a3 0165 	sub.w	r1, r3, #101	; 0x65
+    a34c:	bfbc      	itt	lt
+    a34e:	2700      	movlt	r7, #0
+    a350:	fa1f fb82 	uxthlt.w	fp, r2
+    a354:	2902      	cmp	r1, #2
+    a356:	d901      	bls.n	a35c &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x130&gt;
+    a358:	2b61      	cmp	r3, #97	; 0x61
+    a35a:	d12f      	bne.n	a3bc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x190&gt;
+    a35c:	3507      	adds	r5, #7
+    a35e:	2707      	movs	r7, #7
+    a360:	f8df a2ac 	ldr.w	sl, [pc, #684]	; a610 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x3e4&gt;
+    a364:	f025 0507 	bic.w	r5, r5, #7
+    a368:	3508      	adds	r5, #8
+    a36a:	f01b 0f08 	tst.w	fp, #8
+    a36e:	d066      	beq.n	a43e &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x212&gt;
+    a370:	eb0a 0b07 	add.w	fp, sl, r7
+    a374:	4656      	mov	r6, sl
+    a376:	455e      	cmp	r6, fp
+    a378:	d163      	bne.n	a442 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x216&gt;
+    a37a:	eba4 0a0a 	sub.w	sl, r4, sl
+    a37e:	eba9 0907 	sub.w	r9, r9, r7
+    a382:	eb06 020a 	add.w	r2, r6, sl
+    a386:	e16f      	b.n	a668 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x43c&gt;
+    a388:	2e74      	cmp	r6, #116	; 0x74
+    a38a:	d09f      	beq.n	a2cc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xa0&gt;
+    a38c:	2e7a      	cmp	r6, #122	; 0x7a
+    a38e:	d09d      	beq.n	a2cc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xa0&gt;
+    a390:	e7d4      	b.n	a33c &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x110&gt;
+    a392:	f01b 0f80 	tst.w	fp, #128	; 0x80
+    a396:	bf18      	it	ne
+    a398:	f44b 7b00 	orrne.w	fp, fp, #512	; 0x200
+    a39c:	f04b 0b80 	orr.w	fp, fp, #128	; 0x80
+    a3a0:	e794      	b.n	a2cc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xa0&gt;
+    a3a2:	f41b 7f80 	tst.w	fp, #256	; 0x100
+    a3a6:	bf18      	it	ne
+    a3a8:	f44b 7b00 	orrne.w	fp, fp, #512	; 0x200
+    a3ac:	f44b 7b80 	orr.w	fp, fp, #256	; 0x100
+    a3b0:	e78c      	b.n	a2cc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xa0&gt;
+    a3b2:	f44b 7b20 	orr.w	fp, fp, #640	; 0x280
+    a3b6:	e789      	b.n	a2cc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xa0&gt;
+    a3b8:	461f      	mov	r7, r3
+    a3ba:	e787      	b.n	a2cc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0xa0&gt;
+    a3bc:	f1a6 0163 	sub.w	r1, r6, #99	; 0x63
+    a3c0:	2912      	cmp	r1, #18
+    a3c2:	f200 80f0 	bhi.w	a5a6 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x37a&gt;
+    a3c6:	e8df f011 	tbh	[pc, r1, lsl #1]
+    a3ca:	0013      	.short	0x0013
+    a3cc:	00ee004f 	.word	0x00ee004f
+    a3d0:	00ee00ee 	.word	0x00ee00ee
+    a3d4:	004f00ee 	.word	0x004f00ee
+    a3d8:	00ee00ee 	.word	0x00ee00ee
+    a3dc:	00ee00ee 	.word	0x00ee00ee
+    a3e0:	00fe00ee 	.word	0x00fe00ee
+    a3e4:	00ee00e9 	.word	0x00ee00e9
+    a3e8:	001b00ee 	.word	0x001b00ee
+    a3ec:	00af00ee 	.word	0x00af00ee
+    a3f0:	f855 3b04 	ldr.w	r3, [r5], #4
+    a3f4:	2701      	movs	r7, #1
+    a3f6:	f10d 0a18 	add.w	sl, sp, #24
+    a3fa:	f88d 3018 	strb.w	r3, [sp, #24]
+    a3fe:	e7b4      	b.n	a36a &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x13e&gt;
+    a400:	f855 ab04 	ldr.w	sl, [r5], #4
+    a404:	4b83      	ldr	r3, [pc, #524]	; (a614 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x3e8&gt;)
+    a406:	f1ba 0f00 	cmp.w	sl, #0
+    a40a:	bf08      	it	eq
+    a40c:	469a      	moveq	sl, r3
+    a40e:	f01b 0f40 	tst.w	fp, #64	; 0x40
+    a412:	4650      	mov	r0, sl
+    a414:	bf14      	ite	ne
+    a416:	4639      	movne	r1, r7
+    a418:	f04f 31ff 	moveq.w	r1, #4294967295	; 0xffffffff
+    a41c:	f003 fa06 	bl	d82c &lt;<a href="_unknown___unknown__strnlen.html">strnlen</a>&gt;
+    a420:	4607      	mov	r7, r0
+    a422:	e7a2      	b.n	a36a &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x13e&gt;
+    a424:	4641      	mov	r1, r8
+    a426:	2020      	movs	r0, #32
+    a428:	9b02      	ldr	r3, [sp, #8]
+    a42a:	4798      	blx	r3
+    a42c:	2800      	cmp	r0, #0
+    a42e:	db0f      	blt.n	a450 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x224&gt;
+    a430:	3e01      	subs	r6, #1
+    a432:	42b7      	cmp	r7, r6
+    a434:	d3f6      	bcc.n	a424 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x1f8&gt;
+    a436:	444c      	add	r4, r9
+    a438:	46b1      	mov	r9, r6
+    a43a:	1ba4      	subs	r4, r4, r6
+    a43c:	e798      	b.n	a370 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x144&gt;
+    a43e:	464e      	mov	r6, r9
+    a440:	e7f7      	b.n	a432 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x206&gt;
+    a442:	4641      	mov	r1, r8
+    a444:	f816 0b01 	ldrb.w	r0, [r6], #1
+    a448:	9b02      	ldr	r3, [sp, #8]
+    a44a:	4798      	blx	r3
+    a44c:	2800      	cmp	r0, #0
+    a44e:	da92      	bge.n	a376 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x14a&gt;
+    a450:	f898 3002 	ldrb.w	r3, [r8, #2]
+    a454:	f043 0304 	orr.w	r3, r3, #4
+    a458:	f888 3002 	strb.w	r3, [r8, #2]
+    a45c:	f04f 34ff 	mov.w	r4, #4294967295	; 0xffffffff
+    a460:	4620      	mov	r0, r4
+    a462:	b00d      	add	sp, #52	; 0x34
+    a464:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+    a468:	f01b 0f80 	tst.w	fp, #128	; 0x80
+    a46c:	d034      	beq.n	a4d8 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x2ac&gt;
+    a46e:	f41b 7f00 	tst.w	fp, #512	; 0x200
+    a472:	d02c      	beq.n	a4ce &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x2a2&gt;
+    a474:	3507      	adds	r5, #7
+    a476:	f025 0507 	bic.w	r5, r5, #7
+    a47a:	46aa      	mov	sl, r5
+    a47c:	6869      	ldr	r1, [r5, #4]
+    a47e:	f85a 0b08 	ldr.w	r0, [sl], #8
+    a482:	f02b 0510 	bic.w	r5, fp, #16
+    a486:	2900      	cmp	r1, #0
+    a488:	b2ad      	uxth	r5, r5
+    a48a:	da37      	bge.n	a4fc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x2d0&gt;
+    a48c:	4240      	negs	r0, r0
+    a48e:	f445 6580 	orr.w	r5, r5, #1024	; 0x400
+    a492:	eb61 0141 	sbc.w	r1, r1, r1, lsl #1
+    a496:	f10d 0b18 	add.w	fp, sp, #24
+    a49a:	230a      	movs	r3, #10
+    a49c:	465a      	mov	r2, fp
+    a49e:	f003 f9d1 	bl	d844 &lt;<a href="_unknown___unknown____ultoa_invert.html">__ultoa_invert</a>&gt;
+    a4a2:	eba0 030b 	sub.w	r3, r0, fp
+    a4a6:	9301      	str	r3, [sp, #4]
+    a4a8:	066b      	lsls	r3, r5, #25
+    a4aa:	d562      	bpl.n	a572 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x346&gt;
+    a4ac:	9b01      	ldr	r3, [sp, #4]
+    a4ae:	f025 0101 	bic.w	r1, r5, #1
+    a4b2:	429f      	cmp	r7, r3
+    a4b4:	b289      	uxth	r1, r1
+    a4b6:	f340 80a1 	ble.w	a5fc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x3d0&gt;
+    a4ba:	2e00      	cmp	r6, #0
+    a4bc:	f000 8099 	beq.w	a5f2 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x3c6&gt;
+    a4c0:	f015 0210 	ands.w	r2, r5, #16
+    a4c4:	f040 809c 	bne.w	a600 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x3d4&gt;
+    a4c8:	46bb      	mov	fp, r7
+    a4ca:	460d      	mov	r5, r1
+    a4cc:	e023      	b.n	a516 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x2ea&gt;
+    a4ce:	46aa      	mov	sl, r5
+    a4d0:	f85a 0b04 	ldr.w	r0, [sl], #4
+    a4d4:	17c1      	asrs	r1, r0, #31
+    a4d6:	e7d4      	b.n	a482 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x256&gt;
+    a4d8:	46aa      	mov	sl, r5
+    a4da:	f41b 7f80 	tst.w	fp, #256	; 0x100
+    a4de:	f85a 1b04 	ldr.w	r1, [sl], #4
+    a4e2:	d101      	bne.n	a4e8 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x2bc&gt;
+    a4e4:	4608      	mov	r0, r1
+    a4e6:	e7f5      	b.n	a4d4 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x2a8&gt;
+    a4e8:	f41b 7f00 	tst.w	fp, #512	; 0x200
+    a4ec:	bf19      	ittee	ne
+    a4ee:	b248      	sxtbne	r0, r1
+    a4f0:	f341 11c0 	sbfxne	r1, r1, #7, #1
+    a4f4:	b208      	sxtheq	r0, r1
+    a4f6:	f341 31c0 	sbfxeq	r1, r1, #15, #1
+    a4fa:	e7c2      	b.n	a482 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x256&gt;
+    a4fc:	ea50 0301 	orrs.w	r3, r0, r1
+    a500:	d1c9      	bne.n	a496 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x26a&gt;
+    a502:	f01b 0f40 	tst.w	fp, #64	; 0x40
+    a506:	d0c6      	beq.n	a496 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x26a&gt;
+    a508:	2f00      	cmp	r7, #0
+    a50a:	d1c4      	bne.n	a496 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x26a&gt;
+    a50c:	f02b 0211 	bic.w	r2, fp, #17
+    a510:	46bb      	mov	fp, r7
+    a512:	9701      	str	r7, [sp, #4]
+    a514:	b295      	uxth	r5, r2
+    a516:	f240 4106 	movw	r1, #1030	; 0x406
+    a51a:	ea15 0201 	ands.w	r2, r5, r1
+    a51e:	bf1c      	itt	ne
+    a520:	f10b 0b01 	addne.w	fp, fp, #1
+    a524:	2200      	movne	r2, #0
+    a526:	e02c      	b.n	a582 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x356&gt;
+    a528:	f02b 0210 	bic.w	r2, fp, #16
+    a52c:	230a      	movs	r3, #10
+    a52e:	fa1f fb82 	uxth.w	fp, r2
+    a532:	f01b 0c80 	ands.w	ip, fp, #128	; 0x80
+    a536:	d049      	beq.n	a5cc &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x3a0&gt;
+    a538:	f41b 7100 	ands.w	r1, fp, #512	; 0x200
+    a53c:	bf15      	itete	ne
+    a53e:	3507      	addne	r5, #7
+    a540:	46aa      	moveq	sl, r5
+    a542:	f025 0507 	bicne.w	r5, r5, #7
+    a546:	f85a 0b04 	ldreq.w	r0, [sl], #4
+    a54a:	bf1e      	ittt	ne
+    a54c:	46aa      	movne	sl, r5
+    a54e:	6869      	ldrne	r1, [r5, #4]
+    a550:	f85a 0b08 	ldrne.w	r0, [sl], #8
+    a554:	ea50 0501 	orrs.w	r5, r0, r1
+    a558:	d145      	bne.n	a5e6 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x3ba&gt;
+    a55a:	f02b 0516 	bic.w	r5, fp, #22
+    a55e:	f01b 0f40 	tst.w	fp, #64	; 0x40
+    a562:	b2ad      	uxth	r5, r5
+    a564:	d042      	beq.n	a5ec &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x3c0&gt;
+    a566:	2f00      	cmp	r7, #0
+    a568:	d140      	bne.n	a5ec &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x3c0&gt;
+    a56a:	f02b 0217 	bic.w	r2, fp, #23
+    a56e:	9701      	str	r7, [sp, #4]
+    a570:	b295      	uxth	r5, r2
+    a572:	f015 0210 	ands.w	r2, r5, #16
+    a576:	d048      	beq.n	a60a &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x3de&gt;
+    a578:	9b01      	ldr	r3, [sp, #4]
+    a57a:	2e00      	cmp	r6, #0
+    a57c:	d142      	bne.n	a604 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x3d8&gt;
+    a57e:	f103 0b01 	add.w	fp, r3, #1
+    a582:	0729      	lsls	r1, r5, #28
+    a584:	d45a      	bmi.n	a63c &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x410&gt;
+    a586:	07eb      	lsls	r3, r5, #31
+    a588:	d506      	bpl.n	a598 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x36c&gt;
+    a58a:	45d9      	cmp	r9, fp
+    a58c:	dd6f      	ble.n	a66e &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x442&gt;
+    a58e:	eba9 030b 	sub.w	r3, r9, fp
+    a592:	9901      	ldr	r1, [sp, #4]
+    a594:	46cb      	mov	fp, r9
+    a596:	185f      	adds	r7, r3, r1
+    a598:	465b      	mov	r3, fp
+    a59a:	e049      	b.n	a630 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x404&gt;
+    a59c:	f04b 0b10 	orr.w	fp, fp, #16
+    a5a0:	2310      	movs	r3, #16
+    a5a2:	2678      	movs	r6, #120	; 0x78
+    a5a4:	e7c5      	b.n	a532 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x306&gt;
+    a5a6:	2b78      	cmp	r3, #120	; 0x78
+    a5a8:	d104      	bne.n	a5b4 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x388&gt;
+    a5aa:	f1c6 0378 	rsb	r3, r6, #120	; 0x78
+    a5ae:	f043 0310 	orr.w	r3, r3, #16
+    a5b2:	e7be      	b.n	a532 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x306&gt;
+    a5b4:	4641      	mov	r1, r8
+    a5b6:	2025      	movs	r0, #37	; 0x25
+    a5b8:	9b02      	ldr	r3, [sp, #8]
+    a5ba:	4798      	blx	r3
+    a5bc:	2800      	cmp	r0, #0
+    a5be:	f6ff af47 	blt.w	a450 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x224&gt;
+    a5c2:	3402      	adds	r4, #2
+    a5c4:	e647      	b.n	a256 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x2a&gt;
+    a5c6:	2308      	movs	r3, #8
+    a5c8:	2600      	movs	r6, #0
+    a5ca:	e7b2      	b.n	a532 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x306&gt;
+    a5cc:	46aa      	mov	sl, r5
+    a5ce:	f41b 7180 	ands.w	r1, fp, #256	; 0x100
+    a5d2:	f85a 0b04 	ldr.w	r0, [sl], #4
+    a5d6:	d0bd      	beq.n	a554 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x328&gt;
+    a5d8:	f41b 7100 	ands.w	r1, fp, #512	; 0x200
+    a5dc:	bf1a      	itte	ne
+    a5de:	b2c0      	uxtbne	r0, r0
+    a5e0:	4661      	movne	r1, ip
+    a5e2:	b280      	uxtheq	r0, r0
+    a5e4:	e7b6      	b.n	a554 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x328&gt;
+    a5e6:	f02b 0206 	bic.w	r2, fp, #6
+    a5ea:	b295      	uxth	r5, r2
+    a5ec:	f10d 0b18 	add.w	fp, sp, #24
+    a5f0:	e754      	b.n	a49c &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x270&gt;
+    a5f2:	f025 0511 	bic.w	r5, r5, #17
+    a5f6:	46bb      	mov	fp, r7
+    a5f8:	b2ad      	uxth	r5, r5
+    a5fa:	e78c      	b.n	a516 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x2ea&gt;
+    a5fc:	460d      	mov	r5, r1
+    a5fe:	e7b8      	b.n	a572 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x346&gt;
+    a600:	463b      	mov	r3, r7
+    a602:	460d      	mov	r5, r1
+    a604:	f103 0b02 	add.w	fp, r3, #2
+    a608:	e7bb      	b.n	a582 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x356&gt;
+    a60a:	f8dd b004 	ldr.w	fp, [sp, #4]
+    a60e:	e782      	b.n	a516 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x2ea&gt;
+    a610:	000108f7 	.word	0x000108f7
+    a614:	000108f0 	.word	0x000108f0
+    a618:	e9cd 3204 	strd	r3, r2, [sp, #16]
+    a61c:	4641      	mov	r1, r8
+    a61e:	2020      	movs	r0, #32
+    a620:	9b02      	ldr	r3, [sp, #8]
+    a622:	4798      	blx	r3
+    a624:	2800      	cmp	r0, #0
+    a626:	f6ff af13 	blt.w	a450 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x224&gt;
+    a62a:	9b04      	ldr	r3, [sp, #16]
+    a62c:	9a05      	ldr	r2, [sp, #20]
+    a62e:	3301      	adds	r3, #1
+    a630:	4599      	cmp	r9, r3
+    a632:	dcf1      	bgt.n	a618 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x3ec&gt;
+    a634:	eba4 010b 	sub.w	r1, r4, fp
+    a638:	469b      	mov	fp, r3
+    a63a:	18cc      	adds	r4, r1, r3
+    a63c:	b30a      	cbz	r2, a682 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x456&gt;
+    a63e:	4641      	mov	r1, r8
+    a640:	2030      	movs	r0, #48	; 0x30
+    a642:	9b02      	ldr	r3, [sp, #8]
+    a644:	4798      	blx	r3
+    a646:	2800      	cmp	r0, #0
+    a648:	f6ff af02 	blt.w	a450 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x224&gt;
+    a64c:	b98e      	cbnz	r6, a672 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x446&gt;
+    a64e:	3401      	adds	r4, #1
+    a650:	4427      	add	r7, r4
+    a652:	1b39      	subs	r1, r7, r4
+    a654:	9b01      	ldr	r3, [sp, #4]
+    a656:	4299      	cmp	r1, r3
+    a658:	dc24      	bgt.n	a6a4 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x478&gt;
+    a65a:	461d      	mov	r5, r3
+    a65c:	bb55      	cbnz	r5, a6b4 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x488&gt;
+    a65e:	9a01      	ldr	r2, [sp, #4]
+    a660:	eba9 090b 	sub.w	r9, r9, fp
+    a664:	4655      	mov	r5, sl
+    a666:	4422      	add	r2, r4
+    a668:	4614      	mov	r4, r2
+    a66a:	4491      	add	r9, r2
+    a66c:	e033      	b.n	a6d6 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x4aa&gt;
+    a66e:	9f01      	ldr	r7, [sp, #4]
+    a670:	e792      	b.n	a598 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x36c&gt;
+    a672:	3402      	adds	r4, #2
+    a674:	4641      	mov	r1, r8
+    a676:	4630      	mov	r0, r6
+    a678:	9b02      	ldr	r3, [sp, #8]
+    a67a:	4798      	blx	r3
+    a67c:	2800      	cmp	r0, #0
+    a67e:	dae7      	bge.n	a650 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x424&gt;
+    a680:	e6e6      	b.n	a450 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x224&gt;
+    a682:	f240 4106 	movw	r1, #1030	; 0x406
+    a686:	420d      	tst	r5, r1
+    a688:	d0e2      	beq.n	a650 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x424&gt;
+    a68a:	f015 0f02 	tst.w	r5, #2
+    a68e:	f104 0401 	add.w	r4, r4, #1
+    a692:	4641      	mov	r1, r8
+    a694:	bf14      	ite	ne
+    a696:	202b      	movne	r0, #43	; 0x2b
+    a698:	2020      	moveq	r0, #32
+    a69a:	f415 6f80 	tst.w	r5, #1024	; 0x400
+    a69e:	bf18      	it	ne
+    a6a0:	202d      	movne	r0, #45	; 0x2d
+    a6a2:	e7e9      	b.n	a678 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x44c&gt;
+    a6a4:	4641      	mov	r1, r8
+    a6a6:	2030      	movs	r0, #48	; 0x30
+    a6a8:	9b02      	ldr	r3, [sp, #8]
+    a6aa:	3401      	adds	r4, #1
+    a6ac:	4798      	blx	r3
+    a6ae:	2800      	cmp	r0, #0
+    a6b0:	dacf      	bge.n	a652 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x426&gt;
+    a6b2:	e6cd      	b.n	a450 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x224&gt;
+    a6b4:	ab06      	add	r3, sp, #24
+    a6b6:	3d01      	subs	r5, #1
+    a6b8:	4641      	mov	r1, r8
+    a6ba:	5d58      	ldrb	r0, [r3, r5]
+    a6bc:	9b02      	ldr	r3, [sp, #8]
+    a6be:	4798      	blx	r3
+    a6c0:	2800      	cmp	r0, #0
+    a6c2:	dacb      	bge.n	a65c &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x430&gt;
+    a6c4:	e6c4      	b.n	a450 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x224&gt;
+    a6c6:	4641      	mov	r1, r8
+    a6c8:	2020      	movs	r0, #32
+    a6ca:	9b02      	ldr	r3, [sp, #8]
+    a6cc:	3401      	adds	r4, #1
+    a6ce:	4798      	blx	r3
+    a6d0:	2800      	cmp	r0, #0
+    a6d2:	f6ff aebd 	blt.w	a450 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x224&gt;
+    a6d6:	eba9 0304 	sub.w	r3, r9, r4
+    a6da:	2b00      	cmp	r3, #0
+    a6dc:	dcf3      	bgt.n	a6c6 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x49a&gt;
+    a6de:	e5c1      	b.n	a264 &lt;<a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf</a>+0x38&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_kernel_include_kernel_offsets.h__OffsetAbsSyms.html">_OffsetAbsSyms (2)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 188</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 2<span class="secondary">,</span>126</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2<span class="secondary">,</span>126
+                    
+                    
+                </td>
+                <td class="col_size">1<span class="secondary">,</span>204</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="_unknown___unknown____l_vfprintf.html" class="icon-function">__l_vfprintf</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    188
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    922
+                    
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_libc_picolibc_cbprintf.c_cbvprintf.html" class="icon-function">cbvprintf</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    140
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                12 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    866
+                    
+                    
+                </td>
+                <td class="col_size">36</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html" class="icon-function">print_formatted</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    128
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    830
+                    
+                    
+                </td>
+                <td class="col_size">724</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html" class="icon-function">log_output_process</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">106</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_msg_process.html" class="icon-function">log_output_msg_process</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

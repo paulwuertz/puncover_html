@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_drivers_serial.html">serial</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c.html">uart_mcux_flexcomm.c</a>:263
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">mcux_flexcomm_irq_is_pending</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000c16e</td>
+                <td>
+    
+    
+</td>
+                <td>8 (static)</td>
+                <td>44</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=50
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_irq_tx_ready.html">mcux_flexcomm_irq_tx_ready (34)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_irq_rx_full.html">mcux_flexcomm_irq_rx_full (16)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_irq_rx_enable.html">mcux_flexcomm_irq_rx_enable (16)</a></pre>
+    
+    <pre>
+mcux_flexcomm_irq_is_pending():
+    c16e:	b510      	push	{r4, lr}
+    c170:	4604      	mov	r4, r0
+    c172:	f7ff ff92 	bl	c09a &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_irq_tx_ready.html">mcux_flexcomm_irq_tx_ready</a>&gt;
+    c176:	b970      	cbnz	r0, c196 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_irq_is_pending.html">mcux_flexcomm_irq_is_pending</a>+0x28&gt;
+mcux_flexcomm_irq_rx_pending():
+    c178:	6863      	ldr	r3, [r4, #4]
+    c17a:	681b      	ldr	r3, [r3, #0]
+USART_GetEnabledInterrupts():
+    c17c:	68da      	ldr	r2, [r3, #12]
+    c17e:	68da      	ldr	r2, [r3, #12]
+    c180:	f8d3 3e10 	ldr.w	r3, [r3, #3600]	; 0xe10
+mcux_flexcomm_irq_rx_pending():
+    c184:	071b      	lsls	r3, r3, #28
+    c186:	d505      	bpl.n	c194 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_irq_is_pending.html">mcux_flexcomm_irq_is_pending</a>+0x26&gt;
+    c188:	4620      	mov	r0, r4
+    c18a:	f7ff ff9f 	bl	c0cc &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_irq_rx_full.html">mcux_flexcomm_irq_rx_full</a>&gt;
+    c18e:	3800      	subs	r0, #0
+    c190:	bf18      	it	ne
+    c192:	2001      	movne	r0, #1
+mcux_flexcomm_irq_is_pending():
+    c194:	bd10      	pop	{r4, pc}
+    c196:	2001      	movs	r0, #1
+    c198:	e7fc      	b.n	c194 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_irq_is_pending.html">mcux_flexcomm_irq_is_pending</a>+0x26&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_init.html">mcux_flexcomm_init (172)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 16</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 34</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    16
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">34</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_irq_tx_ready.html" class="icon-function">mcux_flexcomm_irq_tx_ready</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">8</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

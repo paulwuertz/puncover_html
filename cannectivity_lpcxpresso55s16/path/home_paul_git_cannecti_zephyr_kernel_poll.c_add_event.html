@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_kernel.html">kernel</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_kernel_poll.c.html">poll.c</a>:108
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">add_event</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000d5ec</td>
+                <td>
+    
+    
+</td>
+                <td>16 (static)</td>
+                <td>84</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_kernel_poll.c_register_events.html">register_events (252)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_kernel_timer.c_z_impl_k_timer_stop.html">z_impl_k_timer_stop (56)</a></pre>
+    
+    <pre>
+add_event():
+    d5ec:	b570      	push	{r4, r5, r6, lr}
+sys_dlist_peek_tail():
+    d5ee:	e9d0 3400 	ldrd	r3, r4, [r0]
+    d5f2:	4298      	cmp	r0, r3
+    d5f4:	d009      	beq.n	d60a &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_add_event.html">add_event</a>+0x1e&gt;
+add_event():
+    d5f6:	b144      	cbz	r4, d60a &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_add_event.html">add_event</a>+0x1e&gt;
+    d5f8:	68a5      	ldr	r5, [r4, #8]
+poller_thread():
+    d5fa:	b1ed      	cbz	r5, d638 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_add_event.html">add_event</a>+0x4c&gt;
+z_sched_prio_cmp():
+    d5fc:	f915 6c52 	ldrsb.w	r6, [r5, #-82]
+    d600:	f912 5c52 	ldrsb.w	r5, [r2, #-82]
+    d604:	42b5      	cmp	r5, r6
+    d606:	d008      	beq.n	d61a &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_add_event.html">add_event</a>+0x2e&gt;
+add_event():
+    d608:	dd07      	ble.n	d61a &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_add_event.html">add_event</a>+0x2e&gt;
+sys_dlist_append():
+    d60a:	e9c1 0400 	strd	r0, r4, [r1]
+    d60e:	6021      	str	r1, [r4, #0]
+    d610:	6041      	str	r1, [r0, #4]
+    d612:	e010      	b.n	d636 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_add_event.html">add_event</a>+0x4a&gt;
+sys_dlist_peek_next_no_check():
+    d614:	42a3      	cmp	r3, r4
+    d616:	d0f8      	beq.n	d60a &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_add_event.html">add_event</a>+0x1e&gt;
+    d618:	681b      	ldr	r3, [r3, #0]
+add_event():
+    d61a:	2b00      	cmp	r3, #0
+    d61c:	d0f5      	beq.n	d60a &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_add_event.html">add_event</a>+0x1e&gt;
+    d61e:	689a      	ldr	r2, [r3, #8]
+poller_thread():
+    d620:	b162      	cbz	r2, d63c &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_add_event.html">add_event</a>+0x50&gt;
+z_sched_prio_cmp():
+    d622:	f912 2c52 	ldrsb.w	r2, [r2, #-82]
+    d626:	42aa      	cmp	r2, r5
+    d628:	d0f4      	beq.n	d614 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_add_event.html">add_event</a>+0x28&gt;
+add_event():
+    d62a:	ddf3      	ble.n	d614 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_add_event.html">add_event</a>+0x28&gt;
+sys_dlist_insert():
+    d62c:	685a      	ldr	r2, [r3, #4]
+    d62e:	e9c1 3200 	strd	r3, r2, [r1]
+    d632:	6011      	str	r1, [r2, #0]
+    d634:	6059      	str	r1, [r3, #4]
+add_event():
+    d636:	bd70      	pop	{r4, r5, r6, pc}
+z_sched_prio_cmp():
+    d638:	7bab      	ldrb	r3, [r5, #14]
+    d63a:	deff      	udf	#255	; 0xff
+    d63c:	7b93      	ldrb	r3, [r2, #14]
+    d63e:	e7fc      	b.n	d63a &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_add_event.html">add_event</a>+0x4e&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_kernel_poll.c_register_events.html">register_events (252)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 128</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 616</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    128
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    616
+                    
+                    
+                </td>
+                <td class="col_size">84</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_poll.c_add_event.html" class="icon-function">add_event</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    112
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    532
+                    
+                    
+                </td>
+                <td class="col_size">252</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_poll.c_register_events.html" class="icon-function">register_events</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    72
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    280
+                    
+                    
+                </td>
+                <td class="col_size">176</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_poll.c_z_impl_k_poll.html" class="icon-function">z_impl_k_poll</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">104</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_app_src_led.c_led_thread.html" class="icon-function">led_thread</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

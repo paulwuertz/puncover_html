@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_drivers_serial.html">serial</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c.html">uart_mcux_flexcomm.c</a>:117
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">mcux_flexcomm_err_check</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000bff8</td>
+                <td>
+    
+    
+</td>
+                <td>8 (static)</td>
+                <td>50</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=36
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.h_USART_GetStatusFlags.html">USART_GetStatusFlags (36)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_poll_out.html">mcux_flexcomm_poll_out (24)</a></pre>
+    
+    <pre>
+mcux_flexcomm_err_check():
+    bff8:	b510      	push	{r4, lr}
+    bffa:	6843      	ldr	r3, [r0, #4]
+    bffc:	681c      	ldr	r4, [r3, #0]
+    bffe:	4620      	mov	r0, r4
+    c000:	f7ff ffcc 	bl	bf9c &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.h_USART_GetStatusFlags.html">USART_GetStatusFlags</a>&gt;
+    c004:	4603      	mov	r3, r0
+    c006:	f3c0 0040 	ubfx	r0, r0, #1, #1
+    c00a:	045a      	lsls	r2, r3, #17
+    c00c:	bf48      	it	mi
+    c00e:	f040 0002 	orrmi.w	r0, r0, #2
+    c012:	049b      	lsls	r3, r3, #18
+USART_ClearStatusFlags():
+    c014:	f44f 43c0 	mov.w	r3, #24576	; 0x6000
+    c018:	60a3      	str	r3, [r4, #8]
+    c01a:	f04f 0302 	mov.w	r3, #2
+    c01e:	f8c4 3e04 	str.w	r3, [r4, #3588]	; 0xe04
+mcux_flexcomm_err_check():
+    c022:	bf48      	it	mi
+    c024:	f040 0004 	orrmi.w	r0, r0, #4
+    c028:	bd10      	pop	{r4, pc}
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_fifo_fill.html">mcux_flexcomm_fifo_fill (50)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

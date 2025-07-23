@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_drivers_counter.html">counter</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c.html">counter_mcux_ctimer.c</a>:147
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">mcux_lpc_ctimer_set_top_value</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000bc84</td>
+                <td>
+    
+    
+</td>
+                <td>32 (static)</td>
+                <td>104</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=128
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_SetupMatch.html">CTIMER_SetupMatch (128)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_irq_config_4.html">mcux_lpc_ctimer_irq_config_4 (22)</a></pre>
+    
+    <pre>
+mcux_lpc_ctimer_set_top_value():
+    bc84:	b530      	push	{r4, r5, lr}
+    bc86:	6903      	ldr	r3, [r0, #16]
+    bc88:	684a      	ldr	r2, [r1, #4]
+    bc8a:	6844      	ldr	r4, [r0, #4]
+    bc8c:	619a      	str	r2, [r3, #24]
+    bc8e:	688a      	ldr	r2, [r1, #8]
+    bc90:	b085      	sub	sp, #20
+    bc92:	61da      	str	r2, [r3, #28]
+    bc94:	68ca      	ldr	r2, [r1, #12]
+    bc96:	68e3      	ldr	r3, [r4, #12]
+    bc98:	f012 0f01 	tst.w	r2, #1
+    bc9c:	d114      	bne.n	bcc8 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_set_top_value.html">mcux_lpc_ctimer_set_top_value</a>+0x44&gt;
+CTIMER_Reset():
+    bc9e:	685a      	ldr	r2, [r3, #4]
+    bca0:	f042 0202 	orr.w	r2, r2, #2
+    bca4:	605a      	str	r2, [r3, #4]
+    bca6:	685a      	ldr	r2, [r3, #4]
+    bca8:	f022 0202 	bic.w	r2, r2, #2
+    bcac:	605a      	str	r2, [r3, #4]
+mcux_lpc_ctimer_set_top_value():
+    bcae:	680b      	ldr	r3, [r1, #0]
+    bcb0:	68e0      	ldr	r0, [r4, #12]
+    bcb2:	9301      	str	r3, [sp, #4]
+    bcb4:	2301      	movs	r3, #1
+    bcb6:	2103      	movs	r1, #3
+    bcb8:	aa01      	add	r2, sp, #4
+    bcba:	9302      	str	r3, [sp, #8]
+    bcbc:	f88d 300c 	strb.w	r3, [sp, #12]
+    bcc0:	f7fc fa74 	bl	81ac &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_SetupMatch.html">CTIMER_SetupMatch</a>&gt;
+    bcc4:	2000      	movs	r0, #0
+    bcc6:	e00f      	b.n	bce8 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_set_top_value.html">mcux_lpc_ctimer_set_top_value</a>+0x64&gt;
+CTIMER_GetTimerCountValue():
+    bcc8:	6898      	ldr	r0, [r3, #8]
+mcux_lpc_ctimer_set_top_value():
+    bcca:	680d      	ldr	r5, [r1, #0]
+    bccc:	4285      	cmp	r5, r0
+    bcce:	d8ee      	bhi.n	bcae &lt;<a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_set_top_value.html">mcux_lpc_ctimer_set_top_value</a>+0x2a&gt;
+    bcd0:	0792      	lsls	r2, r2, #30
+    bcd2:	d507      	bpl.n	bce4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_set_top_value.html">mcux_lpc_ctimer_set_top_value</a>+0x60&gt;
+CTIMER_Reset():
+    bcd4:	685a      	ldr	r2, [r3, #4]
+    bcd6:	f042 0202 	orr.w	r2, r2, #2
+    bcda:	605a      	str	r2, [r3, #4]
+    bcdc:	685a      	ldr	r2, [r3, #4]
+    bcde:	f022 0202 	bic.w	r2, r2, #2
+    bce2:	605a      	str	r2, [r3, #4]
+mcux_lpc_ctimer_set_top_value():
+    bce4:	f06f 003d 	mvn.w	r0, #61	; 0x3d
+    bce8:	b005      	add	sp, #20
+    bcea:	bd30      	pop	{r4, r5, pc}
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_counter_counter_mcux_ctimer.c_mcux_lpc_ctimer_get_freq.html">mcux_lpc_ctimer_get_freq (46)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 56</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 128</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    56
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">128</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_ctimer_fsl_ctimer.c_CTIMER_SetupMatch.html" class="icon-function">CTIMER_SetupMatch</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">32</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

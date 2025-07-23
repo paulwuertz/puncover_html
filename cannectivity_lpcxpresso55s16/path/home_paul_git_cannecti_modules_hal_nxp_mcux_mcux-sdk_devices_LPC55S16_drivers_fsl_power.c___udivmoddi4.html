@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules.html">modules</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal.html">hal</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp.html">nxp</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux.html">mcux</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk.html">mcux-sdk</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices.html">devices</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16.html">LPC55S16</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers.html">drivers</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c.html">fsl_power.c</a>:1103
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">__udivmoddi4</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00000174</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td></td>
+                <td>668</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="_unknown___unknown____aeabi_uldivmod.html">__aeabi_uldivmod (48)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_strlen.html">strlen (16)</a></pre>
+    
+    <pre>
+__udivmoddi4():
+     174:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+     178:	4686      	mov	lr, r0
+     17a:	468c      	mov	ip, r1
+     17c:	4608      	mov	r0, r1
+     17e:	9e08      	ldr	r6, [sp, #32]
+     180:	4615      	mov	r5, r2
+     182:	4674      	mov	r4, lr
+     184:	4619      	mov	r1, r3
+     186:	2b00      	cmp	r3, #0
+     188:	f040 80c1 	bne.w	30e &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0xe&gt;
+     18c:	4285      	cmp	r5, r0
+     18e:	fab2 f282 	clz	r2, r2
+     192:	d945      	bls.n	220 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x20&gt;
+     194:	b14a      	cbz	r2, 1aa &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c___udivmoddi4.html">__udivmoddi4</a>+0x36&gt;
+     196:	f1c2 0320 	rsb	r3, r2, #32
+     19a:	fa00 fc02 	lsl.w	ip, r0, r2
+     19e:	4095      	lsls	r5, r2
+     1a0:	4094      	lsls	r4, r2
+     1a2:	fa2e f303 	lsr.w	r3, lr, r3
+     1a6:	ea43 0c0c 	orr.w	ip, r3, ip
+     1aa:	ea4f 4e15 	mov.w	lr, r5, lsr #16
+     1ae:	b2a8      	uxth	r0, r5
+     1b0:	0c23      	lsrs	r3, r4, #16
+     1b2:	fbbc f8fe 	udiv	r8, ip, lr
+     1b6:	fb0e cc18 	mls	ip, lr, r8, ip
+     1ba:	fb08 f900 	mul.w	r9, r8, r0
+     1be:	ea43 430c 	orr.w	r3, r3, ip, lsl #16
+     1c2:	4599      	cmp	r9, r3
+     1c4:	d928      	bls.n	218 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x18&gt;
+     1c6:	18eb      	adds	r3, r5, r3
+     1c8:	f108 37ff 	add.w	r7, r8, #4294967295	; 0xffffffff
+     1cc:	d204      	bcs.n	1d8 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c___udivmoddi4.html">__udivmoddi4</a>+0x64&gt;
+     1ce:	4599      	cmp	r9, r3
+     1d0:	d902      	bls.n	1d8 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c___udivmoddi4.html">__udivmoddi4</a>+0x64&gt;
+     1d2:	f1a8 0702 	sub.w	r7, r8, #2
+     1d6:	442b      	add	r3, r5
+     1d8:	eba3 0309 	sub.w	r3, r3, r9
+     1dc:	b2a4      	uxth	r4, r4
+     1de:	fbb3 fcfe 	udiv	ip, r3, lr
+     1e2:	fb0e 331c 	mls	r3, lr, ip, r3
+     1e6:	fb0c f000 	mul.w	r0, ip, r0
+     1ea:	ea44 4403 	orr.w	r4, r4, r3, lsl #16
+     1ee:	42a0      	cmp	r0, r4
+     1f0:	d914      	bls.n	21c &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x1c&gt;
+     1f2:	192c      	adds	r4, r5, r4
+     1f4:	f10c 33ff 	add.w	r3, ip, #4294967295	; 0xffffffff
+     1f8:	d204      	bcs.n	204 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x4&gt;
+     1fa:	42a0      	cmp	r0, r4
+     1fc:	d902      	bls.n	204 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x4&gt;
+     1fe:	f1ac 0302 	sub.w	r3, ip, #2
+     202:	442c      	add	r4, r5
+     204:	1a24      	subs	r4, r4, r0
+     206:	ea43 4007 	orr.w	r0, r3, r7, lsl #16
+     20a:	b11e      	cbz	r6, 214 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x14&gt;
+     20c:	40d4      	lsrs	r4, r2
+     20e:	2300      	movs	r3, #0
+     210:	6034      	str	r4, [r6, #0]
+     212:	6073      	str	r3, [r6, #4]
+     214:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+     218:	4647      	mov	r7, r8
+     21a:	e7dd      	b.n	1d8 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c___udivmoddi4.html">__udivmoddi4</a>+0x64&gt;
+     21c:	4663      	mov	r3, ip
+     21e:	e7f1      	b.n	204 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x4&gt;
+     220:	bb92      	cbnz	r2, 288 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x88&gt;
+     222:	1b43      	subs	r3, r0, r5
+     224:	2101      	movs	r1, #1
+     226:	ea4f 4e15 	mov.w	lr, r5, lsr #16
+     22a:	b2af      	uxth	r7, r5
+     22c:	0c20      	lsrs	r0, r4, #16
+     22e:	fbb3 fcfe 	udiv	ip, r3, lr
+     232:	fb0e 331c 	mls	r3, lr, ip, r3
+     236:	fb0c f807 	mul.w	r8, ip, r7
+     23a:	ea40 4303 	orr.w	r3, r0, r3, lsl #16
+     23e:	4598      	cmp	r8, r3
+     240:	d961      	bls.n	306 &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x6&gt;
+     242:	18eb      	adds	r3, r5, r3
+     244:	f10c 30ff 	add.w	r0, ip, #4294967295	; 0xffffffff
+     248:	d204      	bcs.n	254 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x54&gt;
+     24a:	4598      	cmp	r8, r3
+     24c:	d902      	bls.n	254 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x54&gt;
+     24e:	f1ac 0002 	sub.w	r0, ip, #2
+     252:	442b      	add	r3, r5
+     254:	eba3 0308 	sub.w	r3, r3, r8
+     258:	b2a4      	uxth	r4, r4
+     25a:	fbb3 fcfe 	udiv	ip, r3, lr
+     25e:	fb0e 331c 	mls	r3, lr, ip, r3
+     262:	fb0c f707 	mul.w	r7, ip, r7
+     266:	ea44 4403 	orr.w	r4, r4, r3, lsl #16
+     26a:	42a7      	cmp	r7, r4
+     26c:	d94d      	bls.n	30a &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0xa&gt;
+     26e:	192c      	adds	r4, r5, r4
+     270:	f10c 33ff 	add.w	r3, ip, #4294967295	; 0xffffffff
+     274:	d204      	bcs.n	280 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x80&gt;
+     276:	42a7      	cmp	r7, r4
+     278:	d902      	bls.n	280 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x80&gt;
+     27a:	f1ac 0302 	sub.w	r3, ip, #2
+     27e:	442c      	add	r4, r5
+     280:	1be4      	subs	r4, r4, r7
+     282:	ea43 4000 	orr.w	r0, r3, r0, lsl #16
+     286:	e7c0      	b.n	20a &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0xa&gt;
+     288:	f1c2 0320 	rsb	r3, r2, #32
+     28c:	4095      	lsls	r5, r2
+     28e:	4094      	lsls	r4, r2
+     290:	fa20 f103 	lsr.w	r1, r0, r3
+     294:	fa2e f303 	lsr.w	r3, lr, r3
+     298:	ea4f 4e15 	mov.w	lr, r5, lsr #16
+     29c:	4090      	lsls	r0, r2
+     29e:	b2af      	uxth	r7, r5
+     2a0:	4303      	orrs	r3, r0
+     2a2:	fbb1 fcfe 	udiv	ip, r1, lr
+     2a6:	fb0e 101c 	mls	r0, lr, ip, r1
+     2aa:	0c19      	lsrs	r1, r3, #16
+     2ac:	fb0c f807 	mul.w	r8, ip, r7
+     2b0:	ea41 4100 	orr.w	r1, r1, r0, lsl #16
+     2b4:	4588      	cmp	r8, r1
+     2b6:	d922      	bls.n	2fe &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0xfe&gt;
+     2b8:	1869      	adds	r1, r5, r1
+     2ba:	f10c 30ff 	add.w	r0, ip, #4294967295	; 0xffffffff
+     2be:	d204      	bcs.n	2ca &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0xca&gt;
+     2c0:	4588      	cmp	r8, r1
+     2c2:	d902      	bls.n	2ca &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0xca&gt;
+     2c4:	f1ac 0002 	sub.w	r0, ip, #2
+     2c8:	4429      	add	r1, r5
+     2ca:	eba1 0108 	sub.w	r1, r1, r8
+     2ce:	b29b      	uxth	r3, r3
+     2d0:	fbb1 fcfe 	udiv	ip, r1, lr
+     2d4:	fb0e 111c 	mls	r1, lr, ip, r1
+     2d8:	fb0c f707 	mul.w	r7, ip, r7
+     2dc:	ea43 4301 	orr.w	r3, r3, r1, lsl #16
+     2e0:	429f      	cmp	r7, r3
+     2e2:	d90e      	bls.n	302 &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x2&gt;
+     2e4:	18eb      	adds	r3, r5, r3
+     2e6:	f10c 31ff 	add.w	r1, ip, #4294967295	; 0xffffffff
+     2ea:	d204      	bcs.n	2f6 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0xf6&gt;
+     2ec:	429f      	cmp	r7, r3
+     2ee:	d902      	bls.n	2f6 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0xf6&gt;
+     2f0:	f1ac 0102 	sub.w	r1, ip, #2
+     2f4:	442b      	add	r3, r5
+     2f6:	1bdb      	subs	r3, r3, r7
+     2f8:	ea41 4100 	orr.w	r1, r1, r0, lsl #16
+     2fc:	e793      	b.n	226 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x26&gt;
+     2fe:	4660      	mov	r0, ip
+     300:	e7e3      	b.n	2ca &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0xca&gt;
+     302:	4661      	mov	r1, ip
+     304:	e7f7      	b.n	2f6 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0xf6&gt;
+     306:	4660      	mov	r0, ip
+     308:	e7a4      	b.n	254 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x54&gt;
+     30a:	4663      	mov	r3, ip
+     30c:	e7b8      	b.n	280 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x80&gt;
+     30e:	4283      	cmp	r3, r0
+     310:	d906      	bls.n	320 &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x20&gt;
+     312:	b916      	cbnz	r6, 31a &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x1a&gt;
+     314:	2100      	movs	r1, #0
+     316:	4608      	mov	r0, r1
+     318:	e77c      	b.n	214 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x14&gt;
+     31a:	e9c6 e000 	strd	lr, r0, [r6]
+     31e:	e7f9      	b.n	314 &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x14&gt;
+     320:	fab3 f783 	clz	r7, r3
+     324:	b98f      	cbnz	r7, 34a &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x4a&gt;
+     326:	4283      	cmp	r3, r0
+     328:	d301      	bcc.n	32e &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x2e&gt;
+     32a:	4572      	cmp	r2, lr
+     32c:	d808      	bhi.n	340 &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x40&gt;
+     32e:	ebbe 0402 	subs.w	r4, lr, r2
+     332:	eb60 0303 	sbc.w	r3, r0, r3
+     336:	2001      	movs	r0, #1
+     338:	469c      	mov	ip, r3
+     33a:	b91e      	cbnz	r6, 344 &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x44&gt;
+     33c:	2100      	movs	r1, #0
+     33e:	e769      	b.n	214 &lt;CONFIG_FLASH_FILL_BUFFER_SIZE+0x14&gt;
+     340:	4638      	mov	r0, r7
+     342:	e7fa      	b.n	33a &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x3a&gt;
+     344:	e9c6 4c00 	strd	r4, ip, [r6]
+     348:	e7f8      	b.n	33c &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x3c&gt;
+     34a:	f1c7 0c20 	rsb	ip, r7, #32
+     34e:	40bb      	lsls	r3, r7
+     350:	fa0e f507 	lsl.w	r5, lr, r7
+     354:	fa22 f40c 	lsr.w	r4, r2, ip
+     358:	fa2e f10c 	lsr.w	r1, lr, ip
+     35c:	40ba      	lsls	r2, r7
+     35e:	431c      	orrs	r4, r3
+     360:	fa20 f30c 	lsr.w	r3, r0, ip
+     364:	40b8      	lsls	r0, r7
+     366:	ea4f 4914 	mov.w	r9, r4, lsr #16
+     36a:	4301      	orrs	r1, r0
+     36c:	fa1f fe84 	uxth.w	lr, r4
+     370:	fbb3 f8f9 	udiv	r8, r3, r9
+     374:	fb09 3018 	mls	r0, r9, r8, r3
+     378:	0c0b      	lsrs	r3, r1, #16
+     37a:	fb08 fa0e 	mul.w	sl, r8, lr
+     37e:	ea43 4300 	orr.w	r3, r3, r0, lsl #16
+     382:	459a      	cmp	sl, r3
+     384:	d940      	bls.n	408 &lt;CONFIG_CANNECTIVITY_LED_THREAD_STACK_SIZE+0x8&gt;
+     386:	18e3      	adds	r3, r4, r3
+     388:	f108 30ff 	add.w	r0, r8, #4294967295	; 0xffffffff
+     38c:	d204      	bcs.n	398 &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x98&gt;
+     38e:	459a      	cmp	sl, r3
+     390:	d902      	bls.n	398 &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x98&gt;
+     392:	f1a8 0002 	sub.w	r0, r8, #2
+     396:	4423      	add	r3, r4
+     398:	eba3 030a 	sub.w	r3, r3, sl
+     39c:	b289      	uxth	r1, r1
+     39e:	fbb3 f8f9 	udiv	r8, r3, r9
+     3a2:	fb09 3318 	mls	r3, r9, r8, r3
+     3a6:	fb08 fe0e 	mul.w	lr, r8, lr
+     3aa:	ea41 4103 	orr.w	r1, r1, r3, lsl #16
+     3ae:	458e      	cmp	lr, r1
+     3b0:	d92c      	bls.n	40c &lt;CONFIG_CANNECTIVITY_LED_THREAD_STACK_SIZE+0xc&gt;
+     3b2:	1861      	adds	r1, r4, r1
+     3b4:	f108 33ff 	add.w	r3, r8, #4294967295	; 0xffffffff
+     3b8:	d204      	bcs.n	3c4 &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0xc4&gt;
+     3ba:	458e      	cmp	lr, r1
+     3bc:	d902      	bls.n	3c4 &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0xc4&gt;
+     3be:	f1a8 0302 	sub.w	r3, r8, #2
+     3c2:	4421      	add	r1, r4
+     3c4:	ea43 4000 	orr.w	r0, r3, r0, lsl #16
+     3c8:	eba1 010e 	sub.w	r1, r1, lr
+     3cc:	fba0 9802 	umull	r9, r8, r0, r2
+     3d0:	4541      	cmp	r1, r8
+     3d2:	46ce      	mov	lr, r9
+     3d4:	4643      	mov	r3, r8
+     3d6:	d302      	bcc.n	3de &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0xde&gt;
+     3d8:	d106      	bne.n	3e8 &lt;CONFIG_LOG_FAILURE_REPORT_PERIOD&gt;
+     3da:	454d      	cmp	r5, r9
+     3dc:	d204      	bcs.n	3e8 &lt;CONFIG_LOG_FAILURE_REPORT_PERIOD&gt;
+     3de:	3801      	subs	r0, #1
+     3e0:	ebb9 0e02 	subs.w	lr, r9, r2
+     3e4:	eb68 0304 	sbc.w	r3, r8, r4
+     3e8:	2e00      	cmp	r6, #0
+     3ea:	d0a7      	beq.n	33c &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x3c&gt;
+     3ec:	ebb5 020e 	subs.w	r2, r5, lr
+     3f0:	eb61 0103 	sbc.w	r1, r1, r3
+     3f4:	fa01 fc0c 	lsl.w	ip, r1, ip
+     3f8:	fa22 f307 	lsr.w	r3, r2, r7
+     3fc:	40f9      	lsrs	r1, r7
+     3fe:	ea4c 0303 	orr.w	r3, ip, r3
+     402:	e9c6 3100 	strd	r3, r1, [r6]
+     406:	e799      	b.n	33c &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x3c&gt;
+     408:	4640      	mov	r0, r8
+     40a:	e7c5      	b.n	398 &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0x98&gt;
+     40c:	4643      	mov	r3, r8
+     40e:	e7d9      	b.n	3c4 &lt;CONFIG_LOG_PROCESS_THREAD_STACK_SIZE+0xc4&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_cannectivity_app_src_main.c_main.html">main (208)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 680</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 1<span class="secondary">,</span>854</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>854
+                    
+                    
+                </td>
+                <td class="col_size">668</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c___udivmoddi4.html" class="icon-function">__udivmoddi4</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>186
+                    
+                    
+                </td>
+                <td class="col_size">48</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="_unknown___unknown____aeabi_uldivmod.html" class="icon-function">__aeabi_uldivmod</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    680
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>138
+                    
+                    
+                </td>
+                <td class="col_size">168</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_impl_log_process.html" class="icon-function">z_impl_log_process</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    664
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    970
+                    
+                    
+                </td>
+                <td class="col_size">120</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_msg_post_finalize.html" class="icon-function">z_log_msg_post_finalize</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    648
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    850
+                    
+                    
+                </td>
+                <td class="col_size">36</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_msg_commit.html" class="icon-function">z_log_msg_commit</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    640
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    814
+                    
+                    
+                </td>
+                <td class="col_size">50</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_log_msg_finalize.html" class="icon-function">z_log_msg_finalize</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    624
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                136 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    764
+                    
+                    
+                </td>
+                <td class="col_size">264</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_impl_z_log_msg_static_create.html" class="icon-function">z_impl_z_log_msg_static_create</a></td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    500
+                    
+                    
+                </td>
+                <td class="col_size">4</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_static_create.html" class="icon-function">z_log_msg_static_create</a></td>
+            </tr>
+        
+            <tr>
+                <th>9</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                488 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">496</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_status_callback.html" class="icon-function">gs_usb_status_callback</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

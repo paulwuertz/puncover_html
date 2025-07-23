@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_lib.html">lib</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_lib_os.html">os</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c.html">cbprintf_packaged.c</a>:233
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">cbvprintf_package</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00000e08</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>104 (static)</td>
+                <td>932</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_log_msg_runtime_vcreate.html">z_log_msg_runtime_vcreate (160)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=42
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_strlen.html">strlen (16)</a>
+                    
+                        ,
+                    
+                
+                    <a href="_unknown___unknown__memcpy.html">memcpy (26)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_cannectivity_app_src_termination.c_cannectivity_termination_init.html">cannectivity_termination_init (136)</a></pre>
+    
+    <pre>
+cbvprintf_package():
+     e08:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+     e0c:	b091      	sub	sp, #68	; 0x44
+     e0e:	9300      	str	r3, [sp, #0]
+     e10:	f002 0304 	and.w	r3, r2, #4
+     e14:	9302      	str	r3, [sp, #8]
+     e16:	f3c2 03c2 	ubfx	r3, r2, #3, #3
+     e1a:	3301      	adds	r3, #1
+     e1c:	0784      	lsls	r4, r0, #30
+     e1e:	4605      	mov	r5, r0
+     e20:	460e      	mov	r6, r1
+     e22:	f8dd 8068 	ldr.w	r8, [sp, #104]	; 0x68
+     e26:	9203      	str	r2, [sp, #12]
+     e28:	9305      	str	r3, [sp, #20]
+     e2a:	f040 81bb 	bne.w	11a4 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x39c&gt;
+     e2e:	1d04      	adds	r4, r0, #4
+     e30:	b130      	cbz	r0, e40 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x38&gt;
+     e32:	2907      	cmp	r1, #7
+     e34:	d809      	bhi.n	e4a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x42&gt;
+     e36:	f06f 001b 	mvn.w	r0, #27
+     e3a:	b011      	add	sp, #68	; 0x44
+     e3c:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+     e40:	f001 0607 	and.w	r6, r1, #7
+     e44:	4434      	add	r4, r6
+     e46:	f1c6 0608 	rsb	r6, r6, #8
+     e4a:	9b00      	ldr	r3, [sp, #0]
+     e4c:	f04f 0900 	mov.w	r9, #0
+     e50:	f04f 0a04 	mov.w	sl, #4
+     e54:	1e59      	subs	r1, r3, #1
+     e56:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
+     e5a:	464f      	mov	r7, r9
+     e5c:	9301      	str	r3, [sp, #4]
+     e5e:	46cb      	mov	fp, r9
+     e60:	4653      	mov	r3, sl
+     e62:	f8cd 9010 	str.w	r9, [sp, #16]
+     e66:	b10d      	cbz	r5, e6c &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x64&gt;
+     e68:	9a00      	ldr	r2, [sp, #0]
+     e6a:	6022      	str	r2, [r4, #0]
+     e6c:	9805      	ldr	r0, [sp, #20]
+     e6e:	2800      	cmp	r0, #0
+     e70:	f300 80e8 	bgt.w	1044 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x23c&gt;
+linker_is_in_rodata():
+     e74:	4898      	ldr	r0, [pc, #608]	; (10d8 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x2d0&gt;)
+     e76:	9a00      	ldr	r2, [sp, #0]
+     e78:	4282      	cmp	r2, r0
+     e7a:	d303      	bcc.n	e84 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x7c&gt;
+     e7c:	4897      	ldr	r0, [pc, #604]	; (10dc &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x2d4&gt;)
+     e7e:	4282      	cmp	r2, r0
+     e80:	f0c0 80e0 	bcc.w	1044 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x23c&gt;
+cbvprintf_package():
+     e84:	9a03      	ldr	r2, [sp, #12]
+     e86:	eba4 0e05 	sub.w	lr, r4, r5
+     e8a:	0792      	lsls	r2, r2, #30
+     e8c:	ea4f 009e 	mov.w	r0, lr, lsr #2
+     e90:	f100 8103 	bmi.w	109a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x292&gt;
+     e94:	2f0f      	cmp	r7, #15
+     e96:	f200 80b1 	bhi.w	ffc &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1f4&gt;
+     e9a:	2d00      	cmp	r5, #0
+     e9c:	f000 8105 	beq.w	10aa &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x2a2&gt;
+     ea0:	f107 0240 	add.w	r2, r7, #64	; 0x40
+     ea4:	eb0d 0c02 	add.w	ip, sp, r2
+     ea8:	9a01      	ldr	r2, [sp, #4]
+     eaa:	f80c 0c20 	strb.w	r0, [ip, #-32]
+     eae:	f80c 2c10 	strb.w	r2, [ip, #-16]
+     eb2:	9804      	ldr	r0, [sp, #16]
+     eb4:	3001      	adds	r0, #1
+     eb6:	9004      	str	r0, [sp, #16]
+     eb8:	e0e7      	b.n	108a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x282&gt;
+     eba:	287a      	cmp	r0, #122	; 0x7a
+     ebc:	d85d      	bhi.n	f7a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x172&gt;
+     ebe:	284b      	cmp	r0, #75	; 0x4b
+     ec0:	d80e      	bhi.n	ee0 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0xd8&gt;
+     ec2:	2847      	cmp	r0, #71	; 0x47
+     ec4:	d859      	bhi.n	f7a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x172&gt;
+     ec6:	2829      	cmp	r0, #41	; 0x29
+     ec8:	d82d      	bhi.n	f26 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x11e&gt;
+     eca:	2825      	cmp	r0, #37	; 0x25
+     ecc:	d052      	beq.n	f74 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x16c&gt;
+     ece:	d854      	bhi.n	f7a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x172&gt;
+     ed0:	2820      	cmp	r0, #32
+     ed2:	d07a      	beq.n	fca &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1c2&gt;
+     ed4:	3823      	subs	r0, #35	; 0x23
+     ed6:	f1d0 0b00 	rsbs	fp, r0, #0
+     eda:	eb4b 0b00 	adc.w	fp, fp, r0
+     ede:	e074      	b.n	fca &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1c2&gt;
+     ee0:	384c      	subs	r0, #76	; 0x4c
+     ee2:	282e      	cmp	r0, #46	; 0x2e
+     ee4:	d849      	bhi.n	f7a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x172&gt;
+     ee6:	e8df f000 	tbb	[pc, r0]
+     eea:	4870      	.short	0x4870
+     eec:	48484848 	.word	0x48484848
+     ef0:	48484848 	.word	0x48484848
+     ef4:	484b4848 	.word	0x484b4848
+     ef8:	48484848 	.word	0x48484848
+     efc:	59484848 	.word	0x59484848
+     f00:	594b4b48 	.word	0x594b4b48
+     f04:	4b705959 	.word	0x4b705959
+     f08:	4870486d 	.word	0x4870486d
+     f0c:	48184b18 	.word	0x48184b18
+     f10:	4b7f8248 	.word	0x4b7f8248
+     f14:	484b4848 	.word	0x484b4848
+     f18:	7f          	.byte	0x7f
+     f19:	00          	.byte	0x00
+     f1a:	2000      	movs	r0, #0
+     f1c:	f04f 0b00 	mov.w	fp, #0
+     f20:	f04f 0a04 	mov.w	sl, #4
+     f24:	e038      	b.n	f98 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x190&gt;
+     f26:	2201      	movs	r2, #1
+     f28:	382a      	subs	r0, #42	; 0x2a
+     f2a:	b2c0      	uxtb	r0, r0
+     f2c:	fa02 f000 	lsl.w	r0, r2, r0
+     f30:	ea10 0f0e 	tst.w	r0, lr
+     f34:	d149      	bne.n	fca &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1c2&gt;
+     f36:	f010 5c62 	ands.w	ip, r0, #947912704	; 0x38800000
+     f3a:	d12f      	bne.n	f9c &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x194&gt;
+     f3c:	ea10 0b02 	ands.w	fp, r0, r2
+     f40:	d043      	beq.n	fca &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1c2&gt;
+     f42:	4660      	mov	r0, ip
+     f44:	3c01      	subs	r4, #1
+     f46:	4454      	add	r4, sl
+     f48:	fbb4 f4fa 	udiv	r4, r4, sl
+     f4c:	fb0a f404 	mul.w	r4, sl, r4
+     f50:	2d00      	cmp	r5, #0
+     f52:	d061      	beq.n	1018 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x210&gt;
+     f54:	eba3 0c05 	sub.w	ip, r3, r5
+     f58:	44a4      	add	ip, r4
+     f5a:	45b4      	cmp	ip, r6
+     f5c:	f63f af6b 	bhi.w	e36 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x2e&gt;
+     f60:	2800      	cmp	r0, #0
+     f62:	d168      	bne.n	1036 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x22e&gt;
+     f64:	2b04      	cmp	r3, #4
+     f66:	d147      	bne.n	ff8 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1f0&gt;
+     f68:	f858 3b04 	ldr.w	r3, [r8], #4
+     f6c:	6023      	str	r3, [r4, #0]
+     f6e:	2304      	movs	r3, #4
+     f70:	3404      	adds	r4, #4
+     f72:	e02a      	b.n	fca &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1c2&gt;
+     f74:	9a01      	ldr	r2, [sp, #4]
+     f76:	3a01      	subs	r2, #1
+     f78:	9201      	str	r2, [sp, #4]
+     f7a:	f04f 0b00 	mov.w	fp, #0
+     f7e:	e024      	b.n	fca &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1c2&gt;
+     f80:	f811 0c01 	ldrb.w	r0, [r1, #-1]
+     f84:	286c      	cmp	r0, #108	; 0x6c
+     f86:	d134      	bne.n	ff2 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1ea&gt;
+     f88:	2000      	movs	r0, #0
+     f8a:	f811 3c02 	ldrb.w	r3, [r1, #-2]
+     f8e:	4683      	mov	fp, r0
+     f90:	2b6c      	cmp	r3, #108	; 0x6c
+     f92:	d1c5      	bne.n	f20 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x118&gt;
+     f94:	f04f 0a08 	mov.w	sl, #8
+     f98:	4653      	mov	r3, sl
+     f9a:	e7d3      	b.n	f44 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x13c&gt;
+     f9c:	f108 0807 	add.w	r8, r8, #7
+     fa0:	f028 0807 	bic.w	r8, r8, #7
+     fa4:	3407      	adds	r4, #7
+     fa6:	f024 0407 	bic.w	r4, r4, #7
+     faa:	e8f8 ab02 	ldrd	sl, fp, [r8], #8
+     fae:	b135      	cbz	r5, fbe &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1b6&gt;
+     fb0:	9806      	ldr	r0, [sp, #24]
+     fb2:	4420      	add	r0, r4
+     fb4:	42b0      	cmp	r0, r6
+     fb6:	f63f af3e 	bhi.w	e36 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x2e&gt;
+     fba:	e9c4 ab00 	strd	sl, fp, [r4]
+     fbe:	f04f 0b00 	mov.w	fp, #0
+     fc2:	3408      	adds	r4, #8
+     fc4:	f04f 0a08 	mov.w	sl, #8
+     fc8:	4653      	mov	r3, sl
+     fca:	f811 0f01 	ldrb.w	r0, [r1, #1]!
+     fce:	2800      	cmp	r0, #0
+     fd0:	d078      	beq.n	10c4 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x2bc&gt;
+     fd2:	f1bb 0f00 	cmp.w	fp, #0
+     fd6:	f47f af70 	bne.w	eba &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0xb2&gt;
+     fda:	2825      	cmp	r0, #37	; 0x25
+     fdc:	d1f5      	bne.n	fca &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1c2&gt;
+     fde:	f04f 0b01 	mov.w	fp, #1
+     fe2:	9b01      	ldr	r3, [sp, #4]
+     fe4:	3301      	adds	r3, #1
+     fe6:	9301      	str	r3, [sp, #4]
+     fe8:	f04f 0a04 	mov.w	sl, #4
+     fec:	e7ec      	b.n	fc8 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1c0&gt;
+     fee:	4658      	mov	r0, fp
+     ff0:	e794      	b.n	f1c &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x114&gt;
+     ff2:	2000      	movs	r0, #0
+     ff4:	4683      	mov	fp, r0
+     ff6:	e7a5      	b.n	f44 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x13c&gt;
+     ff8:	2b08      	cmp	r3, #8
+     ffa:	d002      	beq.n	1002 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1fa&gt;
+     ffc:	f06f 0015 	mvn.w	r0, #21
+    1000:	e71b      	b.n	e3a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x32&gt;
+    1002:	f108 0807 	add.w	r8, r8, #7
+    1006:	f028 0807 	bic.w	r8, r8, #7
+    100a:	e8f8 2302 	ldrd	r2, r3, [r8], #8
+    100e:	e9c4 2300 	strd	r2, r3, [r4]
+    1012:	2308      	movs	r3, #8
+    1014:	3408      	adds	r4, #8
+    1016:	e7d8      	b.n	fca &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1c2&gt;
+    1018:	b968      	cbnz	r0, 1036 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x22e&gt;
+    101a:	2b04      	cmp	r3, #4
+    101c:	d102      	bne.n	1024 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x21c&gt;
+    101e:	f108 0804 	add.w	r8, r8, #4
+    1022:	e7a4      	b.n	f6e &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x166&gt;
+    1024:	2b08      	cmp	r3, #8
+    1026:	d1e9      	bne.n	ffc &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1f4&gt;
+    1028:	f108 0807 	add.w	r8, r8, #7
+    102c:	f028 0807 	bic.w	r8, r8, #7
+    1030:	f108 0808 	add.w	r8, r8, #8
+    1034:	e7ed      	b.n	1012 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x20a&gt;
+    1036:	9a05      	ldr	r2, [sp, #20]
+    1038:	3a01      	subs	r2, #1
+    103a:	9205      	str	r2, [sp, #20]
+    103c:	f858 2b04 	ldr.w	r2, [r8], #4
+    1040:	9200      	str	r2, [sp, #0]
+    1042:	e710      	b.n	e66 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x5e&gt;
+    1044:	9a03      	ldr	r2, [sp, #12]
+    1046:	0790      	lsls	r0, r2, #30
+    1048:	d520      	bpl.n	108c &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x284&gt;
+    104a:	f04f 0c01 	mov.w	ip, #1
+    104e:	eba4 0e05 	sub.w	lr, r4, r5
+    1052:	ea4f 009e 	mov.w	r0, lr, lsr #2
+    1056:	f5be 7f00 	cmp.w	lr, #512	; 0x200
+    105a:	d2cf      	bcs.n	ffc &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1f4&gt;
+    105c:	2f0f      	cmp	r7, #15
+    105e:	d8cd      	bhi.n	ffc &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1f4&gt;
+    1060:	b1f5      	cbz	r5, 10a0 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x298&gt;
+    1062:	f107 0240 	add.w	r2, r7, #64	; 0x40
+    1066:	eb0d 0e02 	add.w	lr, sp, r2
+    106a:	9a01      	ldr	r2, [sp, #4]
+    106c:	b2c0      	uxtb	r0, r0
+    106e:	f80e 0c20 	strb.w	r0, [lr, #-32]
+    1072:	f80e 2c10 	strb.w	r2, [lr, #-16]
+    1076:	f1bc 0f00 	cmp.w	ip, #0
+    107a:	f43f af1a 	beq.w	eb2 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0xaa&gt;
+    107e:	f060 007f 	orn	r0, r0, #127	; 0x7f
+    1082:	f80e 0c20 	strb.w	r0, [lr, #-32]
+    1086:	f109 0901 	add.w	r9, r9, #1
+    108a:	3701      	adds	r7, #1
+    108c:	f1c5 0208 	rsb	r2, r5, #8
+    1090:	f64f 7eda 	movw	lr, #65498	; 0xffda
+    1094:	3404      	adds	r4, #4
+    1096:	9206      	str	r2, [sp, #24]
+    1098:	e797      	b.n	fca &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1c2&gt;
+    109a:	f04f 0c00 	mov.w	ip, #0
+    109e:	e7da      	b.n	1056 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x24e&gt;
+    10a0:	f1bc 0f00 	cmp.w	ip, #0
+    10a4:	d001      	beq.n	10aa &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x2a2&gt;
+    10a6:	3601      	adds	r6, #1
+    10a8:	e7ef      	b.n	108a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x282&gt;
+    10aa:	9802      	ldr	r0, [sp, #8]
+    10ac:	3602      	adds	r6, #2
+    10ae:	2800      	cmp	r0, #0
+    10b0:	d1eb      	bne.n	108a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x282&gt;
+    10b2:	9800      	ldr	r0, [sp, #0]
+    10b4:	e9cd 3106 	strd	r3, r1, [sp, #24]
+    10b8:	f7ff f854 	bl	164 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_strlen.html">strlen</a>&gt;
+    10bc:	e9dd 3106 	ldrd	r3, r1, [sp, #24]
+    10c0:	4406      	add	r6, r0
+    10c2:	e7e2      	b.n	108a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x282&gt;
+    10c4:	1b63      	subs	r3, r4, r5
+    10c6:	f5b3 6f80 	cmp.w	r3, #1024	; 0x400
+    10ca:	d297      	bcs.n	ffc &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x1f4&gt;
+    10cc:	b945      	cbnz	r5, 10e0 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x2d8&gt;
+    10ce:	f1a6 0408 	sub.w	r4, r6, #8
+    10d2:	18e0      	adds	r0, r4, r3
+    10d4:	e6b1      	b.n	e3a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x32&gt;
+    10d6:	bf00      	nop
+    10d8:	0000d940 	.word	0x0000d940
+    10dc:	00010900 	.word	0x00010900
+    10e0:	9a02      	ldr	r2, [sp, #8]
+    10e2:	089b      	lsrs	r3, r3, #2
+    10e4:	6028      	str	r0, [r5, #0]
+    10e6:	702b      	strb	r3, [r5, #0]
+    10e8:	f89d 3010 	ldrb.w	r3, [sp, #16]
+    10ec:	b1c2      	cbz	r2, 1120 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x318&gt;
+    10ee:	70eb      	strb	r3, [r5, #3]
+    10f0:	f885 9002 	strb.w	r9, [r5, #2]
+    10f4:	f1b9 0f00 	cmp.w	r9, #0
+    10f8:	d005      	beq.n	1106 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x2fe&gt;
+    10fa:	2200      	movs	r2, #0
+    10fc:	a808      	add	r0, sp, #32
+    10fe:	f1c5 0c01 	rsb	ip, r5, #1
+    1102:	4297      	cmp	r7, r2
+    1104:	d10e      	bne.n	1124 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x31c&gt;
+    1106:	f04f 0a00 	mov.w	sl, #0
+    110a:	f1c5 0301 	rsb	r3, r5, #1
+    110e:	f10d 0820 	add.w	r8, sp, #32
+    1112:	9301      	str	r3, [sp, #4]
+    1114:	f10d 0b30 	add.w	fp, sp, #48	; 0x30
+    1118:	4557      	cmp	r7, sl
+    111a:	d112      	bne.n	1142 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x33a&gt;
+    111c:	1b60      	subs	r0, r4, r5
+    111e:	e68c      	b.n	e3a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x32&gt;
+    1120:	706b      	strb	r3, [r5, #1]
+    1122:	e7e5      	b.n	10f0 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x2e8&gt;
+    1124:	f810 3b01 	ldrb.w	r3, [r0], #1
+    1128:	0619      	lsls	r1, r3, #24
+    112a:	d508      	bpl.n	113e &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x336&gt;
+    112c:	eb0c 0e04 	add.w	lr, ip, r4
+    1130:	45b6      	cmp	lr, r6
+    1132:	f003 037f 	and.w	r3, r3, #127	; 0x7f
+    1136:	f63f ae7e 	bhi.w	e36 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x2e&gt;
+    113a:	f804 3b01 	strb.w	r3, [r4], #1
+    113e:	3201      	adds	r2, #1
+    1140:	e7df      	b.n	1102 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x2fa&gt;
+    1142:	f1b9 0f00 	cmp.w	r9, #0
+    1146:	d003      	beq.n	1150 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x348&gt;
+    1148:	f998 2000 	ldrsb.w	r2, [r8]
+    114c:	2a00      	cmp	r2, #0
+    114e:	db17      	blt.n	1180 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x378&gt;
+    1150:	9b02      	ldr	r3, [sp, #8]
+    1152:	b1d3      	cbz	r3, 118a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x382&gt;
+    1154:	f81a 200b 	ldrb.w	r2, [sl, fp]
+    1158:	f804 2b01 	strb.w	r2, [r4], #1
+    115c:	2200      	movs	r2, #0
+    115e:	9b01      	ldr	r3, [sp, #4]
+    1160:	1918      	adds	r0, r3, r4
+    1162:	4410      	add	r0, r2
+    1164:	42b0      	cmp	r0, r6
+    1166:	f63f ae66 	bhi.w	e36 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x2e&gt;
+    116a:	f898 0000 	ldrb.w	r0, [r8]
+    116e:	9900      	ldr	r1, [sp, #0]
+    1170:	f804 0b01 	strb.w	r0, [r4], #1
+    1174:	4620      	mov	r0, r4
+    1176:	9203      	str	r2, [sp, #12]
+    1178:	f00c fbba 	bl	d8f0 &lt;<a href="_unknown___unknown__memcpy.html">memcpy</a>&gt;
+    117c:	9a03      	ldr	r2, [sp, #12]
+    117e:	4414      	add	r4, r2
+    1180:	f10a 0a01 	add.w	sl, sl, #1
+    1184:	f108 0801 	add.w	r8, r8, #1
+    1188:	e7c6      	b.n	1118 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x310&gt;
+    118a:	f898 2000 	ldrb.w	r2, [r8]
+    118e:	f855 3022 	ldr.w	r3, [r5, r2, lsl #2]
+    1192:	9300      	str	r3, [sp, #0]
+    1194:	9b02      	ldr	r3, [sp, #8]
+    1196:	9800      	ldr	r0, [sp, #0]
+    1198:	f845 3022 	str.w	r3, [r5, r2, lsl #2]
+    119c:	f7fe ffe2 	bl	164 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_power.c_strlen.html">strlen</a>&gt;
+    11a0:	1c42      	adds	r2, r0, #1
+    11a2:	e7dc      	b.n	115e &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x356&gt;
+    11a4:	f06f 000d 	mvn.w	r0, #13
+    11a8:	e647      	b.n	e3a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html">cbvprintf_package</a>+0x32&gt;
+    11aa:	bf00      	nop
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbprintf_package_convert.html">cbprintf_package_convert (972)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 320</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 1<span class="secondary">,</span>550</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    320
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                104 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>550
+                    
+                    
+                </td>
+                <td class="col_size">932</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbvprintf_package.html" class="icon-function">cbvprintf_package</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    216
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                64 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    618
+                    
+                    
+                </td>
+                <td class="col_size">160</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_log_msg_runtime_vcreate.html" class="icon-function">z_log_msg_runtime_vcreate</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    152
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    458
+                    
+                    
+                </td>
+                <td class="col_size">28</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_vprintk.html" class="icon-function">z_log_vprintk</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    128
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    430
+                    
+                    
+                </td>
+                <td class="col_size">26</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_os_printk.c_printk.html" class="icon-function">printk</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    112
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    404
+                    
+                    
+                </td>
+                <td class="col_size">208</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_app_src_main.c_main.html" class="icon-function">main</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">196</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_init.c_bg_thread_main.html" class="icon-function">bg_thread_main</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

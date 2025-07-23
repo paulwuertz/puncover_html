@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_drivers_serial.html">serial</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c.html">uart_mcux_flexcomm.c</a>:291
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">mcux_flexcomm_uart_configure</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000074f4</td>
+                <td>
+    
+    
+</td>
+                <td>48 (static)</td>
+                <td>180</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (4,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=408
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_GetDefaultConfig.html">USART_GetDefaultConfig (26)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Deinit.html">USART_Deinit (40)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Enable9bitMode.html">USART_Enable9bitMode (30)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init (312)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_pinctrl_pinctrl_lpc_iocon.c_pinctrl_configure_pins.html">pinctrl_configure_pins (76)</a></pre>
+    
+    <pre>
+mcux_flexcomm_uart_configure():
+    74f4:	b5f0      	push	{r4, r5, r6, r7, lr}
+    74f6:	460c      	mov	r4, r1
+    74f8:	b087      	sub	sp, #28
+    74fa:	6846      	ldr	r6, [r0, #4]
+    74fc:	6905      	ldr	r5, [r0, #16]
+    74fe:	a801      	add	r0, sp, #4
+    7500:	f004 ff4d 	bl	c39e &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_GetDefaultConfig.html">USART_GetDefaultConfig</a>&gt;
+    7504:	7923      	ldrb	r3, [r4, #4]
+    7506:	2b01      	cmp	r3, #1
+    7508:	d006      	beq.n	7518 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0x24&gt;
+    750a:	2b02      	cmp	r3, #2
+    750c:	d005      	beq.n	751a &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0x26&gt;
+    750e:	b123      	cbz	r3, 751a &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0x26&gt;
+    7510:	f06f 0085 	mvn.w	r0, #133	; 0x85
+    7514:	b007      	add	sp, #28
+    7516:	bdf0      	pop	{r4, r5, r6, r7, pc}
+    7518:	2303      	movs	r3, #3
+    751a:	f88d 3008 	strb.w	r3, [sp, #8]
+    751e:	6823      	ldr	r3, [r4, #0]
+    7520:	9301      	str	r3, [sp, #4]
+    7522:	7963      	ldrb	r3, [r4, #5]
+    7524:	2b01      	cmp	r3, #1
+    7526:	d036      	beq.n	7596 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0xa2&gt;
+    7528:	2b03      	cmp	r3, #3
+    752a:	d1f1      	bne.n	7510 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0x1c&gt;
+    752c:	2301      	movs	r3, #1
+    752e:	f88d 3009 	strb.w	r3, [sp, #9]
+    7532:	79a3      	ldrb	r3, [r4, #6]
+    7534:	2b01      	cmp	r3, #1
+    7536:	d9eb      	bls.n	7510 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0x1c&gt;
+    7538:	3b02      	subs	r3, #2
+    753a:	b2db      	uxtb	r3, r3
+    753c:	2b02      	cmp	r3, #2
+    753e:	d82c      	bhi.n	759a &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0xa6&gt;
+    7540:	4a17      	ldr	r2, [pc, #92]	; (75a0 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0xac&gt;)
+    7542:	5cd7      	ldrb	r7, [r2, r3]
+    7544:	4a17      	ldr	r2, [pc, #92]	; (75a4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0xb0&gt;)
+    7546:	5cd3      	ldrb	r3, [r2, r3]
+    7548:	f88d 300a 	strb.w	r3, [sp, #10]
+    754c:	79e3      	ldrb	r3, [r4, #7]
+    754e:	b10b      	cbz	r3, 7554 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0x60&gt;
+    7550:	2b01      	cmp	r3, #1
+    7552:	d1dd      	bne.n	7510 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0x1c&gt;
+    7554:	f88d 3010 	strb.w	r3, [sp, #16]
+    7558:	6830      	ldr	r0, [r6, #0]
+    755a:	f004 ff0c 	bl	c376 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Deinit.html">USART_Deinit</a>&gt;
+    755e:	e9d6 0101 	ldrd	r0, r1, [r6, #4]
+clock_control_get_rate():
+    7562:	6883      	ldr	r3, [r0, #8]
+    7564:	68db      	ldr	r3, [r3, #12]
+    7566:	b10b      	cbz	r3, 756c &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0x78&gt;
+    7568:	466a      	mov	r2, sp
+    756a:	4798      	blx	r3
+mcux_flexcomm_uart_configure():
+    756c:	4639      	mov	r1, r7
+    756e:	6830      	ldr	r0, [r6, #0]
+    7570:	f005 f819 	bl	c5a6 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Enable9bitMode.html">USART_Enable9bitMode</a>&gt;
+    7574:	9a00      	ldr	r2, [sp, #0]
+    7576:	6830      	ldr	r0, [r6, #0]
+    7578:	a901      	add	r1, sp, #4
+    757a:	f004 ff78 	bl	c46e &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init</a>&gt;
+    757e:	7923      	ldrb	r3, [r4, #4]
+    7580:	2000      	movs	r0, #0
+    7582:	732b      	strb	r3, [r5, #12]
+    7584:	6823      	ldr	r3, [r4, #0]
+    7586:	60ab      	str	r3, [r5, #8]
+    7588:	7963      	ldrb	r3, [r4, #5]
+    758a:	736b      	strb	r3, [r5, #13]
+    758c:	79a3      	ldrb	r3, [r4, #6]
+    758e:	73ab      	strb	r3, [r5, #14]
+    7590:	79e3      	ldrb	r3, [r4, #7]
+    7592:	73eb      	strb	r3, [r5, #15]
+    7594:	e7be      	b.n	7514 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0x20&gt;
+    7596:	2300      	movs	r3, #0
+    7598:	e7c9      	b.n	752e &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0x3a&gt;
+    759a:	f06f 0015 	mvn.w	r0, #21
+    759e:	e7b9      	b.n	7514 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html">mcux_flexcomm_uart_configure</a>+0x20&gt;
+    75a0:	000107cf 	.word	0x000107cf
+    75a4:	000107d2 	.word	0x000107d2
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_timer_cortex_m_systick.c_elapsed.html">elapsed (76)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 104</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 494</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    104
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    494
+                    
+                    
+                </td>
+                <td class="col_size">182</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_SetBaudRate.html" class="icon-function">USART_SetBaudRate</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    72
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">312</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html" class="icon-function">USART_Init</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">48</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

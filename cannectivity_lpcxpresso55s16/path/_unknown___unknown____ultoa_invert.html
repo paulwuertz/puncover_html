@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li class="active"><a href="_unknown_.html">&lt;unknown&gt;</a>
+            </li>
+
+        
+        <li class="active">&lt;unknown&gt;
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">__ultoa_invert</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000d844</td>
+                <td>
+    
+    
+</td>
+                <td></td>
+                <td>172</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="_unknown___unknown____l_vfprintf.html">__l_vfprintf (1204)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="_unknown___unknown__strnlen.html">strnlen (24)</a></pre>
+    
+    <pre>
+__ultoa_invert():
+    d844:	b5f0      	push	{r4, r5, r6, r7, lr}
+    d846:	f1c3 0737 	rsb	r7, r3, #55	; 0x37
+    d84a:	4604      	mov	r4, r0
+    d84c:	f003 031f 	and.w	r3, r3, #31
+    d850:	4610      	mov	r0, r2
+    d852:	b2ff      	uxtb	r7, r7
+    d854:	2b08      	cmp	r3, #8
+    d856:	b2e6      	uxtb	r6, r4
+    d858:	d032      	beq.n	d8c0 &lt;<a href="_unknown___unknown____ultoa_invert.html">__ultoa_invert</a>+0x7c&gt;
+    d85a:	2b10      	cmp	r3, #16
+    d85c:	d03d      	beq.n	d8da &lt;<a href="_unknown___unknown____ultoa_invert.html">__ultoa_invert</a>+0x96&gt;
+    d85e:	0865      	lsrs	r5, r4, #1
+    d860:	08a4      	lsrs	r4, r4, #2
+    d862:	ea45 75c1 	orr.w	r5, r5, r1, lsl #31
+    d866:	ea44 7481 	orr.w	r4, r4, r1, lsl #30
+    d86a:	088a      	lsrs	r2, r1, #2
+    d86c:	192d      	adds	r5, r5, r4
+    d86e:	eb42 0251 	adc.w	r2, r2, r1, lsr #1
+    d872:	0929      	lsrs	r1, r5, #4
+    d874:	ea41 7102 	orr.w	r1, r1, r2, lsl #28
+    d878:	186d      	adds	r5, r5, r1
+    d87a:	eb42 1212 	adc.w	r2, r2, r2, lsr #4
+    d87e:	0a29      	lsrs	r1, r5, #8
+    d880:	ea41 6102 	orr.w	r1, r1, r2, lsl #24
+    d884:	186d      	adds	r5, r5, r1
+    d886:	eb42 2212 	adc.w	r2, r2, r2, lsr #8
+    d88a:	0c29      	lsrs	r1, r5, #16
+    d88c:	ea41 4102 	orr.w	r1, r1, r2, lsl #16
+    d890:	186d      	adds	r5, r5, r1
+    d892:	eb42 4212 	adc.w	r2, r2, r2, lsr #16
+    d896:	18ad      	adds	r5, r5, r2
+    d898:	f142 0200 	adc.w	r2, r2, #0
+    d89c:	08ec      	lsrs	r4, r5, #3
+    d89e:	ea44 7442 	orr.w	r4, r4, r2, lsl #29
+    d8a2:	08d1      	lsrs	r1, r2, #3
+    d8a4:	eb04 0284 	add.w	r2, r4, r4, lsl #2
+    d8a8:	eba6 0542 	sub.w	r5, r6, r2, lsl #1
+    d8ac:	b2ed      	uxtb	r5, r5
+    d8ae:	2d09      	cmp	r5, #9
+    d8b0:	d90c      	bls.n	d8cc &lt;<a href="_unknown___unknown____ultoa_invert.html">__ultoa_invert</a>+0x88&gt;
+    d8b2:	3401      	adds	r4, #1
+    d8b4:	f1a5 050a 	sub.w	r5, r5, #10
+    d8b8:	f141 0100 	adc.w	r1, r1, #0
+    d8bc:	b2ed      	uxtb	r5, r5
+    d8be:	e012      	b.n	d8e6 &lt;<a href="_unknown___unknown____ultoa_invert.html">__ultoa_invert</a>+0xa2&gt;
+    d8c0:	08e4      	lsrs	r4, r4, #3
+    d8c2:	f006 0507 	and.w	r5, r6, #7
+    d8c6:	ea44 7441 	orr.w	r4, r4, r1, lsl #29
+    d8ca:	08c9      	lsrs	r1, r1, #3
+    d8cc:	3530      	adds	r5, #48	; 0x30
+    d8ce:	ea54 0201 	orrs.w	r2, r4, r1
+    d8d2:	f800 5b01 	strb.w	r5, [r0], #1
+    d8d6:	d1bd      	bne.n	d854 &lt;<a href="_unknown___unknown____ultoa_invert.html">__ultoa_invert</a>+0x10&gt;
+    d8d8:	bdf0      	pop	{r4, r5, r6, r7, pc}
+    d8da:	0924      	lsrs	r4, r4, #4
+    d8dc:	f006 050f 	and.w	r5, r6, #15
+    d8e0:	ea44 7401 	orr.w	r4, r4, r1, lsl #28
+    d8e4:	0909      	lsrs	r1, r1, #4
+    d8e6:	2d09      	cmp	r5, #9
+    d8e8:	bf84      	itt	hi
+    d8ea:	19ed      	addhi	r5, r5, r7
+    d8ec:	b2ed      	uxtbhi	r5, r5
+    d8ee:	e7ed      	b.n	d8cc &lt;<a href="_unknown___unknown____ultoa_invert.html">__ultoa_invert</a>+0x88&gt;
+</pre>
+    
+    <pre><a href="_unknown___unknown__memcpy.html">memcpy (26)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 188</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 2<span class="secondary">,</span>298</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2<span class="secondary">,</span>298
+                    
+                    
+                </td>
+                <td class="col_size">172</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="_unknown___unknown____ultoa_invert.html" class="icon-function">__ultoa_invert</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2<span class="secondary">,</span>126
+                    
+                    
+                </td>
+                <td class="col_size">1<span class="secondary">,</span>204</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="_unknown___unknown____l_vfprintf.html" class="icon-function">__l_vfprintf</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    188
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    922
+                    
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_libc_picolibc_cbprintf.c_cbvprintf.html" class="icon-function">cbvprintf</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    140
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                12 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    866
+                    
+                    
+                </td>
+                <td class="col_size">36</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html" class="icon-function">print_formatted</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    128
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    830
+                    
+                    
+                </td>
+                <td class="col_size">724</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html" class="icon-function">log_output_process</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">106</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_msg_process.html" class="icon-function">log_output_msg_process</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

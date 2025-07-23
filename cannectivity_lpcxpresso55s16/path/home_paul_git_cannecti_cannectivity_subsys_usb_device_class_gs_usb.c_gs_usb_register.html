@@ -1,0 +1,1148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_cannectivity.html">cannectivity</a></li>
+        
+        <li><a href="home_paul_git_cannecti_cannectivity_subsys.html">subsys</a></li>
+        
+        <li><a href="home_paul_git_cannecti_cannectivity_subsys_usb.html">usb</a></li>
+        
+        <li><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device.html">device</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class.html">class</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c.html">gs_usb.c</a>:1293
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">gs_usb_register</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00004168</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>104 (dynamic,bounded)</td>
+                <td>412</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_cannectivity_app_src_main.c_main.html">main (208)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (6,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=226
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_1.html">z_log_msg_simple_create_1 (4)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_kernel_sem.c_z_impl_k_sem_init.html">z_impl_k_sem_init (32)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_kernel_device.c_z_impl_device_is_ready.html">z_impl_device_is_ready (22)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_2.html">z_log_msg_simple_create_2 (20)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_add_rx_filter.html">can_add_rx_filter (144)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_static_create.html">z_log_msg_static_create (4)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register_vendorcode_callback.html">gs_usb_register_vendorcode_callback (12)</a></pre>
+    
+    <pre>
+gs_usb_register():
+    4168:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+    416c:	b088      	sub	sp, #32
+    416e:	2a01      	cmp	r2, #1
+    4170:	460e      	mov	r6, r1
+    4172:	6904      	ldr	r4, [r0, #16]
+    4174:	af00      	add	r7, sp, #0
+    4176:	d00c      	beq.n	4192 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x2a&gt;
+    4178:	4613      	mov	r3, r2
+    417a:	2101      	movs	r1, #1
+    417c:	4a57      	ldr	r2, [pc, #348]	; (42dc &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x174&gt;)
+    417e:	4858      	ldr	r0, [pc, #352]	; (42e0 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x178&gt;)
+    4180:	f007 f95f 	bl	b442 &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_1.html">z_log_msg_simple_create_1</a>&gt;
+    4184:	f06f 0685 	mvn.w	r6, #133	; 0x85
+    4188:	4630      	mov	r0, r6
+    418a:	3720      	adds	r7, #32
+    418c:	46bd      	mov	sp, r7
+    418e:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+    4192:	b123      	cbz	r3, 419e &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x36&gt;
+    4194:	cb0f      	ldmia	r3, {r0, r1, r2, r3}
+    4196:	f104 0534 	add.w	r5, r4, #52	; 0x34
+    419a:	e885 000f 	stmia.w	r5, {r0, r1, r2, r3}
+    419e:	2301      	movs	r3, #1
+gs_usb_features_from_ops():
+    41a0:	6b65      	ldr	r5, [r4, #52]	; 0x34
+gs_usb_register():
+    41a2:	6323      	str	r3, [r4, #48]	; 0x30
+gs_usb_features_from_ops():
+    41a4:	3d00      	subs	r5, #0
+    41a6:	bf18      	it	ne
+    41a8:	2501      	movne	r5, #1
+gs_usb_register():
+    41aa:	6c3b      	ldr	r3, [r7, #64]	; 0x40
+gs_usb_features_from_ops():
+    41ac:	012d      	lsls	r5, r5, #4
+gs_usb_register():
+    41ae:	6463      	str	r3, [r4, #68]	; 0x44
+gs_usb_features_from_ops():
+    41b0:	6c23      	ldr	r3, [r4, #64]	; 0x40
+    41b2:	b10b      	cbz	r3, 41b8 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x50&gt;
+    41b4:	f045 0520 	orr.w	r5, r5, #32
+    41b8:	6ba3      	ldr	r3, [r4, #56]	; 0x38
+    41ba:	b11b      	cbz	r3, 41c4 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x5c&gt;
+    41bc:	6be3      	ldr	r3, [r4, #60]	; 0x3c
+    41be:	b10b      	cbz	r3, 41c4 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x5c&gt;
+    41c0:	f445 6500 	orr.w	r5, r5, #2048	; 0x800
+gs_usb_register_channel():
+    41c4:	f04f 0900 	mov.w	r9, #0
+gs_usb_register():
+    41c8:	f8d6 8000 	ldr.w	r8, [r6]
+gs_usb_register_channel():
+    41cc:	2601      	movs	r6, #1
+    41ce:	e9c7 9902 	strd	r9, r9, [r7, #8]
+    41d2:	e9c7 9905 	strd	r9, r9, [r7, #20]
+    41d6:	f887 9010 	strb.w	r9, [r7, #16]
+    41da:	773e      	strb	r6, [r7, #28]
+k_sem_init():
+    41dc:	f04f 32ff 	mov.w	r2, #4294967295	; 0xffffffff
+    41e0:	4649      	mov	r1, r9
+    41e2:	f104 000c 	add.w	r0, r4, #12
+    41e6:	f009 f803 	bl	d1f0 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_sem.c_z_impl_k_sem_init.html">z_impl_k_sem_init</a>&gt;
+gs_usb_register_channel():
+    41ea:	f104 0a08 	add.w	sl, r4, #8
+device_is_ready():
+    41ee:	4640      	mov	r0, r8
+    41f0:	f008 fe79 	bl	cee6 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_device.c_z_impl_device_is_ready.html">z_impl_device_is_ready</a>&gt;
+gs_usb_register_channel():
+    41f4:	4603      	mov	r3, r0
+    41f6:	b968      	cbnz	r0, 4214 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0xac&gt;
+    41f8:	4631      	mov	r1, r6
+    41fa:	4a3a      	ldr	r2, [pc, #232]	; (42e4 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x17c&gt;)
+    41fc:	4838      	ldr	r0, [pc, #224]	; (42e0 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x178&gt;)
+    41fe:	f007 f920 	bl	b442 &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_1.html">z_log_msg_simple_create_1</a>&gt;
+    4202:	f06f 0612 	mvn.w	r6, #18
+gs_usb_register():
+    4206:	4633      	mov	r3, r6
+    4208:	2200      	movs	r2, #0
+    420a:	4937      	ldr	r1, [pc, #220]	; (42e8 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x180&gt;)
+    420c:	4834      	ldr	r0, [pc, #208]	; (42e0 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x178&gt;)
+    420e:	f007 f91c 	bl	b44a &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_2.html">z_log_msg_simple_create_2</a>.constprop.0&gt;
+    4212:	e7b9      	b.n	4188 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x20&gt;
+z_impl_can_get_capabilities():
+    4214:	f8d8 3008 	ldr.w	r3, [r8, #8]
+    4218:	4640      	mov	r0, r8
+    421a:	681b      	ldr	r3, [r3, #0]
+    421c:	1d39      	adds	r1, r7, #4
+    421e:	4798      	blx	r3
+gs_usb_register_channel():
+    4220:	4606      	mov	r6, r0
+    4222:	2800      	cmp	r0, #0
+    4224:	d14c      	bne.n	42c0 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x158&gt;
+    4226:	4652      	mov	r2, sl
+    4228:	4930      	ldr	r1, [pc, #192]	; (42ec &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x184&gt;)
+    422a:	f107 0308 	add.w	r3, r7, #8
+    422e:	4640      	mov	r0, r8
+    4230:	f001 ff88 	bl	6144 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_add_rx_filter.html">can_add_rx_filter</a>&gt;
+    4234:	4652      	mov	r2, sl
+    4236:	492d      	ldr	r1, [pc, #180]	; (42ec &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x184&gt;)
+    4238:	f107 0314 	add.w	r3, r7, #20
+    423c:	4640      	mov	r0, r8
+    423e:	f001 ff81 	bl	6144 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_add_rx_filter.html">can_add_rx_filter</a>&gt;
+can_set_state_change_callback():
+    4242:	f8d8 3008 	ldr.w	r3, [r8, #8]
+    4246:	4652      	mov	r2, sl
+    4248:	6a5b      	ldr	r3, [r3, #36]	; 0x24
+    424a:	4929      	ldr	r1, [pc, #164]	; (42f0 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x188&gt;)
+    424c:	4640      	mov	r0, r8
+    424e:	4798      	blx	r3
+gs_usb_register_channel():
+    4250:	687b      	ldr	r3, [r7, #4]
+    4252:	85a6      	strh	r6, [r4, #44]	; 0x2c
+gs_usb_features_from_capabilities():
+    4254:	f003 0201 	and.w	r2, r3, #1
+    4258:	0799      	lsls	r1, r3, #30
+gs_usb_register_channel():
+    425a:	f8c4 8008 	str.w	r8, [r4, #8]
+gs_usb_features_from_capabilities():
+    425e:	ea4f 0242 	mov.w	r2, r2, lsl #1
+    4262:	d434      	bmi.n	42ce &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x166&gt;
+    4264:	0758      	lsls	r0, r3, #29
+    4266:	bf48      	it	mi
+    4268:	f442 62a0 	orrmi.w	r2, r2, #1280	; 0x500
+    426c:	0719      	lsls	r1, r3, #28
+    426e:	bf48      	it	mi
+    4270:	f042 0208 	orrmi.w	r2, r2, #8
+    4274:	06db      	lsls	r3, r3, #27
+    4276:	bf48      	it	mi
+    4278:	f042 0204 	orrmi.w	r2, r2, #4
+gs_usb_register_channel():
+    427c:	4315      	orrs	r5, r2
+    427e:	46e9      	mov	r9, sp
+    4280:	f445 5500 	orr.w	r5, r5, #8192	; 0x2000
+    4284:	b08a      	sub	sp, #40	; 0x28
+    4286:	466a      	mov	r2, sp
+    4288:	6265      	str	r5, [r4, #36]	; 0x24
+    428a:	4b1a      	ldr	r3, [pc, #104]	; (42f4 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x18c&gt;)
+    428c:	f04f 0800 	mov.w	r8, #0
+    4290:	6153      	str	r3, [r2, #20]
+    4292:	4b19      	ldr	r3, [pc, #100]	; (42f8 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x190&gt;)
+    4294:	e9c2 8507 	strd	r8, r5, [r2, #28]
+    4298:	6193      	str	r3, [r2, #24]
+    429a:	2305      	movs	r3, #5
+    429c:	f44f 5124 	mov.w	r1, #10496	; 0x2900
+    42a0:	f842 3f10 	str.w	r3, [r2, #16]!
+    42a4:	480e      	ldr	r0, [pc, #56]	; (42e0 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x178&gt;)
+    42a6:	4643      	mov	r3, r8
+    42a8:	f007 f8cd 	bl	b446 &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_static_create.html">z_log_msg_static_create</a>&gt;
+sys_slist_peek_tail():
+    42ac:	4b13      	ldr	r3, [pc, #76]	; (42fc &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x194&gt;)
+z_snode_next_set():
+    42ae:	f8c4 8004 	str.w	r8, [r4, #4]
+sys_slist_peek_tail():
+    42b2:	6859      	ldr	r1, [r3, #4]
+gs_usb_register_channel():
+    42b4:	46cd      	mov	sp, r9
+gs_usb_register():
+    42b6:	1d22      	adds	r2, r4, #4
+sys_slist_append():
+    42b8:	b961      	cbnz	r1, 42d4 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x16c&gt;
+z_slist_head_set():
+    42ba:	e9c3 2200 	strd	r2, r2, [r3]
+    42be:	e763      	b.n	4188 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x20&gt;
+gs_usb_register_channel():
+    42c0:	4603      	mov	r3, r0
+    42c2:	464a      	mov	r2, r9
+    42c4:	490e      	ldr	r1, [pc, #56]	; (4300 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x198&gt;)
+    42c6:	4806      	ldr	r0, [pc, #24]	; (42e0 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x178&gt;)
+    42c8:	f007 f8bf 	bl	b44a &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_2.html">z_log_msg_simple_create_2</a>.constprop.0&gt;
+gs_usb_register():
+    42cc:	e79b      	b.n	4206 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x9e&gt;
+gs_usb_features_from_capabilities():
+    42ce:	f042 0201 	orr.w	r2, r2, #1
+    42d2:	e7c7      	b.n	4264 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0xfc&gt;
+z_snode_next_set():
+    42d4:	600a      	str	r2, [r1, #0]
+z_slist_tail_set():
+    42d6:	605a      	str	r2, [r3, #4]
+    42d8:	e756      	b.n	4188 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html">gs_usb_register</a>+0x20&gt;
+    42da:	bf00      	nop
+    42dc:	0000f7ea 	.word	0x0000f7ea
+    42e0:	0000de24 	.word	0x0000de24
+    42e4:	0000f810 	.word	0x0000f810
+    42e8:	0000f884 	.word	0x0000f884
+    42ec:	0000355d 	.word	0x0000355d
+    42f0:	00003401 	.word	0x00003401
+    42f4:	0000f863 	.word	0x0000f863
+    42f8:	0000f95b 	.word	0x0000f95b
+    42fc:	20001cec 	.word	0x20001cec
+    4300:	0000f830 	.word	0x0000f830
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_arch_arm_core_fatal.c_z_arm_fatal_error.html">z_arm_fatal_error (184)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 712</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 2<span class="secondary">,</span>182</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    712
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2<span class="secondary">,</span>182
+                    
+                    
+                </td>
+                <td class="col_size">76</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_timer_cortex_m_systick.c_elapsed.html" class="icon-function">elapsed</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    704
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2<span class="secondary">,</span>106
+                    
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_timer_cortex_m_systick.c_sys_clock_elapsed.html" class="icon-function">sys_clock_elapsed</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2<span class="secondary">,</span>046
+                    
+                    
+                </td>
+                <td class="col_size">20</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_timeout.c_elapsed.html" class="icon-function">elapsed</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    688
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2<span class="secondary">,</span>026
+                    
+                    
+                </td>
+                <td class="col_size">50</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_timeout.c_next_timeout.html" class="icon-function">next_timeout</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    680
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>976
+                    
+                    
+                </td>
+                <td class="col_size">236</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_timeout.c_z_add_timeout.html" class="icon-function">z_add_timeout</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    656
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>740
+                    
+                    
+                </td>
+                <td class="col_size">80</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_timeslicing.c_z_reset_time_slice.html" class="icon-function">z_reset_time_slice</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    640
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>660
+                    
+                    
+                </td>
+                <td class="col_size">132</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_sched.c_ready_thread.html" class="icon-function">ready_thread</a></td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                <td class="col_size">
+                    
+                    624
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>528
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_sched.c_z_sched_wake.html" class="icon-function">z_sched_wake</a></td>
+            </tr>
+        
+            <tr>
+                <th>9</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>460
+                    
+                    
+                </td>
+                <td class="col_size">14</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_work.c_notify_queue_locked.html" class="icon-function">notify_queue_locked</a></td>
+            </tr>
+        
+            <tr>
+                <th>10</th>
+                <td class="col_size">
+                    
+                    608
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>446
+                    
+                    
+                </td>
+                <td class="col_size">180</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html" class="icon-function">submit_to_queue_locked</a></td>
+            </tr>
+        
+            <tr>
+                <th>11</th>
+                <td class="col_size">
+                    
+                    584
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>266
+                    
+                    
+                </td>
+                <td class="col_size">38</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_work.c_z_work_submit_to_queue.html" class="icon-function">z_work_submit_to_queue</a></td>
+            </tr>
+        
+            <tr>
+                <th>12</th>
+                <td class="col_size">
+                    
+                    568
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>228
+                    
+                    
+                </td>
+                <td class="col_size">134</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_poll.c_signal_poll_event.html" class="icon-function">signal_poll_event</a></td>
+            </tr>
+        
+            <tr>
+                <th>13</th>
+                <td class="col_size">
+                    
+                    544
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>094
+                    
+                    
+                </td>
+                <td class="col_size">62</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_poll.c_z_handle_obj_poll_events.html" class="icon-function">z_handle_obj_poll_events</a></td>
+            </tr>
+        
+            <tr>
+                <th>14</th>
+                <td class="col_size">
+                    
+                    528
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>032
+                    
+                    
+                </td>
+                <td class="col_size">116</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_sem.c_z_impl_k_sem_give.html" class="icon-function">z_impl_k_sem_give</a></td>
+            </tr>
+        
+            <tr>
+                <th>15</th>
+                <td class="col_size">
+                    
+                    512
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    916
+                    
+                    
+                </td>
+                <td class="col_size">118</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_mpsc_pbuf_free.html" class="icon-function">mpsc_pbuf_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>16</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    798
+                    
+                    
+                </td>
+                <td class="col_size">16</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_msg_free.html" class="icon-function">z_log_msg_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>17</th>
+                <td class="col_size">
+                    
+                    488
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    782
+                    
+                    
+                </td>
+                <td class="col_size">168</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_impl_log_process.html" class="icon-function">z_impl_log_process</a></td>
+            </tr>
+        
+            <tr>
+                <th>18</th>
+                <td class="col_size">
+                    
+                    472
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    614
+                    
+                    
+                </td>
+                <td class="col_size">120</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_msg_post_finalize.html" class="icon-function">z_log_msg_post_finalize</a></td>
+            </tr>
+        
+            <tr>
+                <th>19</th>
+                <td class="col_size">
+                    
+                    456
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    494
+                    
+                    
+                </td>
+                <td class="col_size">36</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_msg_commit.html" class="icon-function">z_log_msg_commit</a></td>
+            </tr>
+        
+            <tr>
+                <th>20</th>
+                <td class="col_size">
+                    
+                    448
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    458
+                    
+                    
+                </td>
+                <td class="col_size">50</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_log_msg_finalize.html" class="icon-function">z_log_msg_finalize</a></td>
+            </tr>
+        
+            <tr>
+                <th>21</th>
+                <td class="col_size">
+                    
+                    432
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                136 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    408
+                    
+                    
+                </td>
+                <td class="col_size">264</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_impl_z_log_msg_static_create.html" class="icon-function">z_impl_z_log_msg_static_create</a></td>
+            </tr>
+        
+            <tr>
+                <th>22</th>
+                <td class="col_size">
+                    
+                    296
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                80 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">144</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_add_rx_filter.html" class="icon-function">can_add_rx_filter</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">216</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 216</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 816</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    216
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                104 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    816
+                    
+                    
+                </td>
+                <td class="col_size">412</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register.html" class="icon-function">gs_usb_register</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    112
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    404
+                    
+                    
+                </td>
+                <td class="col_size">208</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_app_src_main.c_main.html" class="icon-function">main</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">196</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_init.c_bg_thread_main.html" class="icon-function">bg_thread_main</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

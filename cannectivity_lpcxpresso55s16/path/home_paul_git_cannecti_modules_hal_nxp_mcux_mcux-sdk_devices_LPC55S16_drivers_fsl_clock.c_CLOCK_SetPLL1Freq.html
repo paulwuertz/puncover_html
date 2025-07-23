@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules.html">modules</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal.html">hal</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp.html">nxp</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux.html">mcux</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk.html">mcux-sdk</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices.html">devices</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16.html">LPC55S16</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers.html">drivers</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c.html">fsl_clock.c</a>:1855
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">CLOCK_SetPLL1Freq</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00007ce8</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>24 (static)</td>
+                <td>204</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_soc_nxp_lpc_lpc55xxx_soc.c_clock_init.html">clock_init (304)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=66
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetPLL1InClockRate.html">CLOCK_GetPLL1InClockRate (48)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_common_fsl_common_arm.c_SDK_DelayAtLeastUs.html">SDK_DelayAtLeastUs (18)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetPLL1InClockRate.html">CLOCK_GetPLL1InClockRate (48)</a></pre>
+    
+    <pre>
+POWER_EnablePD():
+    7ce8:	f44f 6180 	mov.w	r1, #1024	; 0x400
+CLOCK_SetPLL1Freq():
+    7cec:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
+    7cf0:	f04f 4480 	mov.w	r4, #1073741824	; 0x40000000
+POWER_EnablePD():
+    7cf4:	4a2a      	ldr	r2, [pc, #168]	; (7da0 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html">CLOCK_SetPLL1Freq</a>+0xb8&gt;)
+CLOCK_SetPLL1Freq():
+    7cf6:	4605      	mov	r5, r0
+POWER_EnablePD():
+    7cf8:	f8c2 10c0 	str.w	r1, [r2, #192]	; 0xc0
+CLOCK_SetPLL1Freq():
+    7cfc:	6803      	ldr	r3, [r0, #0]
+    7cfe:	f8c4 3560 	str.w	r3, [r4, #1376]	; 0x560
+    7d02:	6843      	ldr	r3, [r0, #4]
+    7d04:	f8c4 3568 	str.w	r3, [r4, #1384]	; 0x568
+    7d08:	f443 7380 	orr.w	r3, r3, #256	; 0x100
+    7d0c:	f8c4 3568 	str.w	r3, [r4, #1384]	; 0x568
+    7d10:	6883      	ldr	r3, [r0, #8]
+    7d12:	f8c4 3570 	str.w	r3, [r4, #1392]	; 0x570
+    7d16:	f043 0320 	orr.w	r3, r3, #32
+    7d1a:	f8c4 3570 	str.w	r3, [r4, #1392]	; 0x570
+    7d1e:	68c3      	ldr	r3, [r0, #12]
+    7d20:	f8c4 356c 	str.w	r3, [r4, #1388]	; 0x56c
+    7d24:	f443 3380 	orr.w	r3, r3, #65536	; 0x10000
+    7d28:	f8c4 356c 	str.w	r3, [r4, #1388]	; 0x56c
+POWER_DisablePD():
+    7d2c:	f8c2 10c8 	str.w	r1, [r2, #200]	; 0xc8
+CLOCK_SetPLL1Freq():
+    7d30:	69c3      	ldr	r3, [r0, #28]
+    7d32:	0799      	lsls	r1, r3, #30
+    7d34:	d527      	bpl.n	7d86 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html">CLOCK_SetPLL1Freq</a>+0x9e&gt;
+    7d36:	f7ff ffbf 	bl	7cb8 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_GetPLL1InClockRate.html">CLOCK_GetPLL1InClockRate</a>&gt;
+findPll1PreDiv():
+    7d3a:	f8d4 3560 	ldr.w	r3, [r4, #1376]	; 0x560
+    7d3e:	031a      	lsls	r2, r3, #12
+    7d40:	d414      	bmi.n	7d6c &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html">CLOCK_SetPLL1Freq</a>+0x84&gt;
+    7d42:	f8d4 3568 	ldr.w	r3, [r4, #1384]	; 0x568
+    7d46:	b2db      	uxtb	r3, r3
+    7d48:	2b01      	cmp	r3, #1
+    7d4a:	bf38      	it	cc
+    7d4c:	2301      	movcc	r3, #1
+CLOCK_SetPLL1Freq():
+    7d4e:	fbb0 f0f3 	udiv	r0, r0, r3
+    7d52:	4c14      	ldr	r4, [pc, #80]	; (7da4 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html">CLOCK_SetPLL1Freq</a>+0xbc&gt;)
+    7d54:	4b14      	ldr	r3, [pc, #80]	; (7da8 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html">CLOCK_SetPLL1Freq</a>+0xc0&gt;)
+    7d56:	fbb4 f4f0 	udiv	r4, r4, r0
+    7d5a:	4298      	cmp	r0, r3
+    7d5c:	f504 74fa 	add.w	r4, r4, #500	; 0x1f4
+    7d60:	d917      	bls.n	7d92 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html">CLOCK_SetPLL1Freq</a>+0xaa&gt;
+    7d62:	4620      	mov	r0, r4
+    7d64:	4911      	ldr	r1, [pc, #68]	; (7dac &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html">CLOCK_SetPLL1Freq</a>+0xc4&gt;)
+    7d66:	f000 f981 	bl	806c &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_common_fsl_common_arm.c_SDK_DelayAtLeastUs.html">SDK_DelayAtLeastUs</a>&gt;
+    7d6a:	e00c      	b.n	7d86 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html">CLOCK_SetPLL1Freq</a>+0x9e&gt;
+findPll1PreDiv():
+    7d6c:	2301      	movs	r3, #1
+    7d6e:	e7ee      	b.n	7d4e &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html">CLOCK_SetPLL1Freq</a>+0x66&gt;
+CLOCK_SetPLL1Freq():
+    7d70:	4641      	mov	r1, r8
+    7d72:	2064      	movs	r0, #100	; 0x64
+    7d74:	3664      	adds	r6, #100	; 0x64
+    7d76:	f000 f979 	bl	806c &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_common_fsl_common_arm.c_SDK_DelayAtLeastUs.html">SDK_DelayAtLeastUs</a>&gt;
+CLOCK_IsPLL1Locked():
+    7d7a:	f8d7 3564 	ldr.w	r3, [r7, #1380]	; 0x564
+CLOCK_SetPLL1Freq():
+    7d7e:	07db      	lsls	r3, r3, #31
+    7d80:	d401      	bmi.n	7d86 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html">CLOCK_SetPLL1Freq</a>+0x9e&gt;
+    7d82:	42a6      	cmp	r6, r4
+    7d84:	d3f4      	bcc.n	7d70 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html">CLOCK_SetPLL1Freq</a>+0x88&gt;
+    7d86:	69aa      	ldr	r2, [r5, #24]
+    7d88:	4b09      	ldr	r3, [pc, #36]	; (7db0 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html">CLOCK_SetPLL1Freq</a>+0xc8&gt;)
+    7d8a:	2000      	movs	r0, #0
+    7d8c:	601a      	str	r2, [r3, #0]
+    7d8e:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+    7d92:	2600      	movs	r6, #0
+CLOCK_IsPLL1Locked():
+    7d94:	f04f 4780 	mov.w	r7, #1073741824	; 0x40000000
+CLOCK_SetPLL1Freq():
+    7d98:	f8df 8010 	ldr.w	r8, [pc, #16]	; 7dac &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html">CLOCK_SetPLL1Freq</a>+0xc4&gt;
+    7d9c:	e7ed      	b.n	7d7a &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html">CLOCK_SetPLL1Freq</a>+0x92&gt;
+    7d9e:	bf00      	nop
+    7da0:	40020000 	.word	0x40020000
+    7da4:	17d78400 	.word	0x17d78400
+    7da8:	01312cff 	.word	0x01312cff
+    7dac:	05f5e100 	.word	0x05f5e100
+    7db0:	20002024 	.word	0x20002024
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_EnableUsbhs0PhyPllClock.html">CLOCK_EnableUsbhs0PhyPllClock (232)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 64</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 18</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    64
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">18</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_common_fsl_common_arm.c_SDK_DelayAtLeastUs.html" class="icon-function">SDK_DelayAtLeastUs</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">56</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 56</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 540</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    56
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    540
+                    
+                    
+                </td>
+                <td class="col_size">204</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_clock.c_CLOCK_SetPLL1Freq.html" class="icon-function">CLOCK_SetPLL1Freq</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    32
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    336
+                    
+                    
+                </td>
+                <td class="col_size">304</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_soc_nxp_lpc_lpc55xxx_soc.c_clock_init.html" class="icon-function">clock_init</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">32</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_soc_nxp_lpc_lpc55xxx_soc.c_nxp_lpc55xxx_init.html" class="icon-function">nxp_lpc55xxx_init</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

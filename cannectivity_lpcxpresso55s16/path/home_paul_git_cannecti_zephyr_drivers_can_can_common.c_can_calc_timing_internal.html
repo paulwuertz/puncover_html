@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_drivers_can.html">can</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c.html">can_common.c</a>:251
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">can_calc_timing_internal</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00005ea8</td>
+                <td>
+    
+    
+</td>
+                <td>64 (static)</td>
+                <td>448</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (2)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_z_impl_can_calc_timing.html">z_impl_can_calc_timing (44)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_z_impl_can_calc_timing_data.html">z_impl_can_calc_timing_data (44)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_usb_device_usb_dc_mcux.c_USB_DeviceNotificationTrigger.html">USB_DeviceNotificationTrigger (20)</a></pre>
+    
+    <pre>
+can_calc_timing_internal():
+    5ea8:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+    5eac:	461f      	mov	r7, r3
+    5eae:	885d      	ldrh	r5, [r3, #2]
+    5eb0:	889b      	ldrh	r3, [r3, #4]
+    5eb2:	3501      	adds	r5, #1
+    5eb4:	441d      	add	r5, r3
+    5eb6:	88fb      	ldrh	r3, [r7, #6]
+    5eb8:	b087      	sub	sp, #28
+    5eba:	441d      	add	r5, r3
+    5ebc:	9b10      	ldr	r3, [sp, #64]	; 0x40
+    5ebe:	4688      	mov	r8, r1
+    5ec0:	4692      	mov	sl, r2
+    5ec2:	f8bd 9044 	ldrh.w	r9, [sp, #68]	; 0x44
+    5ec6:	2b00      	cmp	r3, #0
+    5ec8:	f000 80c4 	beq.w	6054 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x1ac&gt;
+    5ecc:	f5b9 7f7a 	cmp.w	r9, #1000	; 0x3e8
+    5ed0:	f080 80c0 	bcs.w	6054 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x1ac&gt;
+z_impl_can_get_core_clock():
+    5ed4:	6883      	ldr	r3, [r0, #8]
+    5ed6:	a905      	add	r1, sp, #20
+    5ed8:	6a9b      	ldr	r3, [r3, #40]	; 0x28
+    5eda:	4798      	blx	r3
+can_calc_timing_internal():
+    5edc:	2800      	cmp	r0, #0
+    5ede:	f040 80bc 	bne.w	605a &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x1b2&gt;
+    5ee2:	f1b9 0f00 	cmp.w	r9, #0
+    5ee6:	d10a      	bne.n	5efe &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x56&gt;
+sample_point_for_bitrate():
+    5ee8:	4b5d      	ldr	r3, [pc, #372]	; (6060 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x1b8&gt;)
+    5eea:	9a10      	ldr	r2, [sp, #64]	; 0x40
+    5eec:	429a      	cmp	r2, r3
+    5eee:	d839      	bhi.n	5f64 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0xbc&gt;
+    5ef0:	f240 396b 	movw	r9, #875	; 0x36b
+    5ef4:	4b5b      	ldr	r3, [pc, #364]	; (6064 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x1bc&gt;)
+    5ef6:	429a      	cmp	r2, r3
+    5ef8:	bf88      	it	hi
+    5efa:	f44f 7948 	movhi.w	r9, #800	; 0x320
+can_calc_timing_internal():
+    5efe:	9b05      	ldr	r3, [sp, #20]
+    5f00:	9300      	str	r3, [sp, #0]
+    5f02:	9b10      	ldr	r3, [sp, #64]	; 0x40
+    5f04:	435d      	muls	r5, r3
+    5f06:	9b00      	ldr	r3, [sp, #0]
+    5f08:	fbb3 f5f5 	udiv	r5, r3, r5
+    5f0c:	f8ba 3008 	ldrh.w	r3, [sl, #8]
+    5f10:	429d      	cmp	r5, r3
+    5f12:	bf38      	it	cc
+    5f14:	461d      	movcc	r5, r3
+    5f16:	9b10      	ldr	r3, [sp, #64]	; 0x40
+    5f18:	fb03 fb05 	mul.w	fp, r3, r5
+    5f1c:	f06f 4300 	mvn.w	r3, #2147483648	; 0x80000000
+    5f20:	9301      	str	r3, [sp, #4]
+    5f22:	893b      	ldrh	r3, [r7, #8]
+    5f24:	42ab      	cmp	r3, r5
+    5f26:	da20      	bge.n	5f6a &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0xc2&gt;
+    5f28:	9801      	ldr	r0, [sp, #4]
+    5f2a:	f8b8 3006 	ldrh.w	r3, [r8, #6]
+    5f2e:	f8b8 2004 	ldrh.w	r2, [r8, #4]
+    5f32:	085b      	lsrs	r3, r3, #1
+    5f34:	4293      	cmp	r3, r2
+    5f36:	bf28      	it	cs
+    5f38:	4613      	movcs	r3, r2
+    5f3a:	f8a8 3000 	strh.w	r3, [r8]
+    5f3e:	f8ba 2000 	ldrh.w	r2, [sl]
+    5f42:	4293      	cmp	r3, r2
+    5f44:	d903      	bls.n	5f4e &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0xa6&gt;
+    5f46:	883a      	ldrh	r2, [r7, #0]
+    5f48:	429a      	cmp	r2, r3
+    5f4a:	bf28      	it	cs
+    5f4c:	461a      	movcs	r2, r3
+    5f4e:	f06f 4300 	mvn.w	r3, #2147483648	; 0x80000000
+    5f52:	4298      	cmp	r0, r3
+    5f54:	bf08      	it	eq
+    5f56:	f06f 0085 	mvneq.w	r0, #133	; 0x85
+    5f5a:	f8a8 2000 	strh.w	r2, [r8]
+    5f5e:	b007      	add	sp, #28
+    5f60:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+sample_point_for_bitrate():
+    5f64:	f240 29ee 	movw	r9, #750	; 0x2ee
+    5f68:	e7c9      	b.n	5efe &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x56&gt;
+can_calc_timing_internal():
+    5f6a:	9b00      	ldr	r3, [sp, #0]
+    5f6c:	fbb3 f0fb 	udiv	r0, r3, fp
+    5f70:	fb0b 3310 	mls	r3, fp, r0, r3
+    5f74:	bb3b      	cbnz	r3, 5fc6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x11e&gt;
+update_sample_pnt():
+    5f76:	f44f 767a 	mov.w	r6, #1000	; 0x3e8
+    5f7a:	fb00 f209 	mul.w	r2, r0, r9
+    5f7e:	fbb2 f2f6 	udiv	r2, r2, r6
+    5f82:	b281      	uxth	r1, r0
+    5f84:	887b      	ldrh	r3, [r7, #2]
+    5f86:	f8ba 6006 	ldrh.w	r6, [sl, #6]
+    5f8a:	f8b7 e004 	ldrh.w	lr, [r7, #4]
+    5f8e:	1a8a      	subs	r2, r1, r2
+    5f90:	b292      	uxth	r2, r2
+    5f92:	eb0e 0403 	add.w	r4, lr, r3
+    5f96:	42b2      	cmp	r2, r6
+    5f98:	9303      	str	r3, [sp, #12]
+    5f9a:	f8ba c004 	ldrh.w	ip, [sl, #4]
+    5f9e:	f8ba 3002 	ldrh.w	r3, [sl, #2]
+    5fa2:	b2a4      	uxth	r4, r4
+    5fa4:	9602      	str	r6, [sp, #8]
+    5fa6:	d912      	bls.n	5fce &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x126&gt;
+    5fa8:	88fe      	ldrh	r6, [r7, #6]
+    5faa:	4296      	cmp	r6, r2
+    5fac:	bf28      	it	cs
+    5fae:	4616      	movcs	r6, r2
+    5fb0:	1e4a      	subs	r2, r1, #1
+    5fb2:	1b92      	subs	r2, r2, r6
+    5fb4:	b292      	uxth	r2, r2
+    5fb6:	4294      	cmp	r4, r2
+    5fb8:	d20b      	bcs.n	5fd2 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x12a&gt;
+    5fba:	1b0e      	subs	r6, r1, r4
+    5fbc:	88fa      	ldrh	r2, [r7, #6]
+    5fbe:	3e01      	subs	r6, #1
+    5fc0:	b2b6      	uxth	r6, r6
+    5fc2:	42b2      	cmp	r2, r6
+    5fc4:	d210      	bcs.n	5fe8 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x140&gt;
+can_calc_timing_internal():
+    5fc6:	9b10      	ldr	r3, [sp, #64]	; 0x40
+    5fc8:	3501      	adds	r5, #1
+    5fca:	449b      	add	fp, r3
+    5fcc:	e7a9      	b.n	5f22 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x7a&gt;
+update_sample_pnt():
+    5fce:	9e02      	ldr	r6, [sp, #8]
+    5fd0:	e7ee      	b.n	5fb0 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x108&gt;
+    5fd2:	eb0c 0403 	add.w	r4, ip, r3
+    5fd6:	b2a4      	uxth	r4, r4
+    5fd8:	4294      	cmp	r4, r2
+    5fda:	d932      	bls.n	6042 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x19a&gt;
+    5fdc:	1b09      	subs	r1, r1, r4
+    5fde:	9a02      	ldr	r2, [sp, #8]
+    5fe0:	3901      	subs	r1, #1
+    5fe2:	b28e      	uxth	r6, r1
+    5fe4:	42b2      	cmp	r2, r6
+    5fe6:	d8ee      	bhi.n	5fc6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x11e&gt;
+    5fe8:	ebb3 0f54 	cmp.w	r3, r4, lsr #1
+    5fec:	ea4f 0254 	mov.w	r2, r4, lsr #1
+    5ff0:	d203      	bcs.n	5ffa &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x152&gt;
+    5ff2:	9b03      	ldr	r3, [sp, #12]
+    5ff4:	4293      	cmp	r3, r2
+    5ff6:	bf28      	it	cs
+    5ff8:	4613      	movcs	r3, r2
+    5ffa:	1ae2      	subs	r2, r4, r3
+    5ffc:	b292      	uxth	r2, r2
+    5ffe:	4596      	cmp	lr, r2
+    6000:	d221      	bcs.n	6046 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x19e&gt;
+    6002:	4672      	mov	r2, lr
+    6004:	eba4 030e 	sub.w	r3, r4, lr
+    6008:	b29b      	uxth	r3, r3
+    600a:	f44f 717a 	mov.w	r1, #1000	; 0x3e8
+    600e:	fb04 1401 	mla	r4, r4, r1, r1
+    6012:	fbb4 f4f0 	udiv	r4, r4, r0
+can_calc_timing_internal():
+    6016:	9901      	ldr	r1, [sp, #4]
+update_sample_pnt():
+    6018:	45a1      	cmp	r9, r4
+    601a:	bf34      	ite	cc
+    601c:	eba4 0009 	subcc.w	r0, r4, r9
+    6020:	eba9 0004 	subcs.w	r0, r9, r4
+can_calc_timing_internal():
+    6024:	4288      	cmp	r0, r1
+    6026:	d2ce      	bcs.n	5fc6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x11e&gt;
+    6028:	f8a8 3002 	strh.w	r3, [r8, #2]
+    602c:	f8a8 2004 	strh.w	r2, [r8, #4]
+    6030:	f8a8 6006 	strh.w	r6, [r8, #6]
+    6034:	f8a8 5008 	strh.w	r5, [r8, #8]
+    6038:	2800      	cmp	r0, #0
+    603a:	f43f af76 	beq.w	5f2a &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x82&gt;
+    603e:	9001      	str	r0, [sp, #4]
+    6040:	e7c1      	b.n	5fc6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x11e&gt;
+update_sample_pnt():
+    6042:	4614      	mov	r4, r2
+    6044:	e7d0      	b.n	5fe8 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x140&gt;
+    6046:	4594      	cmp	ip, r2
+    6048:	bf82      	ittt	hi
+    604a:	eba4 030c 	subhi.w	r3, r4, ip
+    604e:	4662      	movhi	r2, ip
+    6050:	b29b      	uxthhi	r3, r3
+    6052:	e7da      	b.n	600a &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0x162&gt;
+can_calc_timing_internal():
+    6054:	f06f 0015 	mvn.w	r0, #21
+    6058:	e781      	b.n	5f5e &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0xb6&gt;
+    605a:	f06f 0004 	mvn.w	r0, #4
+    605e:	e77e      	b.n	5f5e &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html">can_calc_timing_internal</a>+0xb6&gt;
+    6060:	000c3500 	.word	0x000c3500
+    6064:	0007a120 	.word	0x0007a120
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_z_impl_can_send.html">z_impl_can_send (220)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 176</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 1<span class="secondary">,</span>152</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    176
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                64 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>152
+                    
+                    
+                </td>
+                <td class="col_size">448</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_calc_timing_internal.html" class="icon-function">can_calc_timing_internal</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    112
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    704
+                    
+                    
+                </td>
+                <td class="col_size">44</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_z_impl_can_calc_timing.html" class="icon-function">z_impl_can_calc_timing</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    88
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    660
+                    
+                    
+                </td>
+                <td class="col_size">432</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_can_can_mcan.c_can_mcan_init.html" class="icon-function">can_mcan_init</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">228</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_can_can_mcux_mcan.c_mcux_mcan_init.html" class="icon-function">mcux_mcan_init</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

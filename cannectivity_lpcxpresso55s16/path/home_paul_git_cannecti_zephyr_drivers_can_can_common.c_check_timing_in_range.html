@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_drivers_can.html">can</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c.html">can_common.c</a>:346
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">check_timing_in_range</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000b69e</td>
+                <td>
+    
+    
+</td>
+                <td>16 (static)</td>
+                <td>94</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (2)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_z_impl_can_set_timing_data.html">z_impl_can_set_timing_data (46)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_z_impl_can_set_timing.html">z_impl_can_set_timing (38)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_usb_device_usb_dc_mcux.c_usb_dc_ep_read.html">usb_dc_ep_read (30)</a></pre>
+    
+    <pre>
+check_timing_in_range():
+    b69e:	b570      	push	{r4, r5, r6, lr}
+    b6a0:	8803      	ldrh	r3, [r0, #0]
+    b6a2:	880c      	ldrh	r4, [r1, #0]
+    b6a4:	429c      	cmp	r4, r3
+    b6a6:	d826      	bhi.n	b6f6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_check_timing_in_range.html">check_timing_in_range</a>+0x58&gt;
+    b6a8:	8814      	ldrh	r4, [r2, #0]
+    b6aa:	429c      	cmp	r4, r3
+    b6ac:	d323      	bcc.n	b6f6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_check_timing_in_range.html">check_timing_in_range</a>+0x58&gt;
+    b6ae:	8844      	ldrh	r4, [r0, #2]
+    b6b0:	884d      	ldrh	r5, [r1, #2]
+    b6b2:	42a5      	cmp	r5, r4
+    b6b4:	d81f      	bhi.n	b6f6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_check_timing_in_range.html">check_timing_in_range</a>+0x58&gt;
+    b6b6:	8855      	ldrh	r5, [r2, #2]
+    b6b8:	42a5      	cmp	r5, r4
+    b6ba:	d31c      	bcc.n	b6f6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_check_timing_in_range.html">check_timing_in_range</a>+0x58&gt;
+    b6bc:	8885      	ldrh	r5, [r0, #4]
+    b6be:	888c      	ldrh	r4, [r1, #4]
+    b6c0:	42ac      	cmp	r4, r5
+    b6c2:	d818      	bhi.n	b6f6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_check_timing_in_range.html">check_timing_in_range</a>+0x58&gt;
+    b6c4:	8894      	ldrh	r4, [r2, #4]
+    b6c6:	42ac      	cmp	r4, r5
+    b6c8:	d315      	bcc.n	b6f6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_check_timing_in_range.html">check_timing_in_range</a>+0x58&gt;
+    b6ca:	88c4      	ldrh	r4, [r0, #6]
+    b6cc:	88ce      	ldrh	r6, [r1, #6]
+    b6ce:	42a6      	cmp	r6, r4
+    b6d0:	d811      	bhi.n	b6f6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_check_timing_in_range.html">check_timing_in_range</a>+0x58&gt;
+    b6d2:	88d6      	ldrh	r6, [r2, #6]
+    b6d4:	42a6      	cmp	r6, r4
+    b6d6:	d30e      	bcc.n	b6f6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_check_timing_in_range.html">check_timing_in_range</a>+0x58&gt;
+    b6d8:	8900      	ldrh	r0, [r0, #8]
+    b6da:	8909      	ldrh	r1, [r1, #8]
+    b6dc:	4281      	cmp	r1, r0
+    b6de:	d80a      	bhi.n	b6f6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_check_timing_in_range.html">check_timing_in_range</a>+0x58&gt;
+    b6e0:	8912      	ldrh	r2, [r2, #8]
+    b6e2:	4282      	cmp	r2, r0
+    b6e4:	d307      	bcc.n	b6f6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_check_timing_in_range.html">check_timing_in_range</a>+0x58&gt;
+    b6e6:	42ab      	cmp	r3, r5
+    b6e8:	d805      	bhi.n	b6f6 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_check_timing_in_range.html">check_timing_in_range</a>+0x58&gt;
+    b6ea:	42a3      	cmp	r3, r4
+    b6ec:	bf94      	ite	ls
+    b6ee:	2000      	movls	r0, #0
+    b6f0:	f06f 0085 	mvnhi.w	r0, #133	; 0x85
+    b6f4:	bd70      	pop	{r4, r5, r6, pc}
+    b6f6:	f06f 0085 	mvn.w	r0, #133	; 0x85
+    b6fa:	e7fb      	b.n	b6f4 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_check_timing_in_range.html">check_timing_in_range</a>+0x56&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_can_tx_default_cb.html">can_tx_default_cb (8)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 184</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 1<span class="secondary">,</span>956</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    184
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>956
+                    
+                    
+                </td>
+                <td class="col_size">94</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_check_timing_in_range.html" class="icon-function">check_timing_in_range</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    168
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>862
+                    
+                    
+                </td>
+                <td class="col_size">46</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_z_impl_can_set_timing_data.html" class="icon-function">z_impl_can_set_timing_data</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                152 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">1<span class="secondary">,</span>816</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html" class="icon-function">gs_usb_vendor_request_handler</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

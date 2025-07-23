@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_drivers_gpio.html">gpio</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c.html">gpio_mcux_lpc.c</a>:401
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">gpio_mcux_lpc_manage_cb</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000be44</td>
+                <td>
+    
+    
+</td>
+                <td>8 (static)</td>
+                <td>82</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_port_toggle_bits.html">gpio_mcux_lpc_port_toggle_bits (18)</a></pre>
+    
+    <pre>
+gpio_mcux_lpc_manage_cb():
+    be44:	b510      	push	{r4, lr}
+    be46:	6903      	ldr	r3, [r0, #16]
+sys_slist_peek_head():
+    be48:	6858      	ldr	r0, [r3, #4]
+gpio_manage_callback():
+    be4a:	b1f8      	cbz	r0, be8c &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_manage_cb.html">gpio_mcux_lpc_manage_cb</a>+0x48&gt;
+sys_slist_find_and_remove():
+    be4c:	4288      	cmp	r0, r1
+    be4e:	d119      	bne.n	be84 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_manage_cb.html">gpio_mcux_lpc_manage_cb</a>+0x40&gt;
+sys_slist_remove():
+    be50:	689c      	ldr	r4, [r3, #8]
+z_snode_next_peek():
+    be52:	6808      	ldr	r0, [r1, #0]
+sys_slist_remove():
+    be54:	42a1      	cmp	r1, r4
+z_slist_head_set():
+    be56:	6058      	str	r0, [r3, #4]
+sys_slist_remove():
+    be58:	d100      	bne.n	be5c &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_manage_cb.html">gpio_mcux_lpc_manage_cb</a>+0x18&gt;
+z_slist_tail_set():
+    be5a:	6098      	str	r0, [r3, #8]
+z_snode_next_set():
+    be5c:	2000      	movs	r0, #0
+    be5e:	6008      	str	r0, [r1, #0]
+gpio_manage_callback():
+    be60:	b12a      	cbz	r2, be6e &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_manage_cb.html">gpio_mcux_lpc_manage_cb</a>+0x2a&gt;
+sys_slist_peek_head():
+    be62:	685a      	ldr	r2, [r3, #4]
+z_snode_next_set():
+    be64:	600a      	str	r2, [r1, #0]
+sys_slist_prepend():
+    be66:	689a      	ldr	r2, [r3, #8]
+z_slist_head_set():
+    be68:	6059      	str	r1, [r3, #4]
+sys_slist_prepend():
+    be6a:	b902      	cbnz	r2, be6e &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_manage_cb.html">gpio_mcux_lpc_manage_cb</a>+0x2a&gt;
+z_slist_tail_set():
+    be6c:	6099      	str	r1, [r3, #8]
+gpio_manage_callback():
+    be6e:	2000      	movs	r0, #0
+gpio_mcux_lpc_manage_cb():
+    be70:	e010      	b.n	be94 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_manage_cb.html">gpio_mcux_lpc_manage_cb</a>+0x50&gt;
+sys_slist_find_and_remove():
+    be72:	4281      	cmp	r1, r0
+    be74:	d106      	bne.n	be84 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_manage_cb.html">gpio_mcux_lpc_manage_cb</a>+0x40&gt;
+z_snode_next_peek():
+    be76:	6808      	ldr	r0, [r1, #0]
+z_snode_next_set():
+    be78:	6020      	str	r0, [r4, #0]
+sys_slist_remove():
+    be7a:	6898      	ldr	r0, [r3, #8]
+    be7c:	4281      	cmp	r1, r0
+    be7e:	d1ed      	bne.n	be5c &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_manage_cb.html">gpio_mcux_lpc_manage_cb</a>+0x18&gt;
+z_slist_tail_set():
+    be80:	609c      	str	r4, [r3, #8]
+    be82:	e7eb      	b.n	be5c &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_manage_cb.html">gpio_mcux_lpc_manage_cb</a>+0x18&gt;
+z_snode_next_peek():
+    be84:	4604      	mov	r4, r0
+    be86:	6800      	ldr	r0, [r0, #0]
+sys_slist_find_and_remove():
+    be88:	2800      	cmp	r0, #0
+    be8a:	d1f2      	bne.n	be72 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_manage_cb.html">gpio_mcux_lpc_manage_cb</a>+0x2e&gt;
+gpio_manage_callback():
+    be8c:	2a00      	cmp	r2, #0
+    be8e:	d1e8      	bne.n	be62 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_manage_cb.html">gpio_mcux_lpc_manage_cb</a>+0x1e&gt;
+    be90:	f06f 0015 	mvn.w	r0, #21
+gpio_mcux_lpc_manage_cb():
+    be94:	bd10      	pop	{r4, pc}
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_lpc_gpio_init_0.html">lpc_gpio_init_0 (16)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

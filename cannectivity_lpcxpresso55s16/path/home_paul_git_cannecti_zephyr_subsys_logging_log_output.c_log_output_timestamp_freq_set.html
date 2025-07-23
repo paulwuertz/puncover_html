@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_subsys.html">subsys</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_subsys_logging.html">logging</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c.html">log_output.c</a>:720
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">log_output_timestamp_freq_set</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00001ff4</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>0 (static)</td>
+                <td>44</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_log_set_timestamp_func.html">log_set_timestamp_func (32)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_dropped_process.html">log_output_dropped_process (88)</a></pre>
+    
+    <pre>
+log_output_timestamp_freq_set():
+    1ff4:	2100      	movs	r1, #0
+    1ff6:	2301      	movs	r3, #1
+    1ff8:	4a06      	ldr	r2, [pc, #24]	; (2014 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_timestamp_freq_set.html">log_output_timestamp_freq_set</a>+0x20&gt;)
+    1ffa:	4290      	cmp	r0, r2
+    1ffc:	d806      	bhi.n	200c &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_timestamp_freq_set.html">log_output_timestamp_freq_set</a>+0x18&gt;
+    1ffe:	4a06      	ldr	r2, [pc, #24]	; (2018 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_timestamp_freq_set.html">log_output_timestamp_freq_set</a>+0x24&gt;)
+    2000:	b901      	cbnz	r1, 2004 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_timestamp_freq_set.html">log_output_timestamp_freq_set</a>+0x10&gt;
+    2002:	2301      	movs	r3, #1
+    2004:	6013      	str	r3, [r2, #0]
+    2006:	4b05      	ldr	r3, [pc, #20]	; (201c &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_timestamp_freq_set.html">log_output_timestamp_freq_set</a>+0x28&gt;)
+    2008:	6018      	str	r0, [r3, #0]
+    200a:	4770      	bx	lr
+    200c:	2101      	movs	r1, #1
+    200e:	0840      	lsrs	r0, r0, #1
+    2010:	005b      	lsls	r3, r3, #1
+    2012:	e7f2      	b.n	1ffa &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_timestamp_freq_set.html">log_output_timestamp_freq_set</a>+0x6&gt;
+    2014:	000f4240 	.word	0x000f4240
+    2018:	20001ac8 	.word	0x20001ac8
+    201c:	20001acc 	.word	0x20001acc
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_logging_backends_log_backend_uart.c_char_out.html">char_out (36)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 56</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 400</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    400
+                    
+                    
+                </td>
+                <td class="col_size">44</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_timestamp_freq_set.html" class="icon-function">log_output_timestamp_freq_set</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    56
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    356
+                    
+                    
+                </td>
+                <td class="col_size">32</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_log_set_timestamp_func.html" class="icon-function">log_set_timestamp_func</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    48
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    324
+                    
+                    
+                </td>
+                <td class="col_size">52</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_log_core_init.html" class="icon-function">log_core_init</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    40
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    272
+                    
+                    
+                </td>
+                <td class="col_size">200</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_init.c_z_cstart.html" class="icon-function">z_cstart</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">72</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_arch_arm_core_cortex_m_prep_c.c_z_prep_c.html" class="icon-function">z_prep_c</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

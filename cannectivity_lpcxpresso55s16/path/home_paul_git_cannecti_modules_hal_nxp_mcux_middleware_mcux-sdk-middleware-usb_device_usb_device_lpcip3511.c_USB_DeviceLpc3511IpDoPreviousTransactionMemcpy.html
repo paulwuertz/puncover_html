@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules.html">modules</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal.html">hal</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp.html">nxp</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux.html">mcux</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware.html">middleware</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb.html">mcux-sdk-middleware-usb</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device.html">device</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c.html">usb_device_lpcip3511.c</a>:992
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">USB_DeviceLpc3511IpDoPreviousTransactionMemcpy</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000c8c2</td>
+                <td>
+    
+    
+</td>
+                <td>16 (static)</td>
+                <td>76</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpcIp3511IsrFunction.html">USB_DeviceLpcIp3511IsrFunction (896)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=26
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="_unknown___unknown__memcpy.html">memcpy (26)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpc3511IpTransaction.html">USB_DeviceLpc3511IpTransaction (152)</a></pre>
+    
+    <pre>
+USB_DeviceLpc3511IpDoPreviousTransactionMemcpy():
+    c8c2:	b4f0      	push	{r4, r5, r6, r7}
+    c8c4:	4604      	mov	r4, r0
+    c8c6:	460e      	mov	r6, r1
+    c8c8:	b92a      	cbnz	r2, c8d6 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpc3511IpDoPreviousTransactionMemcpy.html">USB_DeviceLpc3511IpDoPreviousTransactionMemcpy</a>.constprop.0+0x14&gt;
+    c8ca:	7e43      	ldrb	r3, [r0, #25]
+    c8cc:	09db      	lsrs	r3, r3, #7
+    c8ce:	d000      	beq.n	c8d2 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpc3511IpDoPreviousTransactionMemcpy.html">USB_DeviceLpc3511IpDoPreviousTransactionMemcpy</a>.constprop.0+0x10&gt;
+    c8d0:	b9d9      	cbnz	r1, c90a &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpc3511IpDoPreviousTransactionMemcpy.html">USB_DeviceLpc3511IpDoPreviousTransactionMemcpy</a>.constprop.0+0x48&gt;
+    c8d2:	bcf0      	pop	{r4, r5, r6, r7}
+    c8d4:	4770      	bx	lr
+    c8d6:	eb00 0143 	add.w	r1, r0, r3, lsl #1
+    c8da:	7e49      	ldrb	r1, [r1, #25]
+    c8dc:	09c9      	lsrs	r1, r1, #7
+    c8de:	d0f8      	beq.n	c8d2 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpc3511IpDoPreviousTransactionMemcpy.html">USB_DeviceLpc3511IpDoPreviousTransactionMemcpy</a>.constprop.0+0x10&gt;
+    c8e0:	2e00      	cmp	r6, #0
+    c8e2:	d0f6      	beq.n	c8d2 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpc3511IpDoPreviousTransactionMemcpy.html">USB_DeviceLpc3511IpDoPreviousTransactionMemcpy</a>.constprop.0+0x10&gt;
+    c8e4:	07d2      	lsls	r2, r2, #31
+    c8e6:	d4f4      	bmi.n	c8d2 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpc3511IpDoPreviousTransactionMemcpy.html">USB_DeviceLpc3511IpDoPreviousTransactionMemcpy</a>.constprop.0+0x10&gt;
+    c8e8:	8aa5      	ldrh	r5, [r4, #20]
+    c8ea:	68a0      	ldr	r0, [r4, #8]
+    c8ec:	f3c5 050b 	ubfx	r5, r5, #0, #12
+    c8f0:	6827      	ldr	r7, [r4, #0]
+    c8f2:	6921      	ldr	r1, [r4, #16]
+    c8f4:	353f      	adds	r5, #63	; 0x3f
+    c8f6:	1b80      	subs	r0, r0, r6
+    c8f8:	f025 053f 	bic.w	r5, r5, #63	; 0x3f
+    c8fc:	4632      	mov	r2, r6
+    c8fe:	fb03 1105 	mla	r1, r3, r5, r1
+    c902:	4438      	add	r0, r7
+    c904:	bcf0      	pop	{r4, r5, r6, r7}
+    c906:	f000 bff3 	b.w	d8f0 &lt;<a href="_unknown___unknown__memcpy.html">memcpy</a>&gt;
+    c90a:	4613      	mov	r3, r2
+    c90c:	e7ec      	b.n	c8e8 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpc3511IpDoPreviousTransactionMemcpy.html">USB_DeviceLpc3511IpDoPreviousTransactionMemcpy</a>.constprop.0+0x26&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpc3511IpSend.html">USB_DeviceLpc3511IpSend (66)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 88</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 972</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    88
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    972
+                    
+                    
+                </td>
+                <td class="col_size">76</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpc3511IpDoPreviousTransactionMemcpy.html" class="icon-function">USB_DeviceLpc3511IpDoPreviousTransactionMemcpy</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">896</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_device_usb_device_lpcip3511.c_USB_DeviceLpcIp3511IsrFunction.html" class="icon-function">USB_DeviceLpcIp3511IsrFunction</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

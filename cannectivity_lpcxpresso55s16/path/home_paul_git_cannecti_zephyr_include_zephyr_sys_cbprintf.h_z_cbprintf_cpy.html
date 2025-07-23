@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_include.html">include</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_include_zephyr.html">zephyr</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_include_zephyr_sys.html">sys</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_include_zephyr_sys_cbprintf.h.html">cbprintf.h</a>:528
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">z_cbprintf_cpy</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000b13e</td>
+                <td>
+    
+    
+</td>
+                <td>16 (static)</td>
+                <td>44</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=26
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="_unknown___unknown__memcpy.html">memcpy (26)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_mgmt.c_log_backend_enable.html">log_backend_enable (18)</a></pre>
+    
+    <pre>
+z_cbprintf_cpy():
+    b13e:	b570      	push	{r4, r5, r6, lr}
+    b140:	e9d2 3601 	ldrd	r3, r6, [r2, #4]
+    b144:	1b9b      	subs	r3, r3, r6
+    b146:	428b      	cmp	r3, r1
+    b148:	460c      	mov	r4, r1
+    b14a:	4615      	mov	r5, r2
+    b14c:	d30a      	bcc.n	b164 &lt;<a href="home_paul_git_cannecti_zephyr_include_zephyr_sys_cbprintf.h_z_cbprintf_cpy.html">z_cbprintf_cpy</a>+0x26&gt;
+    b14e:	6813      	ldr	r3, [r2, #0]
+    b150:	460a      	mov	r2, r1
+    b152:	4601      	mov	r1, r0
+    b154:	1998      	adds	r0, r3, r6
+    b156:	f002 fbcb 	bl	d8f0 &lt;<a href="_unknown___unknown__memcpy.html">memcpy</a>&gt;
+    b15a:	4620      	mov	r0, r4
+    b15c:	68ab      	ldr	r3, [r5, #8]
+    b15e:	4423      	add	r3, r4
+    b160:	60ab      	str	r3, [r5, #8]
+    b162:	bd70      	pop	{r4, r5, r6, pc}
+    b164:	f06f 001b 	mvn.w	r0, #27
+    b168:	e7fb      	b.n	b162 &lt;<a href="home_paul_git_cannecti_zephyr_include_zephyr_sys_cbprintf.h_z_cbprintf_cpy.html">z_cbprintf_cpy</a>+0x24&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_log_msg_finalize.html">z_log_msg_finalize (50)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

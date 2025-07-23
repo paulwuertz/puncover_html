@@ -1,0 +1,1672 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_cannectivity.html">cannectivity</a></li>
+        
+        <li><a href="home_paul_git_cannecti_cannectivity_subsys.html">subsys</a></li>
+        
+        <li><a href="home_paul_git_cannecti_cannectivity_subsys_usb.html">usb</a></li>
+        
+        <li><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device.html">device</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class.html">class</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c.html">gs_usb.c</a>:685
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">gs_usb_vendor_request_handler</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00003a44</td>
+                <td>
+    
+    
+</td>
+                <td>152 (dynamic,bounded)</td>
+                <td>1<span class="secondary">,</span>816</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (9,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=500
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_descriptor.c_usb_get_dev_data_by_iface.html">usb_get_dev_data_by_iface (26)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_1.html">z_log_msg_simple_create_1 (4)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_2.html">z_log_msg_simple_create_2 (20)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_impl_z_log_msg_simple_create_0.html">z_impl_z_log_msg_simple_create_0 (18)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_static_create.html">z_log_msg_static_create (4)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_bittiming_to_can_timing.html">gs_usb_bittiming_to_can_timing (244)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_z_impl_can_set_timing.html">z_impl_can_set_timing (38)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_reset_channel.html">gs_usb_reset_channel (100)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_z_impl_can_set_timing_data.html">z_impl_can_set_timing_data (46)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_status_callback.html">gs_usb_status_callback (496)</a></pre>
+    
+    <pre>
+gs_usb_vendor_request_handler():
+    3a44:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+    3a48:	b08b      	sub	sp, #44	; 0x2c
+    3a4a:	7805      	ldrb	r5, [r0, #0]
+    3a4c:	4681      	mov	r9, r0
+    3a4e:	f015 051f 	ands.w	r5, r5, #31
+    3a52:	4688      	mov	r8, r1
+    3a54:	4614      	mov	r4, r2
+    3a56:	af00      	add	r7, sp, #0
+    3a58:	d007      	beq.n	3a6a &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x26&gt;
+    3a5a:	2d01      	cmp	r5, #1
+    3a5c:	d019      	beq.n	3a92 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x4e&gt;
+    3a5e:	f899 3001 	ldrb.w	r3, [r9, #1]
+    3a62:	f899 2000 	ldrb.w	r2, [r9]
+    3a66:	49b6      	ldr	r1, [pc, #728]	; (3d40 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x2fc&gt;)
+    3a68:	e1b7      	b.n	3dda &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x396&gt;
+    3a6a:	f990 2000 	ldrsb.w	r2, [r0]
+    3a6e:	7843      	ldrb	r3, [r0, #1]
+    3a70:	2a00      	cmp	r2, #0
+    3a72:	daf4      	bge.n	3a5e &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x1a&gt;
+    3a74:	2baa      	cmp	r3, #170	; 0xaa
+    3a76:	d1f2      	bne.n	3a5e &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x1a&gt;
+    3a78:	8883      	ldrh	r3, [r0, #4]
+    3a7a:	2b07      	cmp	r3, #7
+    3a7c:	d1ef      	bne.n	3a5e &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x1a&gt;
+    3a7e:	4bb1      	ldr	r3, [pc, #708]	; (3d44 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x300&gt;)
+    3a80:	681b      	ldr	r3, [r3, #0]
+    3a82:	2b00      	cmp	r3, #0
+    3a84:	f000 81e4 	beq.w	3e50 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x40c&gt;
+    3a88:	4621      	mov	r1, r4
+    3a8a:	4640      	mov	r0, r8
+    3a8c:	4798      	blx	r3
+gs_usb_request_identify():
+    3a8e:	4604      	mov	r4, r0
+    3a90:	e00d      	b.n	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+gs_usb_vendor_request_handler():
+    3a92:	7901      	ldrb	r1, [r0, #4]
+    3a94:	48ac      	ldr	r0, [pc, #688]	; (3d48 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x304&gt;)
+    3a96:	f007 fcb7 	bl	b408 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_descriptor.c_usb_get_dev_data_by_iface.html">usb_get_dev_data_by_iface</a>&gt;
+    3a9a:	b968      	cbnz	r0, 3ab8 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x74&gt;
+    3a9c:	4629      	mov	r1, r5
+    3a9e:	f8b9 3004 	ldrh.w	r3, [r9, #4]
+    3aa2:	4aaa      	ldr	r2, [pc, #680]	; (3d4c &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x308&gt;)
+    3aa4:	48aa      	ldr	r0, [pc, #680]	; (3d50 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x30c&gt;)
+    3aa6:	f007 fccc 	bl	b442 &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_1.html">z_log_msg_simple_create_1</a>&gt;
+    3aaa:	f06f 0412 	mvn.w	r4, #18
+    3aae:	4620      	mov	r0, r4
+    3ab0:	372c      	adds	r7, #44	; 0x2c
+    3ab2:	46bd      	mov	sp, r7
+    3ab4:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+    3ab8:	f999 2000 	ldrsb.w	r2, [r9]
+    3abc:	6806      	ldr	r6, [r0, #0]
+    3abe:	2a00      	cmp	r2, #0
+    3ac0:	f8b9 5002 	ldrh.w	r5, [r9, #2]
+    3ac4:	f899 3001 	ldrb.w	r3, [r9, #1]
+    3ac8:	f280 818f 	bge.w	3dea &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x3a6&gt;
+    3acc:	3b04      	subs	r3, #4
+    3ace:	2b0a      	cmp	r3, #10
+    3ad0:	d8c5      	bhi.n	3a5e &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x1a&gt;
+    3ad2:	a201      	add	r2, pc, #4	; (adr r2, 3ad8 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x94&gt;)
+    3ad4:	f852 f023 	ldr.w	pc, [r2, r3, lsl #2]
+    3ad8:	00003b05 	.word	0x00003b05
+    3adc:	00003b9f 	.word	0x00003b9f
+    3ae0:	00003bcf 	.word	0x00003bcf
+    3ae4:	00003a5f 	.word	0x00003a5f
+    3ae8:	00003a5f 	.word	0x00003a5f
+    3aec:	00003a5f 	.word	0x00003a5f
+    3af0:	00003a5f 	.word	0x00003a5f
+    3af4:	00003c2f 	.word	0x00003c2f
+    3af8:	00003a5f 	.word	0x00003a5f
+    3afc:	00003d05 	.word	0x00003d05
+    3b00:	00003d7d 	.word	0x00003d7d
+    3b04:	6933      	ldr	r3, [r6, #16]
+    3b06:	6826      	ldr	r6, [r4, #0]
+gs_usb_request_bt_const():
+    3b08:	6b1a      	ldr	r2, [r3, #48]	; 0x30
+    3b0a:	4295      	cmp	r5, r2
+    3b0c:	d308      	bcc.n	3b20 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xdc&gt;
+    3b0e:	462b      	mov	r3, r5
+    3b10:	4a90      	ldr	r2, [pc, #576]	; (3d54 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x310&gt;)
+gs_usb_request_set_termination():
+    3b12:	2101      	movs	r1, #1
+    3b14:	488e      	ldr	r0, [pc, #568]	; (3d50 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x30c&gt;)
+    3b16:	f007 fc94 	bl	b442 &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_1.html">z_log_msg_simple_create_1</a>&gt;
+    3b1a:	f06f 0415 	mvn.w	r4, #21
+    3b1e:	e7c6      	b.n	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+gs_usb_request_bt_const():
+    3b20:	f04f 0a28 	mov.w	sl, #40	; 0x28
+    3b24:	fb0a 3905 	mla	r9, sl, r5, r3
+    3b28:	f8d9 0008 	ldr.w	r0, [r9, #8]
+z_impl_can_get_core_clock():
+    3b2c:	6883      	ldr	r3, [r0, #8]
+    3b2e:	f107 0114 	add.w	r1, r7, #20
+    3b32:	6a9b      	ldr	r3, [r3, #40]	; 0x28
+    3b34:	4798      	blx	r3
+gs_usb_request_bt_const():
+    3b36:	4604      	mov	r4, r0
+    3b38:	b130      	cbz	r0, 3b48 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x104&gt;
+gs_usb_request_bt_const_ext():
+    3b3a:	4623      	mov	r3, r4
+    3b3c:	462a      	mov	r2, r5
+    3b3e:	4986      	ldr	r1, [pc, #536]	; (3d58 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x314&gt;)
+gs_usb_request_data_bittiming():
+    3b40:	4883      	ldr	r0, [pc, #524]	; (3d50 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x30c&gt;)
+    3b42:	f007 fc82 	bl	b44a &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_2.html">z_log_msg_simple_create_2</a>.constprop.0&gt;
+    3b46:	e7b2      	b.n	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+gs_usb_request_bt_const():
+    3b48:	f8d9 3008 	ldr.w	r3, [r9, #8]
+z_impl_can_get_timing_min():
+    3b4c:	6899      	ldr	r1, [r3, #8]
+gs_usb_request_bt_const():
+    3b4e:	f8d9 3008 	ldr.w	r3, [r9, #8]
+z_impl_can_get_timing_max():
+    3b52:	689a      	ldr	r2, [r3, #8]
+gs_usb_request_bt_const():
+    3b54:	f8d9 3024 	ldr.w	r3, [r9, #36]	; 0x24
+    3b58:	6033      	str	r3, [r6, #0]
+    3b5a:	697b      	ldr	r3, [r7, #20]
+    3b5c:	6073      	str	r3, [r6, #4]
+    3b5e:	8e88      	ldrh	r0, [r1, #52]	; 0x34
+    3b60:	8e4b      	ldrh	r3, [r1, #50]	; 0x32
+    3b62:	4403      	add	r3, r0
+    3b64:	60b3      	str	r3, [r6, #8]
+    3b66:	8f93      	ldrh	r3, [r2, #60]	; 0x3c
+    3b68:	8fd0      	ldrh	r0, [r2, #62]	; 0x3e
+    3b6a:	4403      	add	r3, r0
+    3b6c:	60f3      	str	r3, [r6, #12]
+    3b6e:	8ecb      	ldrh	r3, [r1, #54]	; 0x36
+    3b70:	6133      	str	r3, [r6, #16]
+    3b72:	f8b2 3040 	ldrh.w	r3, [r2, #64]	; 0x40
+    3b76:	6173      	str	r3, [r6, #20]
+    3b78:	8f53      	ldrh	r3, [r2, #58]	; 0x3a
+    3b7a:	61b3      	str	r3, [r6, #24]
+    3b7c:	8f0b      	ldrh	r3, [r1, #56]	; 0x38
+    3b7e:	61f3      	str	r3, [r6, #28]
+    3b80:	f8b2 3042 	ldrh.w	r3, [r2, #66]	; 0x42
+    3b84:	f886 4025 	strb.w	r4, [r6, #37]	; 0x25
+    3b88:	6233      	str	r3, [r6, #32]
+    3b8a:	2301      	movs	r3, #1
+    3b8c:	f886 4026 	strb.w	r4, [r6, #38]	; 0x26
+    3b90:	f886 3024 	strb.w	r3, [r6, #36]	; 0x24
+    3b94:	f886 4027 	strb.w	r4, [r6, #39]	; 0x27
+    3b98:	f8c8 a000 	str.w	sl, [r8]
+gs_usb_vendor_request_handler():
+    3b9c:	e787      	b.n	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+gs_usb_request_device_config():
+    3b9e:	2200      	movs	r2, #0
+    3ba0:	6823      	ldr	r3, [r4, #0]
+    3ba2:	6931      	ldr	r1, [r6, #16]
+    3ba4:	605a      	str	r2, [r3, #4]
+    3ba6:	609a      	str	r2, [r3, #8]
+    3ba8:	601a      	str	r2, [r3, #0]
+    3baa:	6b09      	ldr	r1, [r1, #48]	; 0x30
+    3bac:	715a      	strb	r2, [r3, #5]
+    3bae:	3901      	subs	r1, #1
+    3bb0:	70d9      	strb	r1, [r3, #3]
+    3bb2:	2102      	movs	r1, #2
+    3bb4:	7119      	strb	r1, [r3, #4]
+    3bb6:	2101      	movs	r1, #1
+    3bb8:	719a      	strb	r2, [r3, #6]
+    3bba:	71da      	strb	r2, [r3, #7]
+    3bbc:	7219      	strb	r1, [r3, #8]
+    3bbe:	725a      	strb	r2, [r3, #9]
+    3bc0:	729a      	strb	r2, [r3, #10]
+    3bc2:	72da      	strb	r2, [r3, #11]
+    3bc4:	230c      	movs	r3, #12
+    3bc6:	f8c8 3000 	str.w	r3, [r8]
+gs_usb_vendor_request_handler():
+    3bca:	2400      	movs	r4, #0
+    3bcc:	e76f      	b.n	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+gs_usb_request_timestamp():
+    3bce:	6932      	ldr	r2, [r6, #16]
+    3bd0:	6825      	ldr	r5, [r4, #0]
+    3bd2:	6b53      	ldr	r3, [r2, #52]	; 0x34
+    3bd4:	b92b      	cbnz	r3, 3be2 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x19e&gt;
+z_log_msg_simple_create_0():
+    3bd6:	4a61      	ldr	r2, [pc, #388]	; (3d5c &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x318&gt;)
+    3bd8:	2101      	movs	r1, #1
+    3bda:	485d      	ldr	r0, [pc, #372]	; (3d50 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x30c&gt;)
+    3bdc:	f007 fb15 	bl	b20a &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_impl_z_log_msg_simple_create_0.html">z_impl_z_log_msg_simple_create_0</a>&gt;
+    3be0:	e136      	b.n	3e50 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x40c&gt;
+gs_usb_request_timestamp():
+    3be2:	4630      	mov	r0, r6
+    3be4:	6c52      	ldr	r2, [r2, #68]	; 0x44
+    3be6:	f107 0114 	add.w	r1, r7, #20
+    3bea:	4798      	blx	r3
+    3bec:	4604      	mov	r4, r0
+    3bee:	b130      	cbz	r0, 3bfe &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x1ba&gt;
+    3bf0:	4603      	mov	r3, r0
+    3bf2:	2101      	movs	r1, #1
+    3bf4:	4a5a      	ldr	r2, [pc, #360]	; (3d60 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x31c&gt;)
+    3bf6:	4856      	ldr	r0, [pc, #344]	; (3d50 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x30c&gt;)
+    3bf8:	f007 fc23 	bl	b442 &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_1.html">z_log_msg_simple_create_1</a>&gt;
+    3bfc:	e757      	b.n	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+    3bfe:	46e9      	mov	r9, sp
+    3c00:	b088      	sub	sp, #32
+    3c02:	466a      	mov	r2, sp
+    3c04:	697b      	ldr	r3, [r7, #20]
+    3c06:	2604      	movs	r6, #4
+    3c08:	4956      	ldr	r1, [pc, #344]	; (3d64 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x320&gt;)
+    3c0a:	6151      	str	r1, [r2, #20]
+    3c0c:	4956      	ldr	r1, [pc, #344]	; (3d68 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x324&gt;)
+    3c0e:	e9c2 1306 	strd	r1, r3, [r2, #24]
+    3c12:	4603      	mov	r3, r0
+    3c14:	f44f 5104 	mov.w	r1, #8448	; 0x2100
+    3c18:	484d      	ldr	r0, [pc, #308]	; (3d50 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x30c&gt;)
+    3c1a:	f842 6f10 	str.w	r6, [r2, #16]!
+    3c1e:	f007 fc12 	bl	b446 &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_static_create.html">z_log_msg_static_create</a>&gt;
+    3c22:	697b      	ldr	r3, [r7, #20]
+    3c24:	46cd      	mov	sp, r9
+    3c26:	602b      	str	r3, [r5, #0]
+    3c28:	f8c8 6000 	str.w	r6, [r8]
+gs_usb_vendor_request_handler():
+    3c2c:	e73f      	b.n	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+    3c2e:	6933      	ldr	r3, [r6, #16]
+    3c30:	6826      	ldr	r6, [r4, #0]
+gs_usb_request_bt_const_ext():
+    3c32:	6b1a      	ldr	r2, [r3, #48]	; 0x30
+    3c34:	4295      	cmp	r5, r2
+    3c36:	d302      	bcc.n	3c3e &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x1fa&gt;
+    3c38:	462b      	mov	r3, r5
+    3c3a:	4a4c      	ldr	r2, [pc, #304]	; (3d6c &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x328&gt;)
+    3c3c:	e769      	b.n	3b12 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xce&gt;
+    3c3e:	2228      	movs	r2, #40	; 0x28
+    3c40:	fb02 3905 	mla	r9, r2, r5, r3
+    3c44:	f8d9 0008 	ldr.w	r0, [r9, #8]
+z_impl_can_get_core_clock():
+    3c48:	6883      	ldr	r3, [r0, #8]
+    3c4a:	f107 0114 	add.w	r1, r7, #20
+    3c4e:	6a9b      	ldr	r3, [r3, #40]	; 0x28
+    3c50:	4798      	blx	r3
+gs_usb_request_bt_const_ext():
+    3c52:	4604      	mov	r4, r0
+    3c54:	2800      	cmp	r0, #0
+    3c56:	f47f af70 	bne.w	3b3a &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xf6&gt;
+    3c5a:	f8d9 3008 	ldr.w	r3, [r9, #8]
+z_impl_can_get_timing_min():
+    3c5e:	6899      	ldr	r1, [r3, #8]
+gs_usb_request_bt_const_ext():
+    3c60:	f8d9 3008 	ldr.w	r3, [r9, #8]
+z_impl_can_get_timing_max():
+    3c64:	689a      	ldr	r2, [r3, #8]
+gs_usb_request_bt_const_ext():
+    3c66:	f8d9 3024 	ldr.w	r3, [r9, #36]	; 0x24
+    3c6a:	6033      	str	r3, [r6, #0]
+    3c6c:	697b      	ldr	r3, [r7, #20]
+    3c6e:	6073      	str	r3, [r6, #4]
+    3c70:	8e88      	ldrh	r0, [r1, #52]	; 0x34
+    3c72:	8e4b      	ldrh	r3, [r1, #50]	; 0x32
+    3c74:	4403      	add	r3, r0
+    3c76:	60b3      	str	r3, [r6, #8]
+    3c78:	8fd0      	ldrh	r0, [r2, #62]	; 0x3e
+    3c7a:	8f93      	ldrh	r3, [r2, #60]	; 0x3c
+    3c7c:	4403      	add	r3, r0
+    3c7e:	2001      	movs	r0, #1
+    3c80:	60f3      	str	r3, [r6, #12]
+    3c82:	8ecb      	ldrh	r3, [r1, #54]	; 0x36
+    3c84:	6133      	str	r3, [r6, #16]
+    3c86:	f8b2 3040 	ldrh.w	r3, [r2, #64]	; 0x40
+    3c8a:	6173      	str	r3, [r6, #20]
+    3c8c:	8f53      	ldrh	r3, [r2, #58]	; 0x3a
+    3c8e:	61b3      	str	r3, [r6, #24]
+    3c90:	8f0b      	ldrh	r3, [r1, #56]	; 0x38
+    3c92:	61f3      	str	r3, [r6, #28]
+    3c94:	f8b2 3042 	ldrh.w	r3, [r2, #66]	; 0x42
+    3c98:	f886 0024 	strb.w	r0, [r6, #36]	; 0x24
+    3c9c:	6233      	str	r3, [r6, #32]
+    3c9e:	f886 4025 	strb.w	r4, [r6, #37]	; 0x25
+    3ca2:	f886 4026 	strb.w	r4, [r6, #38]	; 0x26
+    3ca6:	f886 4027 	strb.w	r4, [r6, #39]	; 0x27
+    3caa:	f8d9 3008 	ldr.w	r3, [r9, #8]
+z_impl_can_get_timing_data_min():
+    3cae:	6899      	ldr	r1, [r3, #8]
+gs_usb_request_bt_const_ext():
+    3cb0:	f8d9 3008 	ldr.w	r3, [r9, #8]
+z_impl_can_get_timing_data_max():
+    3cb4:	689a      	ldr	r2, [r3, #8]
+gs_usb_request_bt_const_ext():
+    3cb6:	f8b1 504c 	ldrh.w	r5, [r1, #76]	; 0x4c
+    3cba:	f8b1 304a 	ldrh.w	r3, [r1, #74]	; 0x4a
+    3cbe:	442b      	add	r3, r5
+    3cc0:	62b3      	str	r3, [r6, #40]	; 0x28
+    3cc2:	f8b2 3054 	ldrh.w	r3, [r2, #84]	; 0x54
+    3cc6:	f8b2 5056 	ldrh.w	r5, [r2, #86]	; 0x56
+    3cca:	442b      	add	r3, r5
+    3ccc:	62f3      	str	r3, [r6, #44]	; 0x2c
+    3cce:	f8b1 304e 	ldrh.w	r3, [r1, #78]	; 0x4e
+    3cd2:	6333      	str	r3, [r6, #48]	; 0x30
+    3cd4:	f8b2 3058 	ldrh.w	r3, [r2, #88]	; 0x58
+    3cd8:	6373      	str	r3, [r6, #52]	; 0x34
+    3cda:	f8b2 3052 	ldrh.w	r3, [r2, #82]	; 0x52
+    3cde:	63b3      	str	r3, [r6, #56]	; 0x38
+    3ce0:	f8b1 3050 	ldrh.w	r3, [r1, #80]	; 0x50
+    3ce4:	63f3      	str	r3, [r6, #60]	; 0x3c
+    3ce6:	f8b2 305a 	ldrh.w	r3, [r2, #90]	; 0x5a
+    3cea:	f886 0044 	strb.w	r0, [r6, #68]	; 0x44
+    3cee:	6433      	str	r3, [r6, #64]	; 0x40
+    3cf0:	2348      	movs	r3, #72	; 0x48
+    3cf2:	f886 4045 	strb.w	r4, [r6, #69]	; 0x45
+    3cf6:	f886 4046 	strb.w	r4, [r6, #70]	; 0x46
+    3cfa:	f886 4047 	strb.w	r4, [r6, #71]	; 0x47
+gs_usb_request_get_termination():
+    3cfe:	f8c8 3000 	str.w	r3, [r8]
+gs_usb_vendor_request_handler():
+    3d02:	e6d4      	b.n	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+gs_usb_request_get_termination():
+    3d04:	6933      	ldr	r3, [r6, #16]
+    3d06:	f8d4 9000 	ldr.w	r9, [r4]
+    3d0a:	6b1a      	ldr	r2, [r3, #48]	; 0x30
+    3d0c:	4295      	cmp	r5, r2
+    3d0e:	d302      	bcc.n	3d16 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x2d2&gt;
+    3d10:	462b      	mov	r3, r5
+    3d12:	4a17      	ldr	r2, [pc, #92]	; (3d70 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x32c&gt;)
+    3d14:	e6fd      	b.n	3b12 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xce&gt;
+    3d16:	6bdc      	ldr	r4, [r3, #60]	; 0x3c
+    3d18:	b90c      	cbnz	r4, 3d1e &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x2da&gt;
+z_log_msg_simple_create_0():
+    3d1a:	4a16      	ldr	r2, [pc, #88]	; (3d74 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x330&gt;)
+    3d1c:	e75c      	b.n	3bd8 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x194&gt;
+gs_usb_request_get_termination():
+    3d1e:	4629      	mov	r1, r5
+    3d20:	4630      	mov	r0, r6
+    3d22:	6c5b      	ldr	r3, [r3, #68]	; 0x44
+    3d24:	f107 0214 	add.w	r2, r7, #20
+    3d28:	47a0      	blx	r4
+    3d2a:	4604      	mov	r4, r0
+    3d2c:	b118      	cbz	r0, 3d36 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x2f2&gt;
+    3d2e:	4603      	mov	r3, r0
+    3d30:	462a      	mov	r2, r5
+    3d32:	4911      	ldr	r1, [pc, #68]	; (3d78 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x334&gt;)
+    3d34:	e704      	b.n	3b40 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xfc&gt;
+    3d36:	7d3b      	ldrb	r3, [r7, #20]
+    3d38:	f8c9 3000 	str.w	r3, [r9]
+    3d3c:	2304      	movs	r3, #4
+    3d3e:	e7de      	b.n	3cfe &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x2ba&gt;
+    3d40:	0000f7b7 	.word	0x0000f7b7
+    3d44:	20001ce8 	.word	0x20001ce8
+    3d48:	20001cec 	.word	0x20001cec
+    3d4c:	0000f16b 	.word	0x0000f16b
+    3d50:	0000de24 	.word	0x0000de24
+    3d54:	0000f192 	.word	0x0000f192
+    3d58:	0000f1bf 	.word	0x0000f1bf
+    3d5c:	0000f1f0 	.word	0x0000f1f0
+    3d60:	0000f208 	.word	0x0000f208
+    3d64:	0000f231 	.word	0x0000f231
+    3d68:	0000f932 	.word	0x0000f932
+    3d6c:	0000f247 	.word	0x0000f247
+    3d70:	0000f278 	.word	0x0000f278
+    3d74:	0000f2ac 	.word	0x0000f2ac
+    3d78:	0000f2ca 	.word	0x0000f2ca
+gs_usb_vendor_request_handler():
+    3d7c:	6933      	ldr	r3, [r6, #16]
+    3d7e:	6826      	ldr	r6, [r4, #0]
+gs_usb_request_get_state():
+    3d80:	6b1a      	ldr	r2, [r3, #48]	; 0x30
+    3d82:	4295      	cmp	r5, r2
+    3d84:	d302      	bcc.n	3d8c &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x348&gt;
+    3d86:	462b      	mov	r3, r5
+    3d88:	4aab      	ldr	r2, [pc, #684]	; (4038 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x5f4&gt;)
+    3d8a:	e6c2      	b.n	3b12 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xce&gt;
+    3d8c:	2228      	movs	r2, #40	; 0x28
+    3d8e:	fb02 3305 	mla	r3, r2, r5, r3
+    3d92:	6898      	ldr	r0, [r3, #8]
+z_impl_can_get_state():
+    3d94:	6883      	ldr	r3, [r0, #8]
+    3d96:	f107 0214 	add.w	r2, r7, #20
+    3d9a:	6a1b      	ldr	r3, [r3, #32]
+    3d9c:	f107 0108 	add.w	r1, r7, #8
+    3da0:	4798      	blx	r3
+gs_usb_request_get_state():
+    3da2:	4604      	mov	r4, r0
+    3da4:	b118      	cbz	r0, 3dae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x36a&gt;
+    3da6:	4603      	mov	r3, r0
+    3da8:	462a      	mov	r2, r5
+    3daa:	49a4      	ldr	r1, [pc, #656]	; (403c &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x5f8&gt;)
+    3dac:	e6c8      	b.n	3b40 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xfc&gt;
+    3dae:	7d7b      	ldrb	r3, [r7, #21]
+    3db0:	6073      	str	r3, [r6, #4]
+    3db2:	7d3b      	ldrb	r3, [r7, #20]
+    3db4:	60b3      	str	r3, [r6, #8]
+    3db6:	7a3a      	ldrb	r2, [r7, #8]
+    3db8:	2a04      	cmp	r2, #4
+    3dba:	d80c      	bhi.n	3dd6 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x392&gt;
+    3dbc:	e8df f002 	tbb	[pc, r2]
+    3dc0:	07130311 	.word	0x07130311
+    3dc4:	09          	.byte	0x09
+    3dc5:	00          	.byte	0x00
+    3dc6:	2301      	movs	r3, #1
+    3dc8:	6033      	str	r3, [r6, #0]
+    3dca:	230c      	movs	r3, #12
+    3dcc:	e797      	b.n	3cfe &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x2ba&gt;
+    3dce:	2303      	movs	r3, #3
+    3dd0:	e7fa      	b.n	3dc8 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x384&gt;
+    3dd2:	2304      	movs	r3, #4
+    3dd4:	e7f8      	b.n	3dc8 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x384&gt;
+    3dd6:	462b      	mov	r3, r5
+    3dd8:	4999      	ldr	r1, [pc, #612]	; (4040 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x5fc&gt;)
+gs_usb_vendor_request_handler():
+    3dda:	489a      	ldr	r0, [pc, #616]	; (4044 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x600&gt;)
+    3ddc:	f007 fb35 	bl	b44a &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_2.html">z_log_msg_simple_create_2</a>.constprop.0&gt;
+    3de0:	e036      	b.n	3e50 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x40c&gt;
+gs_usb_request_get_state():
+    3de2:	2300      	movs	r3, #0
+    3de4:	e7f0      	b.n	3dc8 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x384&gt;
+    3de6:	2302      	movs	r3, #2
+    3de8:	e7ee      	b.n	3dc8 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x384&gt;
+gs_usb_vendor_request_handler():
+    3dea:	2b0c      	cmp	r3, #12
+    3dec:	f63f ae37 	bhi.w	3a5e &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x1a&gt;
+    3df0:	a201      	add	r2, pc, #4	; (adr r2, 3df8 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x3b4&gt;)
+    3df2:	f852 f023 	ldr.w	pc, [r2, r3, lsl #2]
+    3df6:	bf00      	nop
+    3df8:	00003e2d 	.word	0x00003e2d
+    3dfc:	00003e57 	.word	0x00003e57
+    3e00:	00003ec3 	.word	0x00003ec3
+    3e04:	00003a5f 	.word	0x00003a5f
+    3e08:	00003a5f 	.word	0x00003a5f
+    3e0c:	00003a5f 	.word	0x00003a5f
+    3e10:	00003a5f 	.word	0x00003a5f
+    3e14:	00003ffd 	.word	0x00003ffd
+    3e18:	00003a5f 	.word	0x00003a5f
+    3e1c:	00003a5f 	.word	0x00003a5f
+    3e20:	0000408d 	.word	0x0000408d
+    3e24:	00003a5f 	.word	0x00003a5f
+    3e28:	00004105 	.word	0x00004105
+    3e2c:	f8d8 3000 	ldr.w	r3, [r8]
+    3e30:	6822      	ldr	r2, [r4, #0]
+gs_usb_request_host_format():
+    3e32:	2b04      	cmp	r3, #4
+    3e34:	d001      	beq.n	3e3a &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x3f6&gt;
+    3e36:	4a84      	ldr	r2, [pc, #528]	; (4048 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x604&gt;)
+    3e38:	e66b      	b.n	3b12 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xce&gt;
+    3e3a:	6813      	ldr	r3, [r2, #0]
+    3e3c:	f64b 62ef 	movw	r2, #48879	; 0xbeef
+    3e40:	4293      	cmp	r3, r2
+    3e42:	f43f aec2 	beq.w	3bca &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x186&gt;
+    3e46:	2101      	movs	r1, #1
+    3e48:	4a80      	ldr	r2, [pc, #512]	; (404c &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x608&gt;)
+    3e4a:	487e      	ldr	r0, [pc, #504]	; (4044 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x600&gt;)
+    3e4c:	f007 faf9 	bl	b442 &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_1.html">z_log_msg_simple_create_1</a>&gt;
+gs_usb_vendor_request_handler():
+    3e50:	f06f 0485 	mvn.w	r4, #133	; 0x85
+    3e54:	e62b      	b.n	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+    3e56:	6820      	ldr	r0, [r4, #0]
+    3e58:	6934      	ldr	r4, [r6, #16]
+    3e5a:	f8d8 3000 	ldr.w	r3, [r8]
+gs_usb_request_bittiming():
+    3e5e:	6b22      	ldr	r2, [r4, #48]	; 0x30
+    3e60:	4295      	cmp	r5, r2
+    3e62:	d302      	bcc.n	3e6a &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x426&gt;
+    3e64:	462b      	mov	r3, r5
+    3e66:	4a7a      	ldr	r2, [pc, #488]	; (4050 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x60c&gt;)
+    3e68:	e653      	b.n	3b12 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xce&gt;
+    3e6a:	2b14      	cmp	r3, #20
+    3e6c:	d001      	beq.n	3e72 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x42e&gt;
+    3e6e:	4a79      	ldr	r2, [pc, #484]	; (4054 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x610&gt;)
+    3e70:	e64f      	b.n	3b12 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xce&gt;
+    3e72:	2328      	movs	r3, #40	; 0x28
+    3e74:	fb05 3203 	mla	r2, r5, r3, r3
+    3e78:	4422      	add	r2, r4
+    3e7a:	7992      	ldrb	r2, [r2, #6]
+    3e7c:	b142      	cbz	r2, 3e90 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x44c&gt;
+    3e7e:	462b      	mov	r3, r5
+    3e80:	4a75      	ldr	r2, [pc, #468]	; (4058 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x614&gt;)
+gs_usb_request_data_bittiming():
+    3e82:	2102      	movs	r1, #2
+    3e84:	486f      	ldr	r0, [pc, #444]	; (4044 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x600&gt;)
+    3e86:	f007 fadc 	bl	b442 &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_1.html">z_log_msg_simple_create_1</a>&gt;
+    3e8a:	f06f 040f 	mvn.w	r4, #15
+    3e8e:	e60e      	b.n	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+gs_usb_request_bittiming():
+    3e90:	fb03 4405 	mla	r4, r3, r5, r4
+    3e94:	68a3      	ldr	r3, [r4, #8]
+z_impl_can_get_timing_min():
+    3e96:	6899      	ldr	r1, [r3, #8]
+gs_usb_request_bittiming():
+    3e98:	68a3      	ldr	r3, [r4, #8]
+z_impl_can_get_timing_min():
+    3e9a:	3130      	adds	r1, #48	; 0x30
+z_impl_can_get_timing_max():
+    3e9c:	689a      	ldr	r2, [r3, #8]
+gs_usb_request_bittiming():
+    3e9e:	f107 0314 	add.w	r3, r7, #20
+    3ea2:	323a      	adds	r2, #58	; 0x3a
+    3ea4:	f7ff f8c2 	bl	302c &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_bittiming_to_can_timing.html">gs_usb_bittiming_to_can_timing</a>&gt;
+    3ea8:	68a0      	ldr	r0, [r4, #8]
+can_set_timing():
+    3eaa:	f107 0114 	add.w	r1, r7, #20
+    3eae:	f007 fc29 	bl	b704 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_z_impl_can_set_timing.html">z_impl_can_set_timing</a>&gt;
+gs_usb_request_bittiming():
+    3eb2:	4604      	mov	r4, r0
+    3eb4:	2800      	cmp	r0, #0
+    3eb6:	f43f adfa 	beq.w	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+    3eba:	4603      	mov	r3, r0
+    3ebc:	462a      	mov	r2, r5
+    3ebe:	4967      	ldr	r1, [pc, #412]	; (405c &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x618&gt;)
+    3ec0:	e63e      	b.n	3b40 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xfc&gt;
+gs_usb_request_mode():
+    3ec2:	f8d6 a010 	ldr.w	sl, [r6, #16]
+gs_usb_vendor_request_handler():
+    3ec6:	f8d8 3000 	ldr.w	r3, [r8]
+gs_usb_request_mode():
+    3eca:	f8da 2030 	ldr.w	r2, [sl, #48]	; 0x30
+gs_usb_vendor_request_handler():
+    3ece:	6821      	ldr	r1, [r4, #0]
+gs_usb_request_mode():
+    3ed0:	4295      	cmp	r5, r2
+    3ed2:	d302      	bcc.n	3eda &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x496&gt;
+    3ed4:	462b      	mov	r3, r5
+    3ed6:	4a62      	ldr	r2, [pc, #392]	; (4060 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x61c&gt;)
+    3ed8:	e61b      	b.n	3b12 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xce&gt;
+    3eda:	2b08      	cmp	r3, #8
+    3edc:	d001      	beq.n	3ee2 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x49e&gt;
+    3ede:	4a61      	ldr	r2, [pc, #388]	; (4064 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x620&gt;)
+    3ee0:	e617      	b.n	3b12 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xce&gt;
+    3ee2:	680a      	ldr	r2, [r1, #0]
+    3ee4:	b122      	cbz	r2, 3ef0 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x4ac&gt;
+    3ee6:	2a01      	cmp	r2, #1
+    3ee8:	d026      	beq.n	3f38 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x4f4&gt;
+    3eea:	462b      	mov	r3, r5
+    3eec:	495e      	ldr	r1, [pc, #376]	; (4068 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x624&gt;)
+    3eee:	e774      	b.n	3dda &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x396&gt;
+    3ef0:	4629      	mov	r1, r5
+    3ef2:	4650      	mov	r0, sl
+    3ef4:	f7ff f996 	bl	3224 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_reset_channel.html">gs_usb_reset_channel</a>.isra.0&gt;
+    3ef8:	4604      	mov	r4, r0
+    3efa:	2800      	cmp	r0, #0
+    3efc:	f47f add7 	bne.w	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+    3f00:	f8da 8040 	ldr.w	r8, [sl, #64]	; 0x40
+    3f04:	f1b8 0f00 	cmp.w	r8, #0
+    3f08:	f43f ae5f 	beq.w	3bca &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x186&gt;
+    3f0c:	2428      	movs	r4, #40	; 0x28
+    3f0e:	fb04 a405 	mla	r4, r4, r5, sl
+    3f12:	f894 202e 	ldrb.w	r2, [r4, #46]	; 0x2e
+    3f16:	f8da 3044 	ldr.w	r3, [sl, #68]	; 0x44
+    3f1a:	4630      	mov	r0, r6
+    3f1c:	8da1      	ldrh	r1, [r4, #44]	; 0x2c
+    3f1e:	f082 0201 	eor.w	r2, r2, #1
+    3f22:	47c0      	blx	r8
+    3f24:	4603      	mov	r3, r0
+    3f26:	2800      	cmp	r0, #0
+    3f28:	f43f ae4f 	beq.w	3bca &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x186&gt;
+    3f2c:	8da2      	ldrh	r2, [r4, #44]	; 0x2c
+    3f2e:	494f      	ldr	r1, [pc, #316]	; (406c &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x628&gt;)
+    3f30:	4844      	ldr	r0, [pc, #272]	; (4044 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x600&gt;)
+    3f32:	f007 fa8a 	bl	b44a &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_2.html">z_log_msg_simple_create_2</a>.constprop.0&gt;
+    3f36:	e648      	b.n	3bca &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x186&gt;
+    3f38:	f04f 0b28 	mov.w	fp, #40	; 0x28
+    3f3c:	fb0b ab05 	mla	fp, fp, r5, sl
+    3f40:	f89b 302e 	ldrb.w	r3, [fp, #46]	; 0x2e
+    3f44:	b143      	cbz	r3, 3f58 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x514&gt;
+    3f46:	462b      	mov	r3, r5
+    3f48:	2102      	movs	r1, #2
+    3f4a:	4a49      	ldr	r2, [pc, #292]	; (4070 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x62c&gt;)
+    3f4c:	483d      	ldr	r0, [pc, #244]	; (4044 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x600&gt;)
+    3f4e:	f007 fa78 	bl	b442 &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_simple_create_1.html">z_log_msg_simple_create_1</a>&gt;
+    3f52:	f06f 0477 	mvn.w	r4, #119	; 0x77
+    3f56:	e5aa      	b.n	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+    3f58:	f8d1 9004 	ldr.w	r9, [r1, #4]
+    3f5c:	f8db 3024 	ldr.w	r3, [fp, #36]	; 0x24
+    3f60:	ea39 0303 	bics.w	r3, r9, r3
+    3f64:	d003      	beq.n	3f6e &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x52a&gt;
+    3f66:	462b      	mov	r3, r5
+    3f68:	464a      	mov	r2, r9
+    3f6a:	4942      	ldr	r1, [pc, #264]	; (4074 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x630&gt;)
+    3f6c:	e735      	b.n	3dda &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x396&gt;
+    3f6e:	2328      	movs	r3, #40	; 0x28
+    3f70:	f009 0801 	and.w	r8, r9, #1
+    3f74:	ea4f 0848 	mov.w	r8, r8, lsl #1
+    3f78:	fb03 a305 	mla	r3, r3, r5, sl
+    3f7c:	f019 0f02 	tst.w	r9, #2
+    3f80:	bf18      	it	ne
+    3f82:	f048 0801 	orrne.w	r8, r8, #1
+    3f86:	f019 0f04 	tst.w	r9, #4
+    3f8a:	bf18      	it	ne
+    3f8c:	f048 0810 	orrne.w	r8, r8, #16
+    3f90:	f019 0f08 	tst.w	r9, #8
+    3f94:	bf18      	it	ne
+    3f96:	f048 0808 	orrne.w	r8, r8, #8
+    3f9a:	f419 7f80 	tst.w	r9, #256	; 0x100
+    3f9e:	6898      	ldr	r0, [r3, #8]
+    3fa0:	bf18      	it	ne
+    3fa2:	f048 0804 	orrne.w	r8, r8, #4
+    3fa6:	607b      	str	r3, [r7, #4]
+z_impl_can_set_mode():
+    3fa8:	6882      	ldr	r2, [r0, #8]
+    3faa:	4641      	mov	r1, r8
+    3fac:	68d2      	ldr	r2, [r2, #12]
+    3fae:	4790      	blx	r2
+gs_usb_request_mode():
+    3fb0:	687b      	ldr	r3, [r7, #4]
+    3fb2:	4604      	mov	r4, r0
+    3fb4:	b190      	cbz	r0, 3fdc &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x598&gt;
+    3fb6:	466e      	mov	r6, sp
+    3fb8:	b08a      	sub	sp, #40	; 0x28
+    3fba:	466a      	mov	r2, sp
+    3fbc:	4b2e      	ldr	r3, [pc, #184]	; (4078 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x634&gt;)
+    3fbe:	e9c2 8007 	strd	r8, r0, [r2, #28]
+    3fc2:	e9c2 3505 	strd	r3, r5, [r2, #20]
+    3fc6:	2305      	movs	r3, #5
+    3fc8:	f44f 5121 	mov.w	r1, #10304	; 0x2840
+    3fcc:	f842 3f10 	str.w	r3, [r2, #16]!
+    3fd0:	481c      	ldr	r0, [pc, #112]	; (4044 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x600&gt;)
+    3fd2:	2300      	movs	r3, #0
+    3fd4:	f007 fa37 	bl	b446 &lt;<a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_static_create.html">z_log_msg_static_create</a>&gt;
+    3fd8:	46b5      	mov	sp, r6
+    3fda:	e568      	b.n	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+    3fdc:	6898      	ldr	r0, [r3, #8]
+z_impl_can_start():
+    3fde:	6883      	ldr	r3, [r0, #8]
+    3fe0:	685b      	ldr	r3, [r3, #4]
+    3fe2:	4798      	blx	r3
+gs_usb_request_mode():
+    3fe4:	4604      	mov	r4, r0
+    3fe6:	b118      	cbz	r0, 3ff0 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x5ac&gt;
+    3fe8:	4603      	mov	r3, r0
+    3fea:	462a      	mov	r2, r5
+    3fec:	4923      	ldr	r1, [pc, #140]	; (407c &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x638&gt;)
+    3fee:	e5a7      	b.n	3b40 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xfc&gt;
+    3ff0:	2301      	movs	r3, #1
+    3ff2:	f8cb 9028 	str.w	r9, [fp, #40]	; 0x28
+    3ff6:	f88b 302e 	strb.w	r3, [fp, #46]	; 0x2e
+    3ffa:	e781      	b.n	3f00 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x4bc&gt;
+gs_usb_request_identify():
+    3ffc:	6931      	ldr	r1, [r6, #16]
+gs_usb_vendor_request_handler():
+    3ffe:	f8d8 3000 	ldr.w	r3, [r8]
+gs_usb_request_identify():
+    4002:	6b08      	ldr	r0, [r1, #48]	; 0x30
+gs_usb_vendor_request_handler():
+    4004:	6822      	ldr	r2, [r4, #0]
+gs_usb_request_identify():
+    4006:	4285      	cmp	r5, r0
+    4008:	d302      	bcc.n	4010 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x5cc&gt;
+    400a:	462b      	mov	r3, r5
+    400c:	4a1c      	ldr	r2, [pc, #112]	; (4080 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x63c&gt;)
+    400e:	e580      	b.n	3b12 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xce&gt;
+    4010:	2b04      	cmp	r3, #4
+    4012:	d001      	beq.n	4018 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x5d4&gt;
+    4014:	4a1b      	ldr	r2, [pc, #108]	; (4084 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x640&gt;)
+    4016:	e57c      	b.n	3b12 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xce&gt;
+    4018:	6812      	ldr	r2, [r2, #0]
+    401a:	b122      	cbz	r2, 4026 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x5e2&gt;
+    401c:	2a01      	cmp	r2, #1
+    401e:	d009      	beq.n	4034 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x5f0&gt;
+    4020:	462b      	mov	r3, r5
+    4022:	4919      	ldr	r1, [pc, #100]	; (4088 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x644&gt;)
+    4024:	e6d9      	b.n	3dda &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x396&gt;
+    4026:	2205      	movs	r2, #5
+    4028:	6c0c      	ldr	r4, [r1, #64]	; 0x40
+    402a:	6c4b      	ldr	r3, [r1, #68]	; 0x44
+    402c:	4630      	mov	r0, r6
+    402e:	4629      	mov	r1, r5
+    4030:	47a0      	blx	r4
+    4032:	e52c      	b.n	3a8e &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x4a&gt;
+    4034:	461a      	mov	r2, r3
+    4036:	e7f7      	b.n	4028 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x5e4&gt;
+    4038:	0000f302 	.word	0x0000f302
+    403c:	0000f330 	.word	0x0000f330
+    4040:	0000f35c 	.word	0x0000f35c
+    4044:	0000de24 	.word	0x0000de24
+    4048:	0000f380 	.word	0x0000f380
+    404c:	0000f3ac 	.word	0x0000f3ac
+    4050:	0000f62d 	.word	0x0000f62d
+    4054:	0000f3d1 	.word	0x0000f3d1
+    4058:	0000f3fb 	.word	0x0000f3fb
+    405c:	0000f42f 	.word	0x0000f42f
+    4060:	0000f45c 	.word	0x0000f45c
+    4064:	0000f485 	.word	0x0000f485
+    4068:	0000f53f 	.word	0x0000f53f
+    406c:	0000f574 	.word	0x0000f574
+    4070:	0000f4aa 	.word	0x0000f4aa
+    4074:	0000f4c5 	.word	0x0000f4c5
+    4078:	0000f4ed 	.word	0x0000f4ed
+    407c:	0000f51b 	.word	0x0000f51b
+    4080:	0000f5a6 	.word	0x0000f5a6
+    4084:	0000f5d3 	.word	0x0000f5d3
+    4088:	0000f5fc 	.word	0x0000f5fc
+gs_usb_vendor_request_handler():
+    408c:	6821      	ldr	r1, [r4, #0]
+    408e:	6934      	ldr	r4, [r6, #16]
+    4090:	f8d8 3000 	ldr.w	r3, [r8]
+gs_usb_request_data_bittiming():
+    4094:	6b22      	ldr	r2, [r4, #48]	; 0x30
+    4096:	4295      	cmp	r5, r2
+    4098:	d302      	bcc.n	40a0 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x65c&gt;
+    409a:	462b      	mov	r3, r5
+    409c:	4a27      	ldr	r2, [pc, #156]	; (413c &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6f8&gt;)
+    409e:	e538      	b.n	3b12 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xce&gt;
+    40a0:	2b14      	cmp	r3, #20
+    40a2:	d001      	beq.n	40a8 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x664&gt;
+    40a4:	4a26      	ldr	r2, [pc, #152]	; (4140 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6fc&gt;)
+    40a6:	e534      	b.n	3b12 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xce&gt;
+    40a8:	2328      	movs	r3, #40	; 0x28
+    40aa:	fb05 3203 	mla	r2, r5, r3, r3
+    40ae:	4422      	add	r2, r4
+    40b0:	7992      	ldrb	r2, [r2, #6]
+    40b2:	b112      	cbz	r2, 40ba &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x676&gt;
+    40b4:	462b      	mov	r3, r5
+    40b6:	4a23      	ldr	r2, [pc, #140]	; (4144 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x700&gt;)
+    40b8:	e6e3      	b.n	3e82 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x43e&gt;
+    40ba:	680a      	ldr	r2, [r1, #0]
+    40bc:	fb03 4405 	mla	r4, r3, r5, r4
+    40c0:	617a      	str	r2, [r7, #20]
+    40c2:	684a      	ldr	r2, [r1, #4]
+    40c4:	61ba      	str	r2, [r7, #24]
+    40c6:	688a      	ldr	r2, [r1, #8]
+    40c8:	61fa      	str	r2, [r7, #28]
+    40ca:	68ca      	ldr	r2, [r1, #12]
+    40cc:	623a      	str	r2, [r7, #32]
+    40ce:	690a      	ldr	r2, [r1, #16]
+    40d0:	627a      	str	r2, [r7, #36]	; 0x24
+    40d2:	68a3      	ldr	r3, [r4, #8]
+z_impl_can_get_timing_data_min():
+    40d4:	6899      	ldr	r1, [r3, #8]
+gs_usb_request_data_bittiming():
+    40d6:	68a3      	ldr	r3, [r4, #8]
+z_impl_can_get_timing_data_min():
+    40d8:	3148      	adds	r1, #72	; 0x48
+z_impl_can_get_timing_data_max():
+    40da:	689a      	ldr	r2, [r3, #8]
+gs_usb_request_data_bittiming():
+    40dc:	f107 0014 	add.w	r0, r7, #20
+    40e0:	f107 0308 	add.w	r3, r7, #8
+    40e4:	3252      	adds	r2, #82	; 0x52
+    40e6:	f7fe ffa1 	bl	302c &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_bittiming_to_can_timing.html">gs_usb_bittiming_to_can_timing</a>&gt;
+    40ea:	68a0      	ldr	r0, [r4, #8]
+can_set_timing_data():
+    40ec:	f107 0108 	add.w	r1, r7, #8
+    40f0:	f007 fb1b 	bl	b72a &lt;<a href="home_paul_git_cannecti_zephyr_drivers_can_can_common.c_z_impl_can_set_timing_data.html">z_impl_can_set_timing_data</a>&gt;
+gs_usb_request_data_bittiming():
+    40f4:	4604      	mov	r4, r0
+    40f6:	2800      	cmp	r0, #0
+    40f8:	f43f acd9 	beq.w	3aae &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6a&gt;
+    40fc:	4603      	mov	r3, r0
+    40fe:	462a      	mov	r2, r5
+    4100:	4911      	ldr	r1, [pc, #68]	; (4148 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x704&gt;)
+    4102:	e51d      	b.n	3b40 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xfc&gt;
+gs_usb_request_set_termination():
+    4104:	6931      	ldr	r1, [r6, #16]
+gs_usb_vendor_request_handler():
+    4106:	f8d8 3000 	ldr.w	r3, [r8]
+gs_usb_request_set_termination():
+    410a:	6b08      	ldr	r0, [r1, #48]	; 0x30
+gs_usb_vendor_request_handler():
+    410c:	6822      	ldr	r2, [r4, #0]
+gs_usb_request_set_termination():
+    410e:	4285      	cmp	r5, r0
+    4110:	d302      	bcc.n	4118 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6d4&gt;
+    4112:	462b      	mov	r3, r5
+    4114:	4a0d      	ldr	r2, [pc, #52]	; (414c &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x708&gt;)
+    4116:	e4fc      	b.n	3b12 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xce&gt;
+    4118:	6b8c      	ldr	r4, [r1, #56]	; 0x38
+    411a:	b90c      	cbnz	r4, 4120 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6dc&gt;
+z_log_msg_simple_create_0():
+    411c:	4a0c      	ldr	r2, [pc, #48]	; (4150 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x70c&gt;)
+    411e:	e55b      	b.n	3bd8 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x194&gt;
+gs_usb_request_set_termination():
+    4120:	2b04      	cmp	r3, #4
+    4122:	d001      	beq.n	4128 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x6e4&gt;
+    4124:	4a0b      	ldr	r2, [pc, #44]	; (4154 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x710&gt;)
+    4126:	e4f4      	b.n	3b12 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0xce&gt;
+    4128:	6812      	ldr	r2, [r2, #0]
+    412a:	2a00      	cmp	r2, #0
+    412c:	f43f af7d 	beq.w	402a &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x5e6&gt;
+    4130:	2a01      	cmp	r2, #1
+    4132:	f43f af7a 	beq.w	402a &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x5e6&gt;
+    4136:	462b      	mov	r3, r5
+    4138:	4907      	ldr	r1, [pc, #28]	; (4158 &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x714&gt;)
+    413a:	e64e      	b.n	3dda &lt;<a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_vendor_request_handler.html">gs_usb_vendor_request_handler</a>+0x396&gt;
+    413c:	0000f628 	.word	0x0000f628
+    4140:	0000f65b 	.word	0x0000f65b
+    4144:	0000f68a 	.word	0x0000f68a
+    4148:	0000f6c9 	.word	0x0000f6c9
+    414c:	0000f701 	.word	0x0000f701
+    4150:	0000f735 	.word	0x0000f735
+    4154:	0000f753 	.word	0x0000f753
+    4158:	0000f783 	.word	0x0000f783
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_register_vendorcode_callback.html">gs_usb_register_vendorcode_callback (12)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 696</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 2<span class="secondary">,</span>286</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    696
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2<span class="secondary">,</span>286
+                    
+                    
+                </td>
+                <td class="col_size">76</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_timer_cortex_m_systick.c_elapsed.html" class="icon-function">elapsed</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    688
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2<span class="secondary">,</span>210
+                    
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_timer_cortex_m_systick.c_sys_clock_elapsed.html" class="icon-function">sys_clock_elapsed</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2<span class="secondary">,</span>150
+                    
+                    
+                </td>
+                <td class="col_size">20</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_timeout.c_elapsed.html" class="icon-function">elapsed</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    672
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2<span class="secondary">,</span>130
+                    
+                    
+                </td>
+                <td class="col_size">50</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_timeout.c_next_timeout.html" class="icon-function">next_timeout</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    664
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2<span class="secondary">,</span>080
+                    
+                    
+                </td>
+                <td class="col_size">236</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_timeout.c_z_add_timeout.html" class="icon-function">z_add_timeout</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    640
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>844
+                    
+                    
+                </td>
+                <td class="col_size">80</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_timeslicing.c_z_reset_time_slice.html" class="icon-function">z_reset_time_slice</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    624
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>764
+                    
+                    
+                </td>
+                <td class="col_size">132</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_sched.c_ready_thread.html" class="icon-function">ready_thread</a></td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                <td class="col_size">
+                    
+                    608
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>632
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_sched.c_z_sched_wake.html" class="icon-function">z_sched_wake</a></td>
+            </tr>
+        
+            <tr>
+                <th>9</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>564
+                    
+                    
+                </td>
+                <td class="col_size">14</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_work.c_notify_queue_locked.html" class="icon-function">notify_queue_locked</a></td>
+            </tr>
+        
+            <tr>
+                <th>10</th>
+                <td class="col_size">
+                    
+                    592
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>550
+                    
+                    
+                </td>
+                <td class="col_size">180</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_work.c_submit_to_queue_locked.html" class="icon-function">submit_to_queue_locked</a></td>
+            </tr>
+        
+            <tr>
+                <th>11</th>
+                <td class="col_size">
+                    
+                    568
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>370
+                    
+                    
+                </td>
+                <td class="col_size">38</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_work.c_z_work_submit_to_queue.html" class="icon-function">z_work_submit_to_queue</a></td>
+            </tr>
+        
+            <tr>
+                <th>12</th>
+                <td class="col_size">
+                    
+                    552
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>332
+                    
+                    
+                </td>
+                <td class="col_size">134</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_poll.c_signal_poll_event.html" class="icon-function">signal_poll_event</a></td>
+            </tr>
+        
+            <tr>
+                <th>13</th>
+                <td class="col_size">
+                    
+                    528
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>198
+                    
+                    
+                </td>
+                <td class="col_size">62</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_poll.c_z_handle_obj_poll_events.html" class="icon-function">z_handle_obj_poll_events</a></td>
+            </tr>
+        
+            <tr>
+                <th>14</th>
+                <td class="col_size">
+                    
+                    512
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>136
+                    
+                    
+                </td>
+                <td class="col_size">116</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_sem.c_z_impl_k_sem_give.html" class="icon-function">z_impl_k_sem_give</a></td>
+            </tr>
+        
+            <tr>
+                <th>15</th>
+                <td class="col_size">
+                    
+                    496
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>020
+                    
+                    
+                </td>
+                <td class="col_size">118</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_mpsc_pbuf_free.html" class="icon-function">mpsc_pbuf_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>16</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    902
+                    
+                    
+                </td>
+                <td class="col_size">16</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_msg_free.html" class="icon-function">z_log_msg_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>17</th>
+                <td class="col_size">
+                    
+                    472
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    886
+                    
+                    
+                </td>
+                <td class="col_size">168</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_impl_log_process.html" class="icon-function">z_impl_log_process</a></td>
+            </tr>
+        
+            <tr>
+                <th>18</th>
+                <td class="col_size">
+                    
+                    456
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    718
+                    
+                    
+                </td>
+                <td class="col_size">120</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_msg_post_finalize.html" class="icon-function">z_log_msg_post_finalize</a></td>
+            </tr>
+        
+            <tr>
+                <th>19</th>
+                <td class="col_size">
+                    
+                    440
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    598
+                    
+                    
+                </td>
+                <td class="col_size">36</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_msg_commit.html" class="icon-function">z_log_msg_commit</a></td>
+            </tr>
+        
+            <tr>
+                <th>20</th>
+                <td class="col_size">
+                    
+                    432
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    562
+                    
+                    
+                </td>
+                <td class="col_size">50</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_log_msg_finalize.html" class="icon-function">z_log_msg_finalize</a></td>
+            </tr>
+        
+            <tr>
+                <th>21</th>
+                <td class="col_size">
+                    
+                    416
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                136 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    512
+                    
+                    
+                </td>
+                <td class="col_size">264</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_impl_z_log_msg_static_create.html" class="icon-function">z_impl_z_log_msg_static_create</a></td>
+            </tr>
+        
+            <tr>
+                <th>22</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    248
+                    
+                    
+                </td>
+                <td class="col_size">4</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_static_create.html" class="icon-function">z_log_msg_static_create</a></td>
+            </tr>
+        
+            <tr>
+                <th>23</th>
+                <td class="col_size">
+                    
+                    280
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                128 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">244</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_bittiming_to_can_timing.html" class="icon-function">gs_usb_bittiming_to_can_timing</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">152</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

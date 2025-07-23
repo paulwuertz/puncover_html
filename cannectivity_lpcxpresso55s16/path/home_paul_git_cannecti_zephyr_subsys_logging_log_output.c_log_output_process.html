@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_subsys.html">subsys</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_subsys_logging.html">logging</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c.html">log_output.c</a>:640
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">log_output_process</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00001cc8</td>
+                <td>
+    
+    
+</td>
+                <td>72 (static)</td>
+                <td>724</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_msg_process.html">log_output_msg_process (106)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (5,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=192
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_get_tag.html">z_log_get_tag (4)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted (36)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_newline_print.html">newline_print (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbpprintf_external.html">cbpprintf_external (98)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_include_zephyr_logging_log_output.h_log_output_flush.html">log_output_flush (26)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_newline_print.html">newline_print (28)</a></pre>
+    
+    <pre>
+log_output_process():
+    1cc8:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+    1ccc:	b089      	sub	sp, #36	; 0x24
+    1cce:	469b      	mov	fp, r3
+    1cd0:	9b14      	ldr	r3, [sp, #80]	; 0x50
+    1cd2:	f89d a04c 	ldrb.w	sl, [sp, #76]	; 0x4c
+    1cd6:	9306      	str	r3, [sp, #24]
+    1cd8:	9b15      	ldr	r3, [sp, #84]	; 0x54
+    1cda:	4604      	mov	r4, r0
+    1cdc:	9305      	str	r3, [sp, #20]
+    1cde:	9b16      	ldr	r3, [sp, #88]	; 0x58
+    1ce0:	460d      	mov	r5, r1
+    1ce2:	4690      	mov	r8, r2
+    1ce4:	9e17      	ldr	r6, [sp, #92]	; 0x5c
+    1ce6:	9304      	str	r3, [sp, #16]
+    1ce8:	f1ba 0f00 	cmp.w	sl, #0
+    1cec:	f000 809d 	beq.w	1e2a &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x162&gt;
+prefix_print():
+    1cf0:	f406 7380 	and.w	r3, r6, #256	; 0x100
+    1cf4:	9307      	str	r3, [sp, #28]
+    1cf6:	f009 fa17 	bl	b128 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_get_tag.html">z_log_get_tag</a>&gt;
+    1cfa:	f006 0902 	and.w	r9, r6, #2
+    1cfe:	4602      	mov	r2, r0
+    1d00:	2800      	cmp	r0, #0
+    1d02:	d03e      	beq.n	1d82 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0xba&gt;
+    1d04:	4620      	mov	r0, r4
+    1d06:	4991      	ldr	r1, [pc, #580]	; (1f4c &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x284&gt;)
+    1d08:	f7ff ffbe 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1d0c:	4607      	mov	r7, r0
+    1d0e:	f1b9 0f00 	cmp.w	r9, #0
+    1d12:	d008      	beq.n	1d26 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x5e&gt;
+timestamp_print():
+    1d14:	f016 0f44 	tst.w	r6, #68	; 0x44
+    1d18:	d135      	bne.n	1d86 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0xbe&gt;
+    1d1a:	462a      	mov	r2, r5
+    1d1c:	4620      	mov	r0, r4
+    1d1e:	498c      	ldr	r1, [pc, #560]	; (1f50 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x288&gt;)
+    1d20:	f7ff ffb2 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+prefix_print():
+    1d24:	4407      	add	r7, r0
+color_print():
+    1d26:	f006 0301 	and.w	r3, r6, #1
+    1d2a:	b153      	cbz	r3, 1d42 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x7a&gt;
+    1d2c:	4b89      	ldr	r3, [pc, #548]	; (1f54 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x28c&gt;)
+    1d2e:	4620      	mov	r0, r4
+    1d30:	f853 202a 	ldr.w	r2, [r3, sl, lsl #2]
+    1d34:	4b88      	ldr	r3, [pc, #544]	; (1f58 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x290&gt;)
+    1d36:	4989      	ldr	r1, [pc, #548]	; (1f5c &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x294&gt;)
+    1d38:	2a00      	cmp	r2, #0
+    1d3a:	bf08      	it	eq
+    1d3c:	461a      	moveq	r2, r3
+    1d3e:	f7ff ffa3 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+prefix_print():
+    1d42:	f406 7380 	and.w	r3, r6, #256	; 0x100
+    1d46:	2b00      	cmp	r3, #0
+    1d48:	d049      	beq.n	1dde &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x116&gt;
+ids_print():
+    1d4a:	f006 0308 	and.w	r3, r6, #8
+    1d4e:	2b00      	cmp	r3, #0
+    1d50:	d163      	bne.n	1e1a &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x152&gt;
+    1d52:	f1b8 0f00 	cmp.w	r8, #0
+    1d56:	d066      	beq.n	1e26 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x15e&gt;
+    1d58:	4642      	mov	r2, r8
+    1d5a:	4620      	mov	r0, r4
+    1d5c:	4980      	ldr	r1, [pc, #512]	; (1f60 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x298&gt;)
+    1d5e:	f7ff ff93 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1d62:	4605      	mov	r5, r0
+log_output_process():
+    1d64:	9b06      	ldr	r3, [sp, #24]
+prefix_print():
+    1d66:	443d      	add	r5, r7
+log_output_process():
+    1d68:	2b00      	cmp	r3, #0
+    1d6a:	d16d      	bne.n	1e48 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x180&gt;
+    1d6c:	9b04      	ldr	r3, [sp, #16]
+    1d6e:	2b00      	cmp	r3, #0
+    1d70:	d173      	bne.n	1e5a &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x192&gt;
+color_print():
+    1d72:	07f3      	lsls	r3, r6, #31
+    1d74:	f100 80e4 	bmi.w	1f40 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x278&gt;
+postfix_print():
+    1d78:	4631      	mov	r1, r6
+    1d7a:	4620      	mov	r0, r4
+    1d7c:	f7ff ff96 	bl	1cac &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_newline_print.html">newline_print</a>&gt;
+    1d80:	e0d8      	b.n	1f34 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x26c&gt;
+prefix_print():
+    1d82:	4607      	mov	r7, r0
+    1d84:	e7c3      	b.n	1d0e &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x46&gt;
+timestamp_print():
+    1d86:	4b77      	ldr	r3, [pc, #476]	; (1f64 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x29c&gt;)
+    1d88:	6818      	ldr	r0, [r3, #0]
+    1d8a:	2800      	cmp	r0, #0
+    1d8c:	d0ca      	beq.n	1d24 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x5c&gt;
+    1d8e:	4b76      	ldr	r3, [pc, #472]	; (1f68 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x2a0&gt;)
+    1d90:	f44f 797a 	mov.w	r9, #1000	; 0x3e8
+    1d94:	681b      	ldr	r3, [r3, #0]
+    1d96:	f04f 0c3c 	mov.w	ip, #60	; 0x3c
+    1d9a:	fbb5 f5f3 	udiv	r5, r5, r3
+    1d9e:	fbb5 f1f0 	udiv	r1, r5, r0
+    1da2:	f44f 6361 	mov.w	r3, #3600	; 0xe10
+    1da6:	fb00 5511 	mls	r5, r0, r1, r5
+    1daa:	fb09 f505 	mul.w	r5, r9, r5
+    1dae:	fbb1 f2f3 	udiv	r2, r1, r3
+    1db2:	fbb5 fef0 	udiv	lr, r5, r0
+    1db6:	fb03 1112 	mls	r1, r3, r2, r1
+    1dba:	fb00 551e 	mls	r5, r0, lr, r5
+    1dbe:	fbb1 f3fc 	udiv	r3, r1, ip
+    1dc2:	fb09 f505 	mul.w	r5, r9, r5
+    1dc6:	fbb5 f5f0 	udiv	r5, r5, r0
+    1dca:	fb0c 1113 	mls	r1, ip, r3, r1
+    1dce:	4620      	mov	r0, r4
+    1dd0:	9100      	str	r1, [sp, #0]
+    1dd2:	e9cd e501 	strd	lr, r5, [sp, #4]
+    1dd6:	4965      	ldr	r1, [pc, #404]	; (1f6c &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x2a4&gt;)
+    1dd8:	f7ff ff56 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1ddc:	e7a2      	b.n	1d24 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x5c&gt;
+ids_print():
+    1dde:	f006 0308 	and.w	r3, r6, #8
+    1de2:	b1eb      	cbz	r3, 1e20 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x158&gt;
+    1de4:	4b62      	ldr	r3, [pc, #392]	; (1f70 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x2a8&gt;)
+    1de6:	4620      	mov	r0, r4
+    1de8:	f853 202a 	ldr.w	r2, [r3, sl, lsl #2]
+    1dec:	4961      	ldr	r1, [pc, #388]	; (1f74 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x2ac&gt;)
+    1dee:	f7ff ff4b 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1df2:	4605      	mov	r5, r0
+    1df4:	f1b8 0f00 	cmp.w	r8, #0
+    1df8:	d005      	beq.n	1e06 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x13e&gt;
+    1dfa:	4642      	mov	r2, r8
+    1dfc:	4620      	mov	r0, r4
+    1dfe:	4958      	ldr	r1, [pc, #352]	; (1f60 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x298&gt;)
+    1e00:	f7ff ff42 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1e04:	4405      	add	r5, r0
+    1e06:	f1bb 0f00 	cmp.w	fp, #0
+    1e0a:	d0ab      	beq.n	1d64 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x9c&gt;
+    1e0c:	465a      	mov	r2, fp
+    1e0e:	4620      	mov	r0, r4
+    1e10:	4959      	ldr	r1, [pc, #356]	; (1f78 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x2b0&gt;)
+    1e12:	f7ff ff39 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1e16:	4405      	add	r5, r0
+    1e18:	e7a4      	b.n	1d64 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x9c&gt;
+prefix_print():
+    1e1a:	f04f 0b00 	mov.w	fp, #0
+    1e1e:	e7e1      	b.n	1de4 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x11c&gt;
+ids_print():
+    1e20:	f006 0508 	and.w	r5, r6, #8
+    1e24:	e7e6      	b.n	1df4 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x12c&gt;
+    1e26:	4645      	mov	r5, r8
+    1e28:	e79c      	b.n	1d64 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x9c&gt;
+log_output_process():
+    1e2a:	f1bb 0f01 	cmp.w	fp, #1
+    1e2e:	9b06      	ldr	r3, [sp, #24]
+    1e30:	d106      	bne.n	1e40 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x178&gt;
+    1e32:	2b00      	cmp	r3, #0
+    1e34:	d164      	bne.n	1f00 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x238&gt;
+    1e36:	9b04      	ldr	r3, [sp, #16]
+    1e38:	2b00      	cmp	r3, #0
+    1e3a:	d07b      	beq.n	1f34 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x26c&gt;
+    1e3c:	2500      	movs	r5, #0
+    1e3e:	e00c      	b.n	1e5a &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x192&gt;
+    1e40:	2b00      	cmp	r3, #0
+    1e42:	d0f8      	beq.n	1e36 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x16e&gt;
+    1e44:	484d      	ldr	r0, [pc, #308]	; (1f7c &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x2b4&gt;)
+    1e46:	e05c      	b.n	1f02 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x23a&gt;
+    1e48:	484d      	ldr	r0, [pc, #308]	; (1f80 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x2b8&gt;)
+cbpprintf():
+    1e4a:	9b06      	ldr	r3, [sp, #24]
+    1e4c:	4622      	mov	r2, r4
+    1e4e:	494d      	ldr	r1, [pc, #308]	; (1f84 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x2bc&gt;)
+    1e50:	f008 fe64 	bl	ab1c &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_cbprintf_packaged.c_cbpprintf_external.html">cbpprintf_external</a>&gt;
+log_output_process():
+    1e54:	9b04      	ldr	r3, [sp, #16]
+    1e56:	2b00      	cmp	r3, #0
+    1e58:	d068      	beq.n	1f2c &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x264&gt;
+hexdump_line_print():
+    1e5a:	f8df 812c 	ldr.w	r8, [pc, #300]	; 1f88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x2c0&gt;
+    1e5e:	f8df 912c 	ldr.w	r9, [pc, #300]	; 1f8c &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x2c4&gt;
+log_msg_hexdump():
+    1e62:	9f04      	ldr	r7, [sp, #16]
+hexdump_line_print():
+    1e64:	4631      	mov	r1, r6
+log_msg_hexdump():
+    1e66:	2f10      	cmp	r7, #16
+hexdump_line_print():
+    1e68:	4620      	mov	r0, r4
+log_msg_hexdump():
+    1e6a:	bf28      	it	cs
+    1e6c:	2710      	movcs	r7, #16
+hexdump_line_print():
+    1e6e:	f04f 0b00 	mov.w	fp, #0
+    1e72:	f7ff ff1b 	bl	1cac &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_newline_print.html">newline_print</a>&gt;
+    1e76:	455d      	cmp	r5, fp
+    1e78:	dc45      	bgt.n	1f06 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x23e&gt;
+    1e7a:	9b05      	ldr	r3, [sp, #20]
+    1e7c:	4649      	mov	r1, r9
+    1e7e:	4620      	mov	r0, r4
+    1e80:	781a      	ldrb	r2, [r3, #0]
+    1e82:	f7ff ff01 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1e86:	f04f 0b01 	mov.w	fp, #1
+    1e8a:	f01b 0f07 	tst.w	fp, #7
+    1e8e:	d103      	bne.n	1e98 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x1d0&gt;
+    1e90:	4641      	mov	r1, r8
+    1e92:	4620      	mov	r0, r4
+    1e94:	f7ff fef8 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1e98:	455f      	cmp	r7, fp
+    1e9a:	d93b      	bls.n	1f14 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x24c&gt;
+    1e9c:	9b05      	ldr	r3, [sp, #20]
+    1e9e:	4649      	mov	r1, r9
+    1ea0:	4620      	mov	r0, r4
+    1ea2:	f813 200b 	ldrb.w	r2, [r3, fp]
+    1ea6:	f7ff feef 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1eaa:	f10b 0b01 	add.w	fp, fp, #1
+    1eae:	f1bb 0f10 	cmp.w	fp, #16
+    1eb2:	d1ea      	bne.n	1e8a &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x1c2&gt;
+    1eb4:	f04f 0b00 	mov.w	fp, #0
+    1eb8:	4620      	mov	r0, r4
+    1eba:	4935      	ldr	r1, [pc, #212]	; (1f90 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x2c8&gt;)
+    1ebc:	f7ff fee4 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1ec0:	465a      	mov	r2, fp
+    1ec2:	9b05      	ldr	r3, [sp, #20]
+    1ec4:	4620      	mov	r0, r4
+    1ec6:	5c9a      	ldrb	r2, [r3, r2]
+isprint():
+    1ec8:	f1a2 0120 	sub.w	r1, r2, #32
+hexdump_line_print():
+    1ecc:	295f      	cmp	r1, #95	; 0x5f
+    1ece:	bf28      	it	cs
+    1ed0:	222e      	movcs	r2, #46	; 0x2e
+    1ed2:	4930      	ldr	r1, [pc, #192]	; (1f94 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x2cc&gt;)
+    1ed4:	f7ff fed8 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1ed8:	f10b 0b01 	add.w	fp, fp, #1
+    1edc:	f1bb 0f10 	cmp.w	fp, #16
+    1ee0:	d01d      	beq.n	1f1e &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x256&gt;
+    1ee2:	f01b 0f07 	tst.w	fp, #7
+    1ee6:	d103      	bne.n	1ef0 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x228&gt;
+    1ee8:	4641      	mov	r1, r8
+    1eea:	4620      	mov	r0, r4
+    1eec:	f7ff fecc 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1ef0:	455f      	cmp	r7, fp
+    1ef2:	465a      	mov	r2, fp
+    1ef4:	d8e5      	bhi.n	1ec2 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x1fa&gt;
+    1ef6:	4641      	mov	r1, r8
+    1ef8:	4620      	mov	r0, r4
+    1efa:	f7ff fec5 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1efe:	e7eb      	b.n	1ed8 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x210&gt;
+log_output_process():
+    1f00:	481f      	ldr	r0, [pc, #124]	; (1f80 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x2b8&gt;)
+    1f02:	4655      	mov	r5, sl
+    1f04:	e7a1      	b.n	1e4a &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x182&gt;
+hexdump_line_print():
+    1f06:	4641      	mov	r1, r8
+    1f08:	4620      	mov	r0, r4
+    1f0a:	f7ff febd 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1f0e:	f10b 0b01 	add.w	fp, fp, #1
+    1f12:	e7b0      	b.n	1e76 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x1ae&gt;
+    1f14:	4620      	mov	r0, r4
+    1f16:	4920      	ldr	r1, [pc, #128]	; (1f98 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x2d0&gt;)
+    1f18:	f7ff feb6 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1f1c:	e7c5      	b.n	1eaa &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x1e2&gt;
+log_msg_hexdump():
+    1f1e:	9b05      	ldr	r3, [sp, #20]
+    1f20:	443b      	add	r3, r7
+    1f22:	9305      	str	r3, [sp, #20]
+    1f24:	9b04      	ldr	r3, [sp, #16]
+    1f26:	1bdb      	subs	r3, r3, r7
+    1f28:	9304      	str	r3, [sp, #16]
+    1f2a:	d19a      	bne.n	1e62 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x19a&gt;
+log_output_process():
+    1f2c:	f1ba 0f00 	cmp.w	sl, #0
+    1f30:	f47f af1f 	bne.w	1d72 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0xaa&gt;
+    1f34:	4620      	mov	r0, r4
+    1f36:	b009      	add	sp, #36	; 0x24
+    1f38:	e8bd 4ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+    1f3c:	f009 b992 	b.w	b264 &lt;<a href="home_paul_git_cannecti_zephyr_include_zephyr_logging_log_output.h_log_output_flush.html">log_output_flush</a>&gt;
+color_print():
+    1f40:	4620      	mov	r0, r4
+    1f42:	4a05      	ldr	r2, [pc, #20]	; (1f58 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x290&gt;)
+    1f44:	4905      	ldr	r1, [pc, #20]	; (1f5c &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0x294&gt;)
+    1f46:	f7ff fe9f 	bl	1c88 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html">print_formatted</a>&gt;
+    1f4a:	e715      	b.n	1d78 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html">log_output_process</a>+0xb0&gt;
+    1f4c:	0000e9ae 	.word	0x0000e9ae
+    1f50:	0000e9b2 	.word	0x0000e9b2
+    1f54:	0000df60 	.word	0x0000df60
+    1f58:	0000e9a9 	.word	0x0000e9a9
+    1f5c:	0000ee14 	.word	0x0000ee14
+    1f60:	0000e9d7 	.word	0x0000e9d7
+    1f64:	20001acc 	.word	0x20001acc
+    1f68:	20001ac8 	.word	0x20001ac8
+    1f6c:	0000e9bb 	.word	0x0000e9bb
+    1f70:	0000df74 	.word	0x0000df74
+    1f74:	0000e9db 	.word	0x0000e9db
+    1f78:	0000e9e1 	.word	0x0000e9e1
+    1f7c:	0000b2ad 	.word	0x0000b2ad
+    1f80:	0000b27f 	.word	0x0000b27f
+    1f84:	00004ecd 	.word	0x00004ecd
+    1f88:	0000e9ee 	.word	0x0000e9ee
+    1f8c:	0000e9e6 	.word	0x0000e9e6
+    1f90:	0000e9f0 	.word	0x0000e9f0
+    1f94:	0000e9f2 	.word	0x0000e9f2
+    1f98:	0000e9ec 	.word	0x0000e9ec
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_dropped_process.html">log_output_dropped_process (88)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 188</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 92</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    188
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    92
+                    
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_libc_picolibc_cbprintf.c_cbvprintf.html" class="icon-function">cbvprintf</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    140
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                12 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">36</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_print_formatted.html" class="icon-function">print_formatted</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">128</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 128</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 830</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    128
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    830
+                    
+                    
+                </td>
+                <td class="col_size">724</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_process.html" class="icon-function">log_output_process</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">106</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_msg_process.html" class="icon-function">log_output_msg_process</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_lib.html">lib</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_lib_os.html">os</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c.html">mpsc_pbuf.c</a>:175
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">drop_item_locked</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000aca0</td>
+                <td>
+    
+    
+</td>
+                <td>48 (static)</td>
+                <td>256</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_mpsc_pbuf_alloc.html">mpsc_pbuf_alloc (254)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (3,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=114
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_rd_idx_inc.html">rd_idx_inc (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_add_skip_item.html">add_skip_item (62)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_idx_inc.html">idx_inc (28)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_add_skip_item.html">add_skip_item (62)</a></pre>
+    
+    <pre>
+drop_item_locked():
+    aca0:	e92d 4ff7 	stmdb	sp!, {r0, r1, r2, r4, r5, r6, r7, r8, r9, sl, fp, lr}
+    aca4:	68c7      	ldr	r7, [r0, #12]
+    aca6:	69c6      	ldr	r6, [r0, #28]
+    aca8:	469b      	mov	fp, r3
+    acaa:	eb06 0387 	add.w	r3, r6, r7, lsl #2
+    acae:	9300      	str	r3, [sp, #0]
+get_skip():
+    acb0:	f816 3027 	ldrb.w	r3, [r6, r7, lsl #2]
+drop_item_locked():
+    acb4:	4604      	mov	r4, r0
+get_skip():
+    acb6:	f003 0303 	and.w	r3, r3, #3
+    acba:	2b02      	cmp	r3, #2
+drop_item_locked():
+    acbc:	4688      	mov	r8, r1
+    acbe:	4691      	mov	r9, r2
+    acc0:	f04f 0300 	mov.w	r3, #0
+get_skip():
+    acc4:	d00b      	beq.n	acde &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_drop_item_locked.html">drop_item_locked</a>+0x3e&gt;
+drop_item_locked():
+    acc6:	6013      	str	r3, [r2, #0]
+    acc8:	f8cb 3000 	str.w	r3, [fp]
+    accc:	6923      	ldr	r3, [r4, #16]
+    acce:	079b      	lsls	r3, r3, #30
+    acd0:	d413      	bmi.n	acfa &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_drop_item_locked.html">drop_item_locked</a>+0x5a&gt;
+    acd2:	f04f 0a00 	mov.w	sl, #0
+    acd6:	4650      	mov	r0, sl
+    acd8:	b003      	add	sp, #12
+    acda:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+get_skip():
+    acde:	f856 1027 	ldr.w	r1, [r6, r7, lsl #2]
+drop_item_locked():
+    ace2:	6013      	str	r3, [r2, #0]
+    ace4:	0889      	lsrs	r1, r1, #2
+    ace6:	f8cb 3000 	str.w	r3, [fp]
+    acea:	d0ef      	beq.n	accc &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_drop_item_locked.html">drop_item_locked</a>+0x2c&gt;
+    acec:	f7ff ffad 	bl	ac4a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_rd_idx_inc.html">rd_idx_inc</a>&gt;
+    acf0:	68e3      	ldr	r3, [r4, #12]
+    acf2:	60a3      	str	r3, [r4, #8]
+    acf4:	f04f 0a01 	mov.w	sl, #1
+    acf8:	e7ed      	b.n	acd6 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_drop_item_locked.html">drop_item_locked</a>+0x36&gt;
+    acfa:	69a3      	ldr	r3, [r4, #24]
+    acfc:	eb06 0087 	add.w	r0, r6, r7, lsl #2
+    ad00:	4798      	blx	r3
+is_valid():
+    ad02:	f816 2027 	ldrb.w	r2, [r6, r7, lsl #2]
+drop_item_locked():
+    ad06:	4605      	mov	r5, r0
+    ad08:	f012 0a01 	ands.w	sl, r2, #1
+    ad0c:	d0e1      	beq.n	acd2 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_drop_item_locked.html">drop_item_locked</a>+0x32&gt;
+    ad0e:	f012 0202 	ands.w	r2, r2, #2
+    ad12:	d01f      	beq.n	ad54 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_drop_item_locked.html">drop_item_locked</a>+0xb4&gt;
+    ad14:	f1b8 0f00 	cmp.w	r8, #0
+    ad18:	d003      	beq.n	ad22 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_drop_item_locked.html">drop_item_locked</a>+0x82&gt;
+    ad1a:	4641      	mov	r1, r8
+    ad1c:	4620      	mov	r0, r4
+    ad1e:	f7ff ffa0 	bl	ac62 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_add_skip_item.html">add_skip_item</a>&gt;
+    ad22:	6861      	ldr	r1, [r4, #4]
+    ad24:	462a      	mov	r2, r5
+    ad26:	4620      	mov	r0, r4
+    ad28:	f7ff ff81 	bl	ac2e &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_idx_inc.html">idx_inc</a>&gt;
+    ad2c:	e9d4 2102 	ldrd	r2, r1, [r4, #8]
+    ad30:	4291      	cmp	r1, r2
+    ad32:	6060      	str	r0, [r4, #4]
+    ad34:	d106      	bne.n	ad44 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_drop_item_locked.html">drop_item_locked</a>+0xa4&gt;
+    ad36:	462a      	mov	r2, r5
+    ad38:	4620      	mov	r0, r4
+    ad3a:	f7ff ff78 	bl	ac2e &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_idx_inc.html">idx_inc</a>&gt;
+    ad3e:	f04f 0a00 	mov.w	sl, #0
+    ad42:	60a0      	str	r0, [r4, #8]
+    ad44:	68a2      	ldr	r2, [r4, #8]
+    ad46:	6022      	str	r2, [r4, #0]
+    ad48:	60e2      	str	r2, [r4, #12]
+    ad4a:	6922      	ldr	r2, [r4, #16]
+    ad4c:	f042 0208 	orr.w	r2, r2, #8
+    ad50:	6122      	str	r2, [r4, #16]
+    ad52:	e7c0      	b.n	acd6 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_drop_item_locked.html">drop_item_locked</a>+0x36&gt;
+    ad54:	4601      	mov	r1, r0
+    ad56:	4620      	mov	r0, r4
+    ad58:	9201      	str	r2, [sp, #4]
+    ad5a:	f7ff ff76 	bl	ac4a &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_rd_idx_inc.html">rd_idx_inc</a>&gt;
+    ad5e:	68e3      	ldr	r3, [r4, #12]
+    ad60:	60a3      	str	r3, [r4, #8]
+    ad62:	f1b8 0f00 	cmp.w	r8, #0
+    ad66:	d004      	beq.n	ad72 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_drop_item_locked.html">drop_item_locked</a>+0xd2&gt;
+    ad68:	6821      	ldr	r1, [r4, #0]
+    ad6a:	69e3      	ldr	r3, [r4, #28]
+    ad6c:	9a01      	ldr	r2, [sp, #4]
+    ad6e:	f843 2021 	str.w	r2, [r3, r1, lsl #2]
+    ad72:	eb05 0208 	add.w	r2, r5, r8
+    ad76:	f8cb 2000 	str.w	r2, [fp]
+    ad7a:	6821      	ldr	r1, [r4, #0]
+    ad7c:	4620      	mov	r0, r4
+    ad7e:	f7ff ff56 	bl	ac2e &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_idx_inc.html">idx_inc</a>&gt;
+    ad82:	6923      	ldr	r3, [r4, #16]
+    ad84:	6020      	str	r0, [r4, #0]
+    ad86:	f043 0308 	orr.w	r3, r3, #8
+    ad8a:	6123      	str	r3, [r4, #16]
+    ad8c:	f816 3027 	ldrb.w	r3, [r6, r7, lsl #2]
+    ad90:	f36f 0300 	bfc	r3, #0, #1
+    ad94:	f806 3027 	strb.w	r3, [r6, r7, lsl #2]
+    ad98:	9b00      	ldr	r3, [sp, #0]
+    ad9a:	f8c9 3000 	str.w	r3, [r9]
+    ad9e:	e7a9      	b.n	acf4 &lt;<a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_drop_item_locked.html">drop_item_locked</a>+0x54&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_post_drop_action.html">post_drop_action (54)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 760</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 90</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    760
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    90
+                    
+                    
+                </td>
+                <td class="col_size">28</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_idx_inc.html" class="icon-function">idx_inc</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    752
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">62</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_add_skip_item.html" class="icon-function">add_skip_item</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">736</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 736</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 1<span class="secondary">,</span>290</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    736
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>290
+                    
+                    
+                </td>
+                <td class="col_size">256</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_drop_item_locked.html" class="icon-function">drop_item_locked</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    688
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                64 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1<span class="secondary">,</span>034
+                    
+                    
+                </td>
+                <td class="col_size">254</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_lib_os_mpsc_pbuf.c_mpsc_pbuf_alloc.html" class="icon-function">mpsc_pbuf_alloc</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    780
+                    
+                    
+                </td>
+                <td class="col_size">16</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_core.c_z_log_msg_alloc.html" class="icon-function">z_log_msg_alloc</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    624
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                136 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    764
+                    
+                    
+                </td>
+                <td class="col_size">264</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_msg.c_z_impl_z_log_msg_static_create.html" class="icon-function">z_impl_z_log_msg_static_create</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    500
+                    
+                    
+                </td>
+                <td class="col_size">4</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_build_zephyr_include_generated_zephyr_syscalls_log_msg.h_z_log_msg_static_create.html" class="icon-function">z_log_msg_static_create</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                488 (dynamic,bounded)
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">496</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_subsys_usb_device_class_gs_usb.c_gs_usb_status_callback.html" class="icon-function">gs_usb_status_callback</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

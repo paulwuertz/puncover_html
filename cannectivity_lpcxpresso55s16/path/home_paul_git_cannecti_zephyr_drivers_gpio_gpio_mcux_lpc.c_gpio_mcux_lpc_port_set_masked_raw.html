@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_drivers_gpio.html">gpio</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c.html">gpio_mcux_lpc.c</a>:185
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">gpio_mcux_lpc_port_set_masked_raw</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000bdee</td>
+                <td>
+    
+    
+</td>
+                <td>0 (static)</td>
+                <td>32</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_port_get_raw.html">gpio_mcux_lpc_port_get_raw (20)</a></pre>
+    
+    <pre>
+gpio_mcux_lpc_port_set_masked_raw():
+    bdee:	6843      	ldr	r3, [r0, #4]
+    bdf0:	43c9      	mvns	r1, r1
+    bdf2:	6918      	ldr	r0, [r3, #16]
+    bdf4:	685b      	ldr	r3, [r3, #4]
+    bdf6:	eb03 0380 	add.w	r3, r3, r0, lsl #2
+    bdfa:	2000      	movs	r0, #0
+    bdfc:	f503 5300 	add.w	r3, r3, #8192	; 0x2000
+    be00:	f8c3 1080 	str.w	r1, [r3, #128]	; 0x80
+    be04:	f8c3 2180 	str.w	r2, [r3, #384]	; 0x180
+    be08:	f8c3 0080 	str.w	r0, [r3, #128]	; 0x80
+    be0c:	4770      	bx	lr
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_gpio_mcux_lpc_port_set_bits_raw.html">gpio_mcux_lpc_port_set_bits_raw (18)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

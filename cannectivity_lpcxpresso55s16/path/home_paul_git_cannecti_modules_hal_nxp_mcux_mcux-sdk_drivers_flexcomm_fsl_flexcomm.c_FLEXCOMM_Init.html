@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules.html">modules</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal.html">hal</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp.html">nxp</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux.html">mcux</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk.html">mcux-sdk</a></li>
+        
+        <li><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm.html">flexcomm</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c.html">fsl_flexcomm.c</a>:129
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">FLEXCOMM_Init</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00008344</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>16 (static)</td>
+                <td>124</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html">USART_Init (312)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=42
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_GetInstance.html">FLEXCOMM_GetInstance (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_reset.c_RESET_PeripheralReset.html">RESET_PeripheralReset (14)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_GetInstance.html">FLEXCOMM_GetInstance (28)</a></pre>
+    
+    <pre>
+FLEXCOMM_Init():
+    8344:	b538      	push	{r3, r4, r5, lr}
+    8346:	460c      	mov	r4, r1
+    8348:	4605      	mov	r5, r0
+    834a:	f7ff ffed 	bl	8328 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_GetInstance.html">FLEXCOMM_GetInstance</a>&gt;
+CLOCK_EnableClock():
+    834e:	2101      	movs	r1, #1
+FLEXCOMM_Init():
+    8350:	4b19      	ldr	r3, [pc, #100]	; (83b8 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_Init.html">FLEXCOMM_Init</a>+0x74&gt;)
+    8352:	f833 3010 	ldrh.w	r3, [r3, r0, lsl #1]
+CLOCK_EnableClock():
+    8356:	0a1a      	lsrs	r2, r3, #8
+    8358:	b2db      	uxtb	r3, r3
+    835a:	4099      	lsls	r1, r3
+    835c:	f102 0388 	add.w	r3, r2, #136	; 0x88
+    8360:	f04f 4280 	mov.w	r2, #1073741824	; 0x40000000
+    8364:	f842 1023 	str.w	r1, [r2, r3, lsl #2]
+FLEXCOMM_Init():
+    8368:	4b14      	ldr	r3, [pc, #80]	; (83bc &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_Init.html">FLEXCOMM_Init</a>+0x78&gt;)
+    836a:	f853 0020 	ldr.w	r0, [r3, r0, lsl #2]
+    836e:	f003 ffd4 	bl	c31a &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_reset.c_RESET_PeripheralReset.html">RESET_PeripheralReset</a>&gt;
+FLEXCOMM_PeripheralIsPresent():
+    8372:	b144      	cbz	r4, 8386 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_Init.html">FLEXCOMM_Init</a>+0x42&gt;
+    8374:	2c04      	cmp	r4, #4
+    8376:	d814      	bhi.n	83a2 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_Init.html">FLEXCOMM_Init</a>+0x5e&gt;
+    8378:	f8d5 3ff8 	ldr.w	r3, [r5, #4088]	; 0xff8
+    837c:	1ce2      	adds	r2, r4, #3
+    837e:	40d3      	lsrs	r3, r2
+FLEXCOMM_SetPeriph():
+    8380:	f013 0f01 	tst.w	r3, #1
+    8384:	d014      	beq.n	83b0 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_Init.html">FLEXCOMM_Init</a>+0x6c&gt;
+    8386:	f8d5 3ff8 	ldr.w	r3, [r5, #4088]	; 0xff8
+    838a:	071b      	lsls	r3, r3, #28
+    838c:	d505      	bpl.n	839a &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_Init.html">FLEXCOMM_Init</a>+0x56&gt;
+    838e:	f8d5 3ff8 	ldr.w	r3, [r5, #4088]	; 0xff8
+    8392:	f003 0307 	and.w	r3, r3, #7
+    8396:	42a3      	cmp	r3, r4
+    8398:	d10c      	bne.n	83b4 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_Init.html">FLEXCOMM_Init</a>+0x70&gt;
+    839a:	2000      	movs	r0, #0
+    839c:	f8c5 4ff8 	str.w	r4, [r5, #4088]	; 0xff8
+FLEXCOMM_Init():
+    83a0:	bd38      	pop	{r3, r4, r5, pc}
+FLEXCOMM_PeripheralIsPresent():
+    83a2:	2c05      	cmp	r4, #5
+    83a4:	d104      	bne.n	83b0 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_Init.html">FLEXCOMM_Init</a>+0x6c&gt;
+    83a6:	f8d5 3ff8 	ldr.w	r3, [r5, #4088]	; 0xff8
+FLEXCOMM_SetPeriph():
+    83aa:	f013 0f80 	tst.w	r3, #128	; 0x80
+    83ae:	e7e9      	b.n	8384 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_Init.html">FLEXCOMM_Init</a>+0x40&gt;
+    83b0:	2003      	movs	r0, #3
+    83b2:	e7f5      	b.n	83a0 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_Init.html">FLEXCOMM_Init</a>+0x5c&gt;
+    83b4:	2001      	movs	r0, #1
+FLEXCOMM_Init():
+    83b6:	e7f3      	b.n	83a0 &lt;<a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_Init.html">FLEXCOMM_Init</a>+0x5c&gt;
+    83b8:	0000e266 	.word	0x0000e266
+    83bc:	0000e1e4 	.word	0x0000e1e4
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_middleware_mcux-sdk-middleware-usb_phy_usb_phy.c_USB_EhciPhyGetBase.html">USB_EhciPhyGetBase (48)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 96</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 14</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    96
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">14</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_devices_LPC55S16_drivers_fsl_reset.c_RESET_PeripheralReset.html" class="icon-function">RESET_PeripheralReset</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">88</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 88</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 616</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    88
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    616
+                    
+                    
+                </td>
+                <td class="col_size">124</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_fsl_flexcomm.c_FLEXCOMM_Init.html" class="icon-function">FLEXCOMM_Init</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    72
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    492
+                    
+                    
+                </td>
+                <td class="col_size">312</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_modules_hal_nxp_mcux_mcux-sdk_drivers_flexcomm_usart_fsl_usart.c_USART_Init.html" class="icon-function">USART_Init</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">180</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_uart_configure.html" class="icon-function">mcux_flexcomm_uart_configure</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

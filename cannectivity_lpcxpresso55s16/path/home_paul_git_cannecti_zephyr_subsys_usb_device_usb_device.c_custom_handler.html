@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_subsys.html">subsys</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_subsys_usb.html">usb</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_subsys_usb_device.html">device</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c.html">usb_device.c</a>:1487
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">custom_handler</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00002090</td>
+                <td>
+    
+    
+</td>
+                <td>32 (static)</td>
+                <td>96</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_class_handler.html">class_handler (64)</a></pre>
+    
+    <pre>
+custom_handler():
+    2090:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+    2094:	4605      	mov	r5, r0
+    2096:	460e      	mov	r6, r1
+    2098:	4617      	mov	r7, r2
+    209a:	4c12      	ldr	r4, [pc, #72]	; (20e4 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_custom_handler.html">custom_handler</a>+0x54&gt;)
+    209c:	f8df 8048 	ldr.w	r8, [pc, #72]	; 20e8 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_custom_handler.html">custom_handler</a>+0x58&gt;
+    20a0:	f8df 9048 	ldr.w	r9, [pc, #72]	; 20ec &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_custom_handler.html">custom_handler</a>+0x5c&gt;
+    20a4:	4544      	cmp	r4, r8
+    20a6:	d303      	bcc.n	20b0 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_custom_handler.html">custom_handler</a>+0x20&gt;
+    20a8:	f06f 0085 	mvn.w	r0, #133	; 0x85
+    20ac:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+    20b0:	6862      	ldr	r2, [r4, #4]
+    20b2:	f8d9 3024 	ldr.w	r3, [r9, #36]	; 0x24
+    20b6:	429a      	cmp	r2, r3
+    20b8:	d312      	bcc.n	20e0 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_custom_handler.html">custom_handler</a>+0x50&gt;
+    20ba:	69a3      	ldr	r3, [r4, #24]
+    20bc:	b183      	cbz	r3, 20e0 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_custom_handler.html">custom_handler</a>+0x50&gt;
+    20be:	7890      	ldrb	r0, [r2, #2]
+    20c0:	7929      	ldrb	r1, [r5, #4]
+    20c2:	4288      	cmp	r0, r1
+    20c4:	d105      	bne.n	20d2 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_custom_handler.html">custom_handler</a>+0x42&gt;
+    20c6:	463a      	mov	r2, r7
+    20c8:	4631      	mov	r1, r6
+    20ca:	4628      	mov	r0, r5
+    20cc:	e8bd 47f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+    20d0:	4718      	bx	r3
+    20d2:	7952      	ldrb	r2, [r2, #5]
+    20d4:	2a01      	cmp	r2, #1
+    20d6:	d103      	bne.n	20e0 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_custom_handler.html">custom_handler</a>+0x50&gt;
+    20d8:	463a      	mov	r2, r7
+    20da:	4631      	mov	r1, r6
+    20dc:	4628      	mov	r0, r5
+    20de:	4798      	blx	r3
+    20e0:	3424      	adds	r4, #36	; 0x24
+    20e2:	e7df      	b.n	20a4 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_custom_handler.html">custom_handler</a>+0x14&gt;
+    20e4:	20000d90 	.word	0x20000d90
+    20e8:	20000db4 	.word	0x20000db4
+    20ec:	20001afc 	.word	0x20001afc
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_usb_device_usb_device.c_vendor_handler.html">vendor_handler (60)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

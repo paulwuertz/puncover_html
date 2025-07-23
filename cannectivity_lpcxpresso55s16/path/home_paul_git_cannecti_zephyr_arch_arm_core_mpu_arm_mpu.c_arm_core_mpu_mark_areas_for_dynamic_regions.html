@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_arch.html">arch</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_arch_arm.html">arm</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_arch_arm_core.html">core</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu.html">mpu</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_mpu.c.html">arm_mpu.c</a>:377
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">arm_core_mpu_mark_areas_for_dynamic_regions</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00004cf8</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>48 (static)</td>
+                <td>184</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_core_mpu.c_z_arm_configure_static_mpu_regions.html">z_arm_configure_static_mpu_regions (56)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            &Sigma;=18
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_arch_arm_core_cortex_m_cmse_arm_core_cmse.c_arm_cmse_mpu_region_get.html">arm_cmse_mpu_region_get (18)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_mpu.c_arm_core_mpu_configure_static_mpu_regions.html">arm_core_mpu_configure_static_mpu_regions (20)</a></pre>
+    
+    <pre>
+arm_core_mpu_mark_areas_for_dynamic_regions():
+    4cf8:	e92d 4ff7 	stmdb	sp!, {r0, r1, r2, r4, r5, r6, r7, r8, r9, sl, fp, lr}
+    4cfc:	4d29      	ldr	r5, [pc, #164]	; (4da4 &lt;<a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_mpu.c_arm_core_mpu_mark_areas_for_dynamic_regions.html">arm_core_mpu_mark_areas_for_dynamic_regions</a>+0xac&gt;)
+    4cfe:	468a      	mov	sl, r1
+mpu_mark_areas_for_dynamic_regions():
+    4d00:	4606      	mov	r6, r0
+    4d02:	f04f 0800 	mov.w	r8, #0
+    4d06:	46ab      	mov	fp, r5
+mpu_set_rnr():
+    4d08:	4f27      	ldr	r7, [pc, #156]	; (4da8 &lt;<a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_mpu.c_arm_core_mpu_mark_areas_for_dynamic_regions.html">arm_core_mpu_mark_areas_for_dynamic_regions</a>+0xb0&gt;)
+mpu_mark_areas_for_dynamic_regions():
+    4d0a:	45d0      	cmp	r8, sl
+    4d0c:	da1b      	bge.n	4d46 &lt;<a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_mpu.c_arm_core_mpu_mark_areas_for_dynamic_regions.html">arm_core_mpu_mark_areas_for_dynamic_regions</a>+0x4e&gt;
+    4d0e:	f8d6 9004 	ldr.w	r9, [r6, #4]
+    4d12:	f1b9 0f00 	cmp.w	r9, #0
+    4d16:	d03f      	beq.n	4d98 &lt;<a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_mpu.c_arm_core_mpu_mark_areas_for_dynamic_regions.html">arm_core_mpu_mark_areas_for_dynamic_regions</a>+0xa0&gt;
+    4d18:	6831      	ldr	r1, [r6, #0]
+get_region_index():
+    4d1a:	4608      	mov	r0, r1
+    4d1c:	9101      	str	r1, [sp, #4]
+    4d1e:	f006 fbbe 	bl	b49e &lt;<a href="home_paul_git_cannecti_zephyr_arch_arm_core_cortex_m_cmse_arm_core_cmse.c_arm_cmse_mpu_region_get.html">arm_cmse_mpu_region_get</a>&gt;
+    4d22:	9901      	ldr	r1, [sp, #4]
+    4d24:	4604      	mov	r4, r0
+    4d26:	eb09 0001 	add.w	r0, r9, r1
+    4d2a:	3801      	subs	r0, #1
+    4d2c:	f006 fbb7 	bl	b49e &lt;<a href="home_paul_git_cannecti_zephyr_arch_arm_core_cortex_m_cmse_arm_core_cmse.c_arm_cmse_mpu_region_get.html">arm_cmse_mpu_region_get</a>&gt;
+    4d30:	4284      	cmp	r4, r0
+    4d32:	f04f 0214 	mov.w	r2, #20
+    4d36:	4b1d      	ldr	r3, [pc, #116]	; (4dac &lt;<a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_mpu.c_arm_core_mpu_mark_areas_for_dynamic_regions.html">arm_core_mpu_mark_areas_for_dynamic_regions</a>+0xb4&gt;)
+    4d38:	d008      	beq.n	4d4c &lt;<a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_mpu.c_arm_core_mpu_mark_areas_for_dynamic_regions.html">arm_core_mpu_mark_areas_for_dynamic_regions</a>+0x54&gt;
+mpu_mark_areas_for_dynamic_regions():
+    4d3a:	fb02 f308 	mul.w	r3, r2, r8
+    4d3e:	f06f 0215 	mvn.w	r2, #21
+    4d42:	f84b 2003 	str.w	r2, [fp, r3]
+arm_core_mpu_mark_areas_for_dynamic_regions():
+    4d46:	b003      	add	sp, #12
+    4d48:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+mpu_mark_areas_for_dynamic_regions():
+    4d4c:	f114 0f16 	cmn.w	r4, #22
+    4d50:	602c      	str	r4, [r5, #0]
+    4d52:	d0f8      	beq.n	4d46 &lt;<a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_mpu.c_arm_core_mpu_mark_areas_for_dynamic_regions.html">arm_core_mpu_mark_areas_for_dynamic_regions</a>+0x4e&gt;
+    4d54:	7819      	ldrb	r1, [r3, #0]
+    4d56:	42a1      	cmp	r1, r4
+    4d58:	ddf5      	ble.n	4d46 &lt;<a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_mpu.c_arm_core_mpu_mark_areas_for_dynamic_regions.html">arm_core_mpu_mark_areas_for_dynamic_regions</a>+0x4e&gt;
+mpu_region_get_access_attr():
+    4d5a:	fb02 b008 	mla	r0, r2, r8, fp
+mpu_set_rnr():
+    4d5e:	f8c7 4098 	str.w	r4, [r7, #152]	; 0x98
+    4d62:	f8c7 4098 	str.w	r4, [r7, #152]	; 0x98
+mpu_get_rbar():
+    4d66:	f8d7 409c 	ldr.w	r4, [r7, #156]	; 0x9c
+mpu_region_get_access_attr():
+    4d6a:	f100 0108 	add.w	r1, r0, #8
+    4d6e:	7b00      	ldrb	r0, [r0, #12]
+    4d70:	f364 0004 	bfi	r0, r4, #0, #5
+    4d74:	7108      	strb	r0, [r1, #4]
+mpu_get_rlar():
+    4d76:	f8d7 00a0 	ldr.w	r0, [r7, #160]	; 0xa0
+mpu_region_get_access_attr():
+    4d7a:	790c      	ldrb	r4, [r1, #4]
+    4d7c:	0840      	lsrs	r0, r0, #1
+    4d7e:	f360 1447 	bfi	r4, r0, #5, #3
+    4d82:	710c      	strb	r4, [r1, #4]
+mpu_get_rbar():
+    4d84:	f8d7 109c 	ldr.w	r1, [r7, #156]	; 0x9c
+mpu_region_get_conf():
+    4d88:	f021 011f 	bic.w	r1, r1, #31
+    4d8c:	6069      	str	r1, [r5, #4]
+mpu_get_rlar():
+    4d8e:	f8d7 10a0 	ldr.w	r1, [r7, #160]	; 0xa0
+mpu_region_get_conf():
+    4d92:	f021 011f 	bic.w	r1, r1, #31
+    4d96:	6129      	str	r1, [r5, #16]
+mpu_mark_areas_for_dynamic_regions():
+    4d98:	f108 0801 	add.w	r8, r8, #1
+    4d9c:	3514      	adds	r5, #20
+    4d9e:	360c      	adds	r6, #12
+    4da0:	e7b3      	b.n	4d0a &lt;<a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_mpu.c_arm_core_mpu_mark_areas_for_dynamic_regions.html">arm_core_mpu_mark_areas_for_dynamic_regions</a>+0x12&gt;
+    4da2:	bf00      	nop
+    4da4:	20001cf8 	.word	0x20001cf8
+    4da8:	e000ed00 	.word	0xe000ed00
+    4dac:	2000237a 	.word	0x2000237a
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_mpu.c_z_arm_mpu_init.html">z_arm_mpu_init (284)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 112</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 512</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    112
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    512
+                    
+                    
+                </td>
+                <td class="col_size">184</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_mpu.c_arm_core_mpu_mark_areas_for_dynamic_regions.html" class="icon-function">arm_core_mpu_mark_areas_for_dynamic_regions</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    64
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    328
+                    
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_arch_arm_core_mpu_arm_core_mpu.c_z_arm_configure_static_mpu_regions.html" class="icon-function">z_arm_configure_static_mpu_regions</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    40
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    272
+                    
+                    
+                </td>
+                <td class="col_size">200</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_init.c_z_cstart.html" class="icon-function">z_cstart</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">72</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_arch_arm_core_cortex_m_prep_c.c_z_prep_c.html" class="icon-function">z_prep_c</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_subsys.html">subsys</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_subsys_logging.html">logging</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_subsys_logging_backends.html">backends</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_subsys_logging_backends_log_backend_uart.c.html">log_backend_uart.c</a>:82
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">char_out</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00002020</td>
+                <td>
+    
+    
+</td>
+                <td>24 (static)</td>
+                <td>36</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_logging_log_output.c_log_output_timestamp_freq_set.html">log_output_timestamp_freq_set (44)</a></pre>
+    
+    <pre>
+char_out():
+    2020:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+    2022:	460d      	mov	r5, r1
+    2024:	4604      	mov	r4, r0
+z_impl_uart_poll_out():
+    2026:	4f06      	ldr	r7, [pc, #24]	; (2040 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_backends_log_backend_uart.c_char_out.html">char_out</a>+0x20&gt;)
+    2028:	1846      	adds	r6, r0, r1
+char_out():
+    202a:	42b4      	cmp	r4, r6
+    202c:	d101      	bne.n	2032 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_backends_log_backend_uart.c_char_out.html">char_out</a>+0x12&gt;
+    202e:	4628      	mov	r0, r5
+    2030:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
+    2032:	f814 1b01 	ldrb.w	r1, [r4], #1
+z_impl_uart_poll_out():
+    2036:	68bb      	ldr	r3, [r7, #8]
+    2038:	4801      	ldr	r0, [pc, #4]	; (2040 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_backends_log_backend_uart.c_char_out.html">char_out</a>+0x20&gt;)
+    203a:	685b      	ldr	r3, [r3, #4]
+    203c:	4798      	blx	r3
+char_out():
+    203e:	e7f4      	b.n	202a &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_backends_log_backend_uart.c_char_out.html">char_out</a>+0xa&gt;
+    2040:	0000da54 	.word	0x0000da54
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_mem_mgmt_mem_attr.c_mem_attr_get_regions.html">mem_attr_get_regions (12)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

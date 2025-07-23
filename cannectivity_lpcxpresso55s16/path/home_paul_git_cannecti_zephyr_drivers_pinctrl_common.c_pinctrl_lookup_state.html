@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_drivers.html">drivers</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_drivers_pinctrl.html">pinctrl</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_drivers_pinctrl_common.c.html">common.c</a>:9
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">pinctrl_lookup_state</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000beec</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>12 (static)</td>
+                <td>38</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (3)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_can_can_mcux_mcan.c_mcux_mcan_init.html">mcux_mcan_init (228)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_init.html">mcux_flexcomm_init (172)</a>
+                    
+                        ,
+                    
+                
+                    <a href="home_paul_git_cannecti_zephyr_drivers_usb_device_usb_dc_mcux.c_usb_mcux_init.html">usb_mcux_init (100)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_gpio_gpio_mcux_lpc.c_lpc_gpio_init_1.html">lpc_gpio_init_1 (16)</a></pre>
+    
+    <pre>
+pinctrl_lookup_state():
+    beec:	b530      	push	{r4, r5, lr}
+    beee:	6803      	ldr	r3, [r0, #0]
+    bef0:	6013      	str	r3, [r2, #0]
+    bef2:	7905      	ldrb	r5, [r0, #4]
+    bef4:	6804      	ldr	r4, [r0, #0]
+    bef6:	eb04 04c5 	add.w	r4, r4, r5, lsl #3
+    befa:	42a3      	cmp	r3, r4
+    befc:	d302      	bcc.n	bf04 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_pinctrl_common.c_pinctrl_lookup_state.html">pinctrl_lookup_state</a>+0x18&gt;
+    befe:	f06f 0001 	mvn.w	r0, #1
+    bf02:	bd30      	pop	{r4, r5, pc}
+    bf04:	795c      	ldrb	r4, [r3, #5]
+    bf06:	428c      	cmp	r4, r1
+    bf08:	d001      	beq.n	bf0e &lt;<a href="home_paul_git_cannecti_zephyr_drivers_pinctrl_common.c_pinctrl_lookup_state.html">pinctrl_lookup_state</a>+0x22&gt;
+    bf0a:	3308      	adds	r3, #8
+    bf0c:	e7f0      	b.n	bef0 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_pinctrl_common.c_pinctrl_lookup_state.html">pinctrl_lookup_state</a>+0x4&gt;
+    bf0e:	2000      	movs	r0, #0
+    bf10:	e7f7      	b.n	bf02 &lt;<a href="home_paul_git_cannecti_zephyr_drivers_pinctrl_common.c_pinctrl_lookup_state.html">pinctrl_lookup_state</a>+0x16&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_drivers_pinctrl_pinctrl_lpc_iocon.c_pinctrl_clock_init.html">pinctrl_clock_init (16)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 60</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 210</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    60
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                12 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    210
+                    
+                    
+                </td>
+                <td class="col_size">38</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_pinctrl_common.c_pinctrl_lookup_state.html" class="icon-function">pinctrl_lookup_state</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">172</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_drivers_serial_uart_mcux_flexcomm.c_mcux_flexcomm_init.html" class="icon-function">mcux_flexcomm_init</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

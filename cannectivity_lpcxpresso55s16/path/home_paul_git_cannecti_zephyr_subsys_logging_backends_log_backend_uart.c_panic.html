@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_subsys.html">subsys</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr_subsys_logging.html">logging</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_subsys_logging_backends.html">backends</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_subsys_logging_backends_log_backend_uart.c.html">log_backend_uart.c</a>:184
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">panic</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000b34a</td>
+                <td>
+    
+    
+</td>
+                <td>24 (static)</td>
+                <td>50</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_logging_backends_log_backend_uart.c_log_backend_uart_init.html">log_backend_uart_init (12)</a></pre>
+    
+    <pre>
+panic():
+    b34a:	2101      	movs	r1, #1
+    b34c:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
+    b350:	6843      	ldr	r3, [r0, #4]
+    b352:	681b      	ldr	r3, [r3, #0]
+    b354:	685a      	ldr	r2, [r3, #4]
+    b356:	7711      	strb	r1, [r2, #28]
+    b358:	681d      	ldr	r5, [r3, #0]
+log_output_flush():
+    b35a:	682f      	ldr	r7, [r5, #0]
+    b35c:	e9d5 3601 	ldrd	r3, r6, [r5, #4]
+    b360:	e9d3 4800 	ldrd	r4, r8, [r3]
+log_output_write():
+    b364:	b91c      	cbnz	r4, b36e &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_backends_log_backend_uart.c_panic.html">panic</a>+0x24&gt;
+log_output_flush():
+    b366:	686b      	ldr	r3, [r5, #4]
+    b368:	601c      	str	r4, [r3, #0]
+panic():
+    b36a:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+log_output_write():
+    b36e:	4621      	mov	r1, r4
+    b370:	4630      	mov	r0, r6
+    b372:	4642      	mov	r2, r8
+    b374:	47b8      	blx	r7
+    b376:	1a24      	subs	r4, r4, r0
+    b378:	4406      	add	r6, r0
+    b37a:	e7f3      	b.n	b364 &lt;<a href="home_paul_git_cannecti_zephyr_subsys_logging_backends_log_backend_uart.c_panic.html">panic</a>+0x1a&gt;
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_subsys_logging_backends_log_backend_uart.c_dropped.html">dropped (10)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <script src="../static/js/jquery-3.6.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/d3.v4.js"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+
+        </div>
+
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="home.html">home</a></li>
+        
+        <li><a href="home_paul.html">paul</a></li>
+        
+        <li><a href="home_paul_git.html">git</a></li>
+        
+        <li><a href="home_paul_git_cannecti.html">cannecti</a></li>
+        
+        <li><a href="home_paul_git_cannecti_zephyr.html">zephyr</a></li>
+        
+        <li ><a href="home_paul_git_cannecti_zephyr_kernel.html">kernel</a>
+            </li>
+
+        
+        <li class="active"><a href="home_paul_git_cannecti_zephyr_kernel_poll.c.html">poll.c</a>:209
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">clear_event_registrations</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000a078</td>
+                <td>
+    
+    
+</td>
+                <td>20 (static)</td>
+                <td>96</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="home_paul_git_cannecti_zephyr_kernel_poll.c_z_impl_k_poll.html">z_impl_k_poll (176)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_kernel_timer.c_z_impl_k_timer_start.html">z_impl_k_timer_start (116)</a></pre>
+    
+    <pre>
+clear_event_registrations():
+    a078:	2314      	movs	r3, #20
+    a07a:	b5f0      	push	{r4, r5, r6, r7, lr}
+clear_event_registration():
+    a07c:	2400      	movs	r4, #0
+__set_BASEPRI_MAX():
+    a07e:	2720      	movs	r7, #32
+    a080:	fb03 0001 	mla	r0, r3, r1, r0
+clear_event_registration():
+    a084:	4e13      	ldr	r6, [pc, #76]	; (a0d4 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_clear_event_registrations.html">clear_event_registrations</a>+0x5c&gt;)
+clear_event_registrations():
+    a086:	b901      	cbnz	r1, a08a &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_clear_event_registrations.html">clear_event_registrations</a>+0x12&gt;
+    a088:	bdf0      	pop	{r4, r5, r6, r7, pc}
+clear_event_registration():
+    a08a:	f810 3c07 	ldrb.w	r3, [r0, #-7]
+    a08e:	f1a0 0c14 	sub.w	ip, r0, #20
+    a092:	f003 033f 	and.w	r3, r3, #63	; 0x3f
+    a096:	2b10      	cmp	r3, #16
+    a098:	f840 4c0c 	str.w	r4, [r0, #-12]
+    a09c:	d80c      	bhi.n	a0b8 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_clear_event_registrations.html">clear_event_registrations</a>+0x40&gt;
+    a09e:	fa26 f303 	lsr.w	r3, r6, r3
+    a0a2:	07db      	lsls	r3, r3, #31
+    a0a4:	d508      	bpl.n	a0b8 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_clear_event_registrations.html">clear_event_registrations</a>+0x40&gt;
+sys_dnode_is_linked():
+    a0a6:	f850 3c14 	ldr.w	r3, [r0, #-20]
+clear_event_registration():
+    a0aa:	b12b      	cbz	r3, a0b8 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_clear_event_registrations.html">clear_event_registrations</a>+0x40&gt;
+sys_dlist_remove():
+    a0ac:	f850 5c10 	ldr.w	r5, [r0, #-16]
+    a0b0:	602b      	str	r3, [r5, #0]
+    a0b2:	605d      	str	r5, [r3, #4]
+sys_dnode_init():
+    a0b4:	e940 4405 	strd	r4, r4, [r0, #-20]
+__set_BASEPRI():
+    a0b8:	f382 8811 	msr	BASEPRI, r2
+__ISB():
+    a0bc:	f3bf 8f6f 	isb	sy
+__get_BASEPRI():
+    a0c0:	f3ef 8211 	mrs	r2, BASEPRI
+__set_BASEPRI_MAX():
+    a0c4:	f387 8812 	msr	BASEPRI_MAX, r7
+__ISB():
+    a0c8:	f3bf 8f6f 	isb	sy
+k_spin_lock():
+    a0cc:	4660      	mov	r0, ip
+    a0ce:	3901      	subs	r1, #1
+    a0d0:	e7d9      	b.n	a086 &lt;<a href="home_paul_git_cannecti_zephyr_kernel_poll.c_clear_event_registrations.html">clear_event_registrations</a>+0xe&gt;
+    a0d2:	bf00      	nop
+    a0d4:	00010116 	.word	0x00010116
+</pre>
+    
+    <pre><a href="home_paul_git_cannecti_zephyr_kernel_poll.c_z_impl_k_poll.html">z_impl_k_poll (176)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="3" style="text-align: center">Stack</th>
+                <th colspan="3" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 92</th>
+                <th class="col_size"></th>
+                <th class="col_size">  </th>
+                <th class="col_size">&sum;= 376</th>
+                <th class="col_size"></th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    92
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    376
+                    
+                    
+                </td>
+                <td class="col_size">96</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_poll.c_clear_event_registrations.html" class="icon-function">clear_event_registrations</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    72
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                    
+                    280
+                    
+                    
+                </td>
+                <td class="col_size">176</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_zephyr_kernel_poll.c_z_impl_k_poll.html" class="icon-function">z_impl_k_poll</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">104</td>
+                <td class="col_size">
+                
+                </td>
+                <td><a href="home_paul_git_cannecti_cannectivity_app_src_led.c_led_thread.html" class="icon-function">led_thread</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with &#128150;
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright &copy; 2014-2025</span>
+        
+    
+<p  style="color:#808080">Offline html copy built by 
+			      <a href="https://github.com/vChavezB/puncover_html" target="_blank">Puncover HTML</a> v1.3.0</p>
+
+			   </div>
+    </div>
+</body>
+</html>
